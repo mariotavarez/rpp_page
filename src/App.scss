@@ -1,0 +1,236 @@
+@import "./assets/scss/colors.scss";
+
+body {
+  background-color: $color-blue-3;
+  font-family: SF Pro Display -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.App {
+  display: grid;
+  transition: 5s;
+  animation-name: FadeIn;
+  animation-duration: 3s;
+  transition-timing-function: linear;
+}
+
+.btn-portal {
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.btn-portal-rounded {
+  font-size: 15px;
+  border-radius: 34px;
+  width: auto;
+  min-width: 200px;
+  height: 50px;
+}
+
+.btn-tutoriales {
+  background: $color-black-3 0% 0% no-repeat padding-box;
+}
+
+.btn-tutoriales:hover {
+  background: $color-black-1 0% 0% no-repeat padding-box;
+  transform: translate(0, 0);
+  transform: scale(1.05) will-change transform;
+}
+
+// BUTTON ACTION BLUE GENERAL
+.btn-action-blue {
+  background: $color-blue-4;
+  color: $color-white-1;
+}
+// BUTTON ACTION BLUE WHITE
+.btn-action-white {
+  background: $color-white-1;
+  color: $color-blue-2;
+}
+.btn-action-white:hover {
+  background: $color-blue-4;
+  color: $color-white-1;
+}
+
+.bg-gradient-blue-purple {
+  background: transparent linear-gradient(113deg, #0077ed 0%, #7650df 100%) 0%
+    0% no-repeat padding-box;
+}
+.bg-gradient-blue-green {
+  background: transparent
+    linear-gradient(113deg, #0077ed 0%, rgba(0, 201, 47, 1) 100%) 0% 0%
+    no-repeat padding-box;
+}
+
+.glow-on-hover {
+  width: auto;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $color-black-1;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/*base code*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/*the animation definition*/
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    -ms-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

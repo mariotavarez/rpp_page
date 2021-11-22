@@ -1,0 +1,1 @@
+export { ConsultaEstatus } from "./ConsultaEstatus";

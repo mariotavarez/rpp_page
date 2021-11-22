@@ -1,0 +1,1 @@
+export { ValidarTramite } from "./ValidarTramite";

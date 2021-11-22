@@ -1,0 +1,100 @@
+@import "../../../assets/scss/colors.scss";
+
+.container-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "navbar-footer"
+    "politicas";
+  background: $color-gray-1 0% 0% no-repeat padding-box;
+  opacity: 1;
+  height: auto;
+  row-gap: 30px;
+  padding: 10px 10px 0 10px;
+}
+
+//  NAVBAR FOOTER
+.navbar-footer {
+  grid-area: navbar-footer;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 1fr;
+  text-align: left;
+}
+
+// NAVBAR ITEM
+.navbar-footer-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px;
+  row-gap: 10px;
+}
+
+// NAVBAR TITLE H1
+.navbar-footer-item h1 {
+  font: normal normal bold 18px/21px SF Pro Display;
+  letter-spacing: 0px;
+  color: $color-black-2;
+}
+// NAVBAR TITLE H1 HOVER
+.navbar-footer-item h1:hover {
+  cursor: pointer;
+  color: $color-blue-2;
+}
+// NAVBAR OPTION
+.navbar-footer-item p {
+  font: normal normal normal 14px/16px SF Pro Display;
+  letter-spacing: 0px;
+  color: $color-black-2;
+  cursor: pointer;
+}
+
+// NAVBAR OPTION HOVER
+.navbar-footer-item p:hover {
+  font: normal normal normal 14px/16px SF Pro Display;
+  letter-spacing: 0px;
+  color: $color-blue-2;
+  cursor: pointer;
+}
+
+// POLITICAS
+.politicas {
+  display: grid;
+  grid-area: politicas;
+  grid-template-rows: auto 1fr 1fr;
+  row-gap: 1rem;
+}
+
+// COPYRIHT
+.politicas p {
+  text-align: center;
+  font: normal normal normal 15px/16px SF Pro Display;
+  letter-spacing: 0px;
+  color: $color-black-2;
+  opacity: 1;
+}
+
+// POLITICAS OPTIONS
+.politicas-options {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+// AGREGAR BORDE DE POLITICAS
+.politicas-options div {
+  text-align: center;
+  border-right: 1px solid $color-black-2;
+}
+// POLITICAS OPTIONS HOVER
+.politicas-options div p:hover {
+  color: $color-blue-2;
+}
+
+// QUITAR EL ULTIMO BORDE DE LAS POLITICAS
+.politicas-options div:nth-of-type(4) {
+  text-align: center;
+  border-right: none;
+}

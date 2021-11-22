@@ -1,0 +1,1 @@
+export { DescargaTramite } from "./DescargaTramite";

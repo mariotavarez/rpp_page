@@ -1,0 +1,67 @@
+@import "../../../assets/scss/colors.scss";
+
+.contenido-alerta-registral {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+  margin: 0 2rem 0 2rem;
+  grid-template-areas: "container-contenido-alerta-registral registrate-alerta-registral";
+}
+
+.container-contenido-alerta-registral {
+  display: grid;
+  grid-area: container-contenido-alerta-registral;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr auto;
+  grid-template-areas:
+    "title-alerta-registral"
+    "text-alerta-registral"
+    "buttons-alerta-registral"
+    "img-alerta-registral";
+}
+
+.registrate-alerta-registral {
+  display: grid;
+  grid-area: registrate-alerta-registral;
+}
+
+.title-alerta-registral {
+  grid-area: title-alerta-registral;
+  text-align: center;
+  font: normal normal bold 45px/65px SF Pro Display;
+  letter-spacing: 0px;
+  color: $color-black-1 !important;
+}
+
+.text-alerta-registral {
+  grid-area: text-alerta-registral;
+  text-align: justify;
+  justify-self: center;
+  font: normal normal bold 25px/40px SF Pro Display;
+  margin: 0 2rem 0 2rem;
+  letter-spacing: 0px;
+  color: $color-black-4;
+}
+
+.buttons-alerta-registral {
+  grid-area: buttons-alerta-registral;
+  column-gap: 30px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.img-alerta-registral {
+  justify-self: center;
+  display: grid;
+  grid-area: img-alerta-registral;
+  max-width: 200px;
+}
+
+.img-alerta-registral img {
+  justify-self: center;
+  width: 100%;
+  height: auto;
+}

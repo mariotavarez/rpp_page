@@ -1,0 +1,54 @@
+@import "../../../assets/scss/colors.scss";
+
+.container-copias-certificadas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  margin: 0 2rem 0 2rem;
+  grid-template-areas:
+    "instrucciones-copias titulo-copias-certificadas ."
+    "instrucciones-copias . section-question-copias"
+    "instrucciones-copias . .";
+  background-color: $color-blue-5;
+}
+
+.titulo-copias-certificadas {
+  grid-area: titulo-copias-certificadas;
+  opacity: 1;
+  font-size: 30px;
+  text-align: left;
+  font: normal normal bold 40px/65px SF Pro Display;
+  letter-spacing: 0px;
+  opacity: 1;
+  text-align: center;
+}
+
+strong {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, $color-blue-2, $color-aqua-1);
+  -webkit-background-clip: text;
+}
+
+.instrucciones-copias {
+  grid-area: instrucciones-copias;
+}
+
+.instrucciones-copias img {
+  height: auto;
+  width: 100%;
+}
+
+.section-question-copias {
+  display: grid;
+  grid-area: section-question-copias;
+  grid-template-rows: auto auto;
+  row-gap: 1rem;
+}
+
+.section-question-copias BtnVideoTutorial {
+  justify-self: center;
+}
+
+.justify-end-btn-tutorial {
+  justify-self: end;
+}

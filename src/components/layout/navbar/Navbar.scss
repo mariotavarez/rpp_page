@@ -1,0 +1,12 @@
+@import "../../../assets/scss/colors.scss";
+
+.navbar-background {
+  background: transparent
+    linear-gradient(91deg, #0146a1 0%, #0077ed 0%, #1e54a2 100%) 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
+}
+
+.navbar-options {
+  color: $color-white-1;
+}

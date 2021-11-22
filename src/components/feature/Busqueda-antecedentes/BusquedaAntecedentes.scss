@@ -1,0 +1,96 @@
+@import "../../../assets/scss/colors.scss";
+
+// CONTAINER BUSQUEDA ANTE
+.container-busqueda-ante {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  height: 35rem;
+  background-color: $color-blue-5;
+  grid-template-areas: "container-forma-busqueda-ante container-preguntas-busqueda";
+}
+
+// CONTAINER FORMA BUSQUEDA ANTE
+.container-forma-busqueda-ante {
+  display: grid;
+  grid-area: container-forma-busqueda-ante;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  row-gap: 3rem;
+  background-image: url("http://172.34.9.154/portal_assets/img/formas/busqueda-antecedentes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100%;
+  grid-template-areas:
+    "title-busqueda-ante"
+    "btn-tutorial-busqueda-ante"
+    "text-tutorial-busqueda-ante"
+    "btn-action-busqueda-ante";
+}
+
+// TITLE BUSQUEDA ANTE
+.title-busqueda-ante {
+  margin: 0 2rem 0 2rem;
+  display: grid;
+  grid-area: title-busqueda-ante;
+  font: normal normal bold 40px/65px SF Pro Display;
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255, 1);
+}
+
+// BTN TUTORIAL BUSQUEDA ANTE
+.btn-tutorial-busqueda-ante {
+  margin: 0 2rem 0 2rem;
+  display: grid;
+  grid-area: btn-tutorial-busqueda-ante;
+}
+
+// TEXT TUTORIAL BUSQUEDA ANTE
+.text-tutorial-busqueda-ante {
+  margin: 0 2rem 0 2rem;
+  display: grid;
+  grid-area: text-tutorial-busqueda-ante;
+  font: normal normal bold 35px/48px SF Pro Display;
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255, 1);
+}
+
+// BTN ACTION BUSQUEDA ANTE
+.btn-action-busqueda-ante {
+  margin: 0 2rem 0 2rem;
+  display: grid;
+  grid-area: btn-action-busqueda-ante;
+}
+
+// CONTAINER PREGUNTAS BUSQUEDA
+.container-preguntas-busqueda {
+  display: grid;
+  grid-area: container-preguntas-busqueda;
+  justify-items: right;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "img-laptop-busqueda-ante"
+    "container-question-busqueda-ante";
+}
+
+// IMG LAPTOP BUSQUEDA ANTE
+.img-laptop-busqueda-ante {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  grid-area: img-laptop-busqueda-ante;
+  background-image: url("http://172.34.9.154/portal_assets/img/dibujos/busqueda-antecedentes.png");
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 40%;
+}
+// CONTAINER PREGUNTAS BUSQUEDA
+.container-question-busqueda-ante {
+  grid-area: container-question-busqueda-ante;
+  margin: 0 2rem 0 2rem;
+}

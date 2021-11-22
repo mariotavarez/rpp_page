@@ -1,0 +1,6 @@
+.container-consulta-estatus {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "container-info-consulta-estatus container-preguntas-";
+}

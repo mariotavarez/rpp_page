@@ -1,0 +1,100 @@
+@import "../../../assets/scss/colors.scss";
+
+.container-validar-tramite {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 35rem;
+  margin: 0 2rem 0 2rem;
+  grid-template-areas: "container-info-validar-tramite preguntas-validar-tramite";
+}
+
+.container-info-validar-tramite {
+  display: grid;
+  grid-area: container-info-validar-tramite;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  justify-items: center;
+  grid-template-areas:
+    "titulo-validar-tramite"
+    "texto-validar-tramite"
+    "sub-texto-validar-tramite"
+    "img-forma-validar-tramite"
+    "botones-validar-tramite";
+}
+
+.titulo-validar-tramite {
+  text-align: center;
+  grid-area: titulo-validar-tramite;
+  font: normal normal bold 40px/65px SF Pro Display;
+  letter-spacing: 0px;
+  color: $color-black-3;
+  opacity: 1;
+}
+
+.texto-validar-tramite {
+  text-align: justify;
+  grid-area: texto-validar-tramite;
+  font: normal normal bold 20px/40px SF Pro Display;
+  letter-spacing: 0px;
+  padding: 0 2rem 0 2rem;
+  color: $color-black-4;
+  opacity: 1;
+}
+.sub-texto-validar-tramite {
+  text-align: justify;
+  grid-area: sub-texto-validar-tramite;
+  font: normal normal bold 20px/40px SF Pro Display;
+  letter-spacing: 0px;
+  padding: 0 2rem 0 2rem;
+  color: $color-blue-2;
+  opacity: 1;
+}
+
+.img-forma-validar-tramite {
+  display: grid;
+  grid-area: img-forma-validar-tramite;
+  justify-self: center;
+}
+
+.img-forma-validar-tramite img {
+  justify-self: center;
+  height: auto;
+  width: 45%;
+}
+
+.botones-validar-tramite {
+  justify-self: center;
+  grid-area: botones-validar-tramite;
+  padding-bottom: 5rem;
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: auto auto;
+}
+
+.preguntas-validar-tramite {
+  display: grid;
+  grid-area: preguntas-validar-tramite;
+  grid-template-rows: auto auto;
+  padding-top: 2rem;
+  grid-template-areas:
+    "section-question-validar-tramites"
+    "dibujo-mano-certificado";
+}
+
+.section-question-validar-tramites {
+  display: grid;
+  grid-area: section-question-validar-tramites;
+}
+
+.dibujo-mano-certificado {
+  display: grid;
+  grid-area: dibujo-mano-certificado;
+}
+
+.dibujo-mano-certificado img {
+  justify-self: center;
+  align-self: start;
+  height: auto;
+  width: 45%;
+}

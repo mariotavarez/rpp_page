@@ -1,0 +1,16 @@
+@import "../../../assets/scss/colors.scss";
+
+.container-section-question {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 500px;
+  height: auto;
+
+  box-shadow: 0px 3px 10px #8b8b8b;
+  border-radius: 14px;
+  opacity: 1;
+}
+
+.text-blue-btn {
+  color: $color-blue-4;
+}

@@ -1,0 +1,1 @@
+export { ConsultaInmobiliaria } from "./ConsultaInmobiliaria";

@@ -1,0 +1,68 @@
+@import "../../../assets/scss/colors.scss";
+
+.container-cerlin {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "container-info-cerlin registrate-cerlin";
+  height: 35rem;
+  margin: 0 2rem 0 2rem;
+  background-color: $color-blue-5;
+}
+
+.container-info-cerlin {
+  display: grid;
+  grid-area: container-info-cerlin;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr auto;
+  grid-template-areas:
+    "titulo-cerlin"
+    "texto-cerlin"
+    "botones-cerlin"
+    "container-img-forma-cerlin";
+}
+
+.container-img-forma-cerlin {
+  display: grid;
+  grid-area: container-img-forma-cerlin;
+  justify-self: center;
+}
+
+.container-img-forma-cerlin img {
+  height: auto;
+  width: 100%;
+  object-position: 0 -50px;
+}
+
+.titulo-cerlin {
+  text-align: center;
+  grid-area: titulo-cerlin;
+  font: normal normal bold 40px/65px SF Pro Display;
+  letter-spacing: 0px;
+  color: $color-black-3;
+  opacity: 1;
+}
+
+.texto-cerlin {
+  text-align: justify;
+  grid-area: texto-cerlin;
+  font: normal normal bold 20px/40px SF Pro Display;
+  letter-spacing: 0px;
+  padding: 0 2rem 0 2rem;
+  color: $color-black-4;
+  opacity: 1;
+}
+
+.botones-cerlin {
+  justify-self: center;
+  grid-area: botones-cerlin;
+  padding-bottom: 5rem;
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: auto auto;
+}
+
+.registrate-cerlin {
+  justify-self: end;
+  grid-area: registrate-cerlin;
+}

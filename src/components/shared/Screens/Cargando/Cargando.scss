@@ -1,0 +1,15 @@
+.container-loading {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto;
+  height: 100vh;
+}
+
+.container-loading img {
+  justify-self: center;
+  align-self: center;
+  height: auto;
+  width: 15%;
+}

@@ -1,0 +1,64 @@
+@import "../../../assets/scss/colors.scss";
+
+.container-signUp {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  height: 35rem;
+  padding: 0 2rem 0 2rem;
+  grid-template-areas:
+    "title-signUp"
+    "text-signUp"
+    "img-container-signUp"
+    "btn-signUp";
+  background-image: linear-gradient(
+      151deg,
+      $color-rgba-blue-1,
+      $color-rgba-blue-2
+    ),
+    url("http://172.34.9.154/portal_assets/img/backgrounds/registrate.jpg");
+  justify-items: center;
+  align-items: center;
+}
+
+.title-signUp {
+  grid-area: title-signUp;
+  text-align: center;
+  font: normal normal bold 30px/48px SF Pro Display;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.text-signUp {
+  text-align: center;
+  grid-area: text-signUp;
+  font: normal normal normal 20px/36px SF Pro Display;
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+
+.img-container-signUp {
+  display: grid;
+  grid-area: img-container-signUp;
+  height: 100%;
+  width: 50%;
+  background-position: 0 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.img-signUp {
+  background-image: url("http://172.34.9.154/portal_assets/img/dibujos/registrate.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100;
+  width: 100%;
+}
+
+.btn-signUp {
+  align-self: end;
+  padding-bottom: 10px;
+  grid-area: btn-signUp;
+}

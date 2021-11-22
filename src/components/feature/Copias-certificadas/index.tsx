@@ -1,0 +1,1 @@
+export { CopiasCertificadas } from "./CopiasCertificadas";
