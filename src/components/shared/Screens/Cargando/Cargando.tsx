@@ -1,7 +1,7 @@
 // Styles
 import "./Cargando.scss";
 // Images
-import CARGANDO from "../../../../assets/img/screens/cargando.gif";
+import CARGANDO from "../../../../assets/img/screens/cargando_rpp.gif";
 
 export const Cargando = () => {
   return (

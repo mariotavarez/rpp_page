@@ -23,6 +23,12 @@
   text-align: center;
 }
 
+.titulo-copias-certificadas P {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, $color-blue-2, $color-aqua-1);
+  -webkit-background-clip: text;
+}
+
 strong {
   -webkit-text-fill-color: transparent;
   background: linear-gradient(90deg, $color-blue-2, $color-aqua-1);
@@ -41,14 +47,22 @@ strong {
 .section-question-copias {
   display: grid;
   grid-area: section-question-copias;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   row-gap: 1rem;
 }
 
-.section-question-copias BtnVideoTutorial {
+.section-question-copias SectionQuestion {
   justify-self: center;
 }
 
 .justify-end-btn-tutorial {
   justify-self: end;
+}
+
+.container-buttons-copias-certificadas {
+  justify-items: end;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
 }

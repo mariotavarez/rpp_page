@@ -3,50 +3,52 @@ import logo from "../../../assets/img/logos/logo.png";
 import "./Navbar.scss";
 // Models
 import { NavbarModel } from "./../../../models/navbar/navbarModel";
+// Router Link
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const navbarOptions: NavbarModel[] = [
     {
       nombre: "Inicio",
-      url: "",
+      url: "/",
     },
-    {
-      nombre: "Organización",
-      url: "",
-    },
-    {
-      nombre: "Trámites y servicios",
-      url: "",
-    },
+    // {
+    //   nombre: "Organización",
+    //   url: "",
+    // },
+    // {
+    //   nombre: "Trámites y servicios",
+    //   url: "",
+    // },
     {
       nombre: "Sitios de interés",
-      url: "",
+      url: "sitios-interes",
     },
-    {
-      nombre: "Transparencia",
-      url: "",
-    },
+    // {
+    //   nombre: "Transparencia",
+    //   url: "",
+    // },
     {
       nombre: "Contáctanos",
-      url: "",
+      url: "contactanos",
     },
   ];
   // Menu Desktop
   const navbarOptionsMenuDesktop = navbarOptions.map((option, index) => (
-    <a
+    <Link
       key={index}
-      href="#"
-      className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+      className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-semibold"
+      to={option.url}
     >
       {option.nombre}
-    </a>
+    </Link>
   ));
   // Menu Mobile
   const navbarOptionsMenuMobile = navbarOptions.map((option, index) => (
     <a
       key={index}
-      href="#"
-      className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+      href={option.url}
+      className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-semibold"
     >
       {option.nombre}
     </a>

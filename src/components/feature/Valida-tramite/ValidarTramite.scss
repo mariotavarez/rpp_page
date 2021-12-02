@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  height: 35rem;
+  height: 41rem;
   margin: 0 2rem 0 2rem;
   grid-template-areas: "container-info-validar-tramite preguntas-validar-tramite";
 }
@@ -13,7 +13,7 @@
   display: grid;
   grid-area: container-info-validar-tramite;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: 70px 100px 40px 200px;
   justify-items: center;
   grid-template-areas:
     "titulo-validar-tramite"
@@ -61,6 +61,7 @@
   justify-self: center;
   height: auto;
   width: 45%;
+  max-width: 500px;
 }
 
 .botones-validar-tramite {
@@ -85,6 +86,7 @@
 .section-question-validar-tramites {
   display: grid;
   grid-area: section-question-validar-tramites;
+  justify-self: end;
 }
 
 .dibujo-mano-certificado {
@@ -97,4 +99,8 @@
   align-self: start;
   height: auto;
   width: 45%;
+}
+
+.appearance-none {
+  text-transform: uppercase !important;
 }

@@ -3,8 +3,10 @@ import { ButtonModel } from "./../../../models/buttons/ButtonModel";
 
 export const BtnAction = ({
   buttonOptions,
+  onChildClick,
 }: {
   buttonOptions: ButtonModel;
+  onChildClick: any;
 }) => {
   /**
    * @author Mario Tavarez
@@ -18,6 +20,8 @@ export const BtnAction = ({
     // Redirecciona al enlace externo o interno segun el parametro "sameWindow": false - mismo destino, true - nueva ventana
     if (!buttonOptions.sameWindow) {
       window.open(buttonOptions.url, "_blank");
+    } else {
+      onChildClick(event);
     }
   };
 

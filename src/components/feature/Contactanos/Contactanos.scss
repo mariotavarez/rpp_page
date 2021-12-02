@@ -1,0 +1,37 @@
+@import "../../../assets/scss/colors.scss";
+
+.container-contactanos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "titulo-contactanos titulo-contactanos"
+    "formulario-contactanos img-contactanos";
+}
+
+.titulo-contactanos {
+  grid-area: titulo-contactanos;
+  text-align: center;
+  font: normal normal bold 45px/65px SF Pro Display;
+  letter-spacing: 0px;
+  color: $color-black-1 !important;
+}
+
+.img-contactanos {
+  grid-area: img-contactanos;
+}
+.img-contactanos img {
+  height: auto;
+  width: 100%;
+}
+
+.formulario-contactanos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-area: formulario-contactanos;
+}
+
+.formulario-contact-background {
+  justify-self: center;
+  border-radius: 10px;
+}

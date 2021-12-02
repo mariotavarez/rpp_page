@@ -15,7 +15,7 @@
   display: grid;
   grid-area: container-contenido-consulta-web-inmo;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr auto;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas:
     "title-consulta-web-inmo"
     "text-consulta-web-inmo"
@@ -41,6 +41,14 @@
 // TITLE CONSULTA WEB INMO
 .title-consulta-web-inmo h1 {
   color: $color-black-1;
+  font-size: 50px;
+}
+.title-consulta-web-inmo p {
+  color: $color-black-1;
+  font-size: 35px;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #378de2, #00ddec);
+  -webkit-background-clip: text;
 }
 
 // TEXT CONSULTA WEB INMO

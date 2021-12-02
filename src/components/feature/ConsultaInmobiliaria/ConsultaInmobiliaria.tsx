@@ -27,9 +27,8 @@ export const ConsultaInmobiliaria = () => {
       <div className="container-contenido-consulta-web-inmo">
         {/* TITLE CONSULTA WEB INMO */}
         <div className="title-consulta-web-inmo">
-          <h1>
-            Consulta <strong>Inmobiliaria</strong>
-          </h1>
+          <h1>CRI </h1>
+          <p>(Sistema de Consulta Remota de Inmuebles)</p>
         </div>
         {/* TITLE CONSULTA WEB INMO */}
         {/* TEXT CONSULTA WEB INMO */}
@@ -40,7 +39,10 @@ export const ConsultaInmobiliaria = () => {
         {/* BUTTONS CONSULTA WEB INMO */}
         <div className="buttons-consulta-web-inmo">
           {/* BTN ACTION */}
-          <BtnAction buttonOptions={btnConsultarAsientos} />
+          <BtnAction
+            buttonOptions={btnConsultarAsientos}
+            onChildClick={() => {}}
+          />
           {/* BTN ACTION */}
           {/* BTN VIDEO TUTORIAL */}
           <BtnVideoTutorial urlVideo={TUTORIALES.CONSULTA_INMOBILIARIA} />
@@ -50,7 +52,7 @@ export const ConsultaInmobiliaria = () => {
         {/* IMG CONSULTA WEB INMO */}
         <div className="img-consulta-web-inmo">
           <img
-            src="http://172.34.9.154/portal_assets/img/dibujos/consulta-inmobiliaria.png"
+            src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/consulta-inmobiliaria.png"
             alt=""
           />
         </div>

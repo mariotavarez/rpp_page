@@ -21,18 +21,18 @@ export const SignUp = () => {
       <div className="title-signUp">
         <h2>
           {" "}
-          Si aun no estas registrado a los servicios en linea del RPP,
-          registrate ahora!!!
+          Si aún no estas registrado a los servicios en línea del Registro
+          Público de la Propiedad
         </h2>
       </div>
       <div className="text-signUp">
-        <h3>Dando clic en el botón "Registrarse".</h3>
+        <h3>Da clic en el siguiente botón para registrarte</h3>
       </div>
       <div className="img-container-signUp">
         <div className="img-signUp"></div>
       </div>
       <div className="btn-signUp">
-        <BtnAction buttonOptions={btnSignUp} />
+        <BtnAction buttonOptions={btnSignUp} onChildClick={() => {}} />
       </div>
     </div>
   );

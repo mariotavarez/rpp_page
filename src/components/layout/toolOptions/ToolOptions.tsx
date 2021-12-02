@@ -21,8 +21,12 @@ export const ToolOptions = () => {
   const handleRedirectToUrl = (event: any, pathUrl: any) => {
     // Previene el comportamiento por defecto del evento
     event.preventDefault();
-    // Redirecciona a la ruta especificada
-    navigate(pathUrl);
+    if (pathUrl.isExternal) {
+      window.open(pathUrl.url, "_blank");
+    } else {
+      // Redirecciona a la ruta especificada
+      navigate(pathUrl.url);
+    }
   };
 
   const toolOptionsImg = toolOptions.map((option, index) => (
@@ -30,7 +34,7 @@ export const ToolOptions = () => {
     <div
       key={index}
       className="container-menu-array-options"
-      onClick={(event) => handleRedirectToUrl(event, option.url)}
+      onClick={(event) => handleRedirectToUrl(event, option)}
     >
       {/* CONTAINER MENU ITEM */}
       <div className="container-menu-item ">
@@ -39,7 +43,13 @@ export const ToolOptions = () => {
         {/* CONTAINER MENU ITEM IMG*/}
         {/* CONTAINER MENU ITEM P*/}
         <p className="text-toolOption">
-          <Link to={option.url}>{option.nombre}</Link>
+          {!option.isExternal ? (
+            <Link to={option.url}>{option.nombre}</Link>
+          ) : (
+            <a href={option.url} target="_blank">
+              {option.nombre}
+            </a>
+          )}
         </p>
         {/* CONTAINER MENU ITEM P*/}
       </div>
@@ -51,7 +61,7 @@ export const ToolOptions = () => {
   return (
     // CONTAINER-TOOLOPTIONS
     <div className="container-toolOptions">
-      <div className="grid grid-cols-8 gap-1 items-center justify-items-center ">
+      <div className="grid grid-cols-9 gap-1 items-center justify-items-center ">
         {toolOptionsImg}
       </div>
     </div>

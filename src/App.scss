@@ -1,5 +1,7 @@
 @import "./assets/scss/colors.scss";
 
+@import url("https://fonts.googleapis.com/css?family=Cookie");
+
 body {
   background-color: $color-blue-3;
   font-family: SF Pro Display -apple-system, BlinkMacSystemFont, sans-serif;
@@ -11,6 +13,34 @@ body {
   animation-name: FadeIn;
   animation-duration: 3s;
   transition-timing-function: linear;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "navbar-main"
+    "toolOptions-main"
+    "main-content"
+    "footer-main";
+}
+
+.navbar-main {
+  grid-area: navbar-main;
+  display: grid;
+}
+
+.toolOptions-main {
+  grid-area: toolOptions-main;
+  display: grid;
+}
+
+.main-content {
+  grid-area: main-content;
+  display: grid;
+  // margin-bottom: 4rem;
+}
+
+.footer-main {
+  grid-area: footer-main;
+  display: grid;
 }
 
 .btn-portal {
@@ -232,5 +262,102 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.drop {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  border-radius: 100%;
+  background-color: $color-white-1;
+  box-shadow: 0 0 10px $color-white-1;
+}
+
+.animate {
+  animation: falling 5.5s infinite ease-in;
+}
+
+@keyframes falling {
+  0% {
+    top: -10px;
+    // opacity: 1;
+  }
+  10% {
+    transform: translateX(-5px);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  70% {
+    transform: translateX(5px);
+  }
+  80% {
+    transform: translateX(-5px);
+  }
+  90% {
+    transform: translateX(5px);
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    top: 95vh;
+    opacity: 0;
+  }
+}
+
+.line {
+  text-align: center;
+}
+
+li {
+  position: relative;
+  margin: 0 15px;
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  width: 12px;
+  height: 28px;
+  border-radius: 50%;
+  top: 35px;
+  background: #fff;
+  &:before {
+    content: "";
+    position: absolute;
+    background: #222;
+    width: 10px;
+    height: 9px;
+    border-radius: 3px;
+    top: -4px;
+    left: 1px;
+  }
+  &:after {
+    content: "";
+    top: -14px;
+    left: 9px;
+    position: absolute;
+    width: 52px;
+    height: 19px;
+    border-bottom: solid #222 2px;
+    border-radius: 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .line {
+    padding: 0;
+  }
+  li {
+    margin: 0 15px 20px 15px;
   }
 }

@@ -10,11 +10,13 @@ import { FooterOptionModel } from "./../../../models/footer/FooterOptionModel";
 export const Footer = () => {
   // Data del footer
   const footerData: FooterModel[] = FOOTER.slice();
+  // Año actual
+  const currentYear = new Date().getFullYear();
   // Footer Options
   const footerOptions = footerData.map((option, index) => (
-    <>
+    <div key={index}>
       {/* NAVBAR ITEM */}
-      <div key={index} className="navbar-footer-item">
+      <div className="navbar-footer-item">
         {/* NAVBAR TITLE H1 */}
         <h1>{option.tituloMenu.text}</h1>
         {/* NAVBAR TITLE H1 */}
@@ -27,7 +29,7 @@ export const Footer = () => {
         {/* NAVBAR OPTION */}
       </div>
       {/* NAVBAR ITEM */}
-    </>
+    </div>
   ));
 
   // Politicas
@@ -48,8 +50,8 @@ export const Footer = () => {
       <div className="politicas">
         {/* COPYRIHT */}
         <p>
-          Copyright © 2021 Registro Público de la Propiedad del Estado de
-          Querétaro. Todos los derechos reservados
+          Copyright © {currentYear} Registro Público de la Propiedad del Estado
+          de Querétaro. Todos los derechos reservados
         </p>
         {/* COPYRIHT */}
         {/* HR */}

@@ -1,6 +1,84 @@
+@import "../../../assets/scss/colors.scss";
+
 .container-consulta-estatus {
   display: grid;
   grid-template-columns: 60% 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "container-info-consulta-estatus container-preguntas-";
+  grid-template-areas: "container-info-estatus img-consulta-estatus";
+  height: 100%;
+  margin: 0 2rem 0 2rem;
+}
+
+.container-info-estatus {
+  grid-area: container-info-estatus;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "title-consulta-estatus"
+    "subtitle-consulta-estatus"
+    "ingresando-datos-consulta-estatus"
+    "img-requisitos-consulta-estatus"
+    "btn-consulta-estatus";
+}
+
+.title-consulta-estatus {
+  grid-area: title-consulta-estatus;
+  text-align: center;
+  font: normal normal bold 40px/65px SF Pro Display;
+  letter-spacing: 0px;
+  color: $color-black-1;
+}
+
+.subtitle-consulta-estatus {
+  grid-area: subtitle-consulta-estatus;
+  font: normal normal bold 20px/40px SF Pro Display;
+  letter-spacing: 0px;
+  color: #636363;
+  text-align: justify;
+}
+
+.ingresando-datos-consulta-estatus {
+  grid-area: ingresando-datos-consulta-estatus;
+  font: normal normal bold 18px/30px SF Pro Display;
+  letter-spacing: 0px;
+  color: #378de2;
+  text-align: center;
+}
+
+.img-requisitos-consulta-estatus {
+  grid-area: img-requisitos-consulta-estatus;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.img-requisitos-consulta-estatus img {
+  width: 60%;
+  height: auto;
+  justify-self: center;
+}
+
+.btn-consulta-estatus {
+  display: grid;
+  grid-area: btn-consulta-estatus;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-self: center;
+  column-gap: 40px;
+  padding-bottom: 12rem;
+}
+
+.img-consulta-estatus {
+  display: grid;
+  grid-area: img-consulta-estatus;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.img-consulta-estatus img {
+  height: auto;
+  width: 100%;
 }

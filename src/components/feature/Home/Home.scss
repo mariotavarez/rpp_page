@@ -1,11 +1,63 @@
-@tailwind base;
+@import "../../../assets/scss/colors.scss";
 
-@tailwind components;
+// @tailwind base;
 
-@tailwind utilities;
+// @tailwind components;
 
-@import "tailwindcss/base";
+// @tailwind utilities;
 
-@import "tailwindcss/components";
+// @import "tailwindcss/base";
 
-@import "tailwindcss/utilities";
+// @import "tailwindcss/components";
+
+// @import "tailwindcss/utilities";
+
+.container-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "content-home";
+}
+
+.content-home {
+  grid-area: content-home;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "carousel-avisos-home";
+}
+
+.title-home {
+  text-align: center;
+  grid-area: title-home;
+  font: normal normal bold 40px/40px SF Pro Display;
+  letter-spacing: 0px;
+  padding: 0 2rem 0 2rem;
+  color: $color-black-4;
+  opacity: 1;
+}
+
+.img-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.img-home img {
+  width: 100%;
+  height: auto;
+  align-self: center;
+  justify-self: center;
+}
+
+.carousel-avisos-home {
+  grid-area: carousel-avisos-home;
+  display: grid;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  max-height: 45rem;
+  min-height: 45rem;
+}

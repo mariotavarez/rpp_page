@@ -14,7 +14,7 @@
 // CONTAINER MENU ARRAY OPTIONS
 .container-menu-array-options {
   display: grid;
-  grid-template-columns: repeat(7, auto);
+  grid-template-columns: repeat(9, auto);
   grid-template-rows: auto;
   cursor: pointer;
 }
@@ -40,7 +40,7 @@
 // CONTAINER MENU ITEM P
 .container-menu-item p {
   color: $color-black-2;
-  font: normal normal bold 14px/16px SF Pro Display;
+  font: normal normal bold 16px/16px SF Pro Display;
   letter-spacing: 0px;
 }
 
@@ -48,6 +48,6 @@
 .container-menu-item p:hover {
   color: $color-green-1;
   cursor: pointer;
-  font: normal normal bold 14px/16px SF Pro Display;
+  font: normal normal bold 16px/16px SF Pro Display;
   letter-spacing: 0px;
 }

@@ -16,8 +16,12 @@ import { AlertaRegistral } from "./components/feature/AlertaRegistral";
 import { ConsultaEstatus } from "./components/feature/ConsutlaEstatus";
 import { DescargaTramite } from "./components/feature/DescargaTramite";
 import { ValidarTramite } from "./components/feature/Valida-tramite";
-
+import { CopiasCertificadas } from "./components/feature/Copias-certificadas/CopiasCertificadas";
+import { SitiosInteres } from "./components/feature/Sitios-interes";
+import { Contactanos } from "./components/feature/Contactanos";
+// Routes
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -31,49 +35,63 @@ function App() {
         <BrowserRouter>
           <div className="App">
             {/* NAVBAR */}
-            <Navbar />
+            <div className="navbar-main">
+              <Navbar />
+            </div>
             {/* NAVBAR */}
             {/* TOOL OPTIONS */}
-            <ToolOptions />
+            <div className="toolOptions-main">
+              <ToolOptions />
+            </div>
             {/* TOOL OPTIONS */}
-            <Routes>
-              <Route path="/" element={<Home />}>
-                {/* HOME */}
-                <Route index element={<Home />} />
-                {/* HOME */}
-                {/* <Route path=":teamId" element={<Team />} />
-                  <Route path="new" element={<NewTeamForm />} />
-                <Route index element={<LeagueStandings />} /> */}
-              </Route>
-              <Route
-                path="busqueda-antecedentes"
-                element={<BusquedaAntecedentes />}
-              ></Route>
-              <Route path="cerlin" element={<Cerlin />}></Route>
-              <Route
-                path="consulta-inmobiliaria"
-                element={<ConsultaInmobiliaria />}
-              ></Route>
-              <Route
-                path="alerta-registral"
-                element={<AlertaRegistral />}
-              ></Route>
-              <Route
-                path="consulta-estatus"
-                element={<ConsultaEstatus />}
-              ></Route>
-              <Route
-                path="validar-tramite"
-                element={<ValidarTramite />}
-              ></Route>
-              <Route
-                path="descarga-tramite"
-                element={<DescargaTramite />}
-              ></Route>
-            </Routes>
-
+            <div className="main-content">
+              <Routes>
+                <Route path="/" element={<Home />}>
+                  {/* HOME */}
+                  <Route index element={<Home />} />
+                  {/* HOME */}
+                </Route>
+                <Route
+                  path="copias-certificadas"
+                  element={<CopiasCertificadas />}
+                ></Route>
+                <Route
+                  path="busqueda-antecedentes"
+                  element={<BusquedaAntecedentes />}
+                ></Route>
+                <Route path="cerlin" element={<Cerlin />}></Route>
+                <Route
+                  path="consulta-inmobiliaria"
+                  element={<ConsultaInmobiliaria />}
+                ></Route>
+                <Route
+                  path="alerta-registral"
+                  element={<AlertaRegistral />}
+                ></Route>
+                <Route
+                  path="consulta-estatus"
+                  element={<ConsultaEstatus />}
+                ></Route>
+                <Route
+                  path="validar-tramite"
+                  element={<ValidarTramite />}
+                ></Route>
+                <Route
+                  path="descarga-tramite"
+                  element={<DescargaTramite />}
+                ></Route>
+                <Route
+                  path="sitios-interes"
+                  element={<SitiosInteres />}
+                ></Route>
+                <Route path="contactanos" element={<Contactanos />}></Route>
+              </Routes>
+            </div>
             {/* FOOTER */}
-            <Footer />
+            <div className="footer-main">
+              <Footer />
+            </div>
+
             {/* FOOTER */}
           </div>
         </BrowserRouter>

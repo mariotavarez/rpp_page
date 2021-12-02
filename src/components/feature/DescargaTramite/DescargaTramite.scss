@@ -1,0 +1,91 @@
+@import "../../../assets/scss/colors.scss";
+
+.container-descarga-tramite {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "container-info-descarga-tramite img-descarga-tramite";
+  height: 100%;
+  margin: 0 2rem 0 2rem;
+}
+
+.container-info-descarga-tramite {
+  grid-area: container-info-descarga-tramite;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "title-descarga-tramite"
+    "subtitle-descarga-tramite"
+    "ingresando-datos-descarga-tramite"
+    "img-requisitos-descarga-tramite"
+    "btn-descarga-tramite";
+}
+
+.title-descarga-tramite {
+  grid-area: title-descarga-tramite;
+  text-align: center;
+  font: normal normal bold 40px/65px SF Pro Display;
+  letter-spacing: 0px;
+  color: $color-black-1;
+}
+
+.title-descarga-tramite p {
+  font-size: 35px;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #378de2, #00ddec);
+  -webkit-background-clip: text;
+}
+
+.subtitle-descarga-tramite {
+  grid-area: subtitle-descarga-tramite;
+  font: normal normal bold 20px/40px SF Pro Display;
+  letter-spacing: 0px;
+  color: #636363;
+  text-align: justify;
+}
+
+.ingresando-datos-descarga-tramite {
+  grid-area: ingresando-datos-descarga-tramite;
+  font: normal normal bold 18px/30px SF Pro Display;
+  letter-spacing: 0px;
+  color: #378de2;
+  text-align: center;
+}
+
+.img-requisitos-descarga-tramite {
+  grid-area: img-requisitos-descarga-tramite;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.img-requisitos-descarga-tramite img {
+  width: 80%;
+  height: auto;
+  justify-self: center;
+}
+
+.btn-descarga-tramite {
+  display: grid;
+  grid-area: btn-descarga-tramite;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-self: center;
+  column-gap: 40px;
+  padding-bottom: 12rem;
+}
+
+.img-descarga-tramite {
+  display: grid;
+  grid-area: img-descarga-tramite;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.img-descarga-tramite img {
+  height: auto;
+  width: 50%;
+}

@@ -48,7 +48,10 @@ export const BusquedaAntecedentes = () => {
         {/* TEXT TUTORIAL BUSQUEDA ANTE */}
         {/* BTN ACTION BUSQUEDA ANTE */}
         <div className="btn-action-busqueda-ante">
-          <BtnAction buttonOptions={btnBusquedaAntecedentes} />
+          <BtnAction
+            buttonOptions={btnBusquedaAntecedentes}
+            onChildClick={() => {}}
+          />
         </div>
         {/* BTN ACTION BUSQUEDA ANTE */}
       </div>

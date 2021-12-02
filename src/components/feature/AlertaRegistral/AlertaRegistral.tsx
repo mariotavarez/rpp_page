@@ -24,9 +24,8 @@ export const AlertaRegistral = () => {
     <div className="contenido-alerta-registral">
       <div className="container-contenido-alerta-registral">
         <div className="title-alerta-registral">
-          <h1>
-            Alerta <strong>Registral</strong>
-          </h1>
+          <h1>ALERI</h1>
+          <p>Alerta Registral</p>
         </div>
 
         <div className="text-alerta-registral">
@@ -37,13 +36,16 @@ export const AlertaRegistral = () => {
         </div>
 
         <div className="buttons-alerta-registral">
-          <BtnAction buttonOptions={btnAlertaRegistral} />
+          <BtnAction
+            buttonOptions={btnAlertaRegistral}
+            onChildClick={() => {}}
+          />
           <BtnVideoTutorial urlVideo={TUTORIALES.ALERTA_REGISTRAL} />
         </div>
 
         <div className="img-alerta-registral">
           <img
-            src="http://172.34.9.154/portal_assets/img/dibujos/alerta-registral.png"
+            src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/alerta-registral.png"
             alt=""
           />
         </div>
