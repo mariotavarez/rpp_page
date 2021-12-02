@@ -1,8 +1,7 @@
+// Styles
 import "./Home.scss";
-import "../../../assets/scss/fickity.scss";
-
-import Flickity from "react-flickity-component";
-
+// Shared
+import { Carousel } from "../../shared/Screens/Carousel/Carousel";
 export const Home = () => {
   const data = [
     {
@@ -23,31 +22,12 @@ export const Home = () => {
 
   return (
     <div className="container-home">
-      {/* CONTENT HOME */}
-      <div className="content-home">
-        {/* <div className="img-home">
-          <img
-            src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/megafono.gif"
-            alt=""
-          />
-        </div> */}
-        {/* CAROUSEL AVISOS HOME */}
-        <div className="carousel-avisos-home">
-          <Flickity
-            className={"carousel"}
-            elementType={"div"}
-            options={flickityOptions}
-            disableImagesLoaded={false}
-            reloadOnUpdate
-            static
-          >
-            <img src="http://172.34.9.154/portal_assets/img/avisos/copias-certificadas.png" />
-            <img src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/cancelacion-hipoteca.png" />
-          </Flickity>
-        </div>
-        {/* CAROUSEL AVISOS HOME */}
-      </div>
-      {/* CONTENT HOME */}
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+      />
+
+      <Carousel />
     </div>
   );
 };

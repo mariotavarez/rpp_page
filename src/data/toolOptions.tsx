@@ -15,7 +15,7 @@ import { ToolOptionsModel } from "../models/toolOptions/toolOptionsModel";
 export const TOOL_OPTIONS: ToolOptionsModel[] = [
   {
     img: COPIAS_CERTIFICADAS,
-    nombre: "Copias certificadas",
+    nombre: "COPICE",
     url: "copias-certificadas",
     isExternal: false,
   },
@@ -27,7 +27,7 @@ export const TOOL_OPTIONS: ToolOptionsModel[] = [
   },
   {
     img: BUSQUEDA_ANTECEDENTES,
-    nombre: "Búsqueda de antecedentes",
+    nombre: "BUSAN",
     url: "busqueda-antecedentes",
     isExternal: false,
   },
@@ -45,13 +45,13 @@ export const TOOL_OPTIONS: ToolOptionsModel[] = [
   },
   {
     img: VALIDAR_TRAMITE,
-    nombre: "Validar trámite",
+    nombre: "QRECO",
     url: "validar-tramite",
     isExternal: false,
   },
   {
     img: CONSULTA_ESTATUS,
-    nombre: "Consulta estatus",
+    nombre: "CONES",
     url: "consulta-estatus",
     isExternal: false,
   },
@@ -63,7 +63,7 @@ export const TOOL_OPTIONS: ToolOptionsModel[] = [
   },
   {
     img: INFONAVIT,
-    nombre: "Infonavit",
+    nombre: "INFONAVIT",
     url: "https://rppc.queretaro.gob.mx/portal/videos/VIDEO_INFONAVIT.mp4",
     isExternal: true,
   },

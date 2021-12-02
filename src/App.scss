@@ -320,39 +320,6 @@ body {
   text-align: center;
 }
 
-li {
-  position: relative;
-  margin: 0 15px;
-  list-style: none;
-  padding: 0;
-  display: inline-block;
-  width: 12px;
-  height: 28px;
-  border-radius: 50%;
-  top: 35px;
-  background: #fff;
-  &:before {
-    content: "";
-    position: absolute;
-    background: #222;
-    width: 10px;
-    height: 9px;
-    border-radius: 3px;
-    top: -4px;
-    left: 1px;
-  }
-  &:after {
-    content: "";
-    top: -14px;
-    left: 9px;
-    position: absolute;
-    width: 52px;
-    height: 19px;
-    border-bottom: solid #222 2px;
-    border-radius: 30%;
-  }
-}
-
 @media (max-width: 1024px) {
   .line {
     padding: 0;

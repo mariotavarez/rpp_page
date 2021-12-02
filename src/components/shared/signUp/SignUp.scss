@@ -9,8 +9,8 @@
   grid-template-areas:
     "title-signUp"
     "text-signUp"
-    "img-container-signUp"
-    "btn-signUp";
+    "btn-signUp"
+    "img-container-signUp";
   background-image: linear-gradient(
       151deg,
       $color-rgba-blue-1,
@@ -48,12 +48,8 @@
   grid-template-columns: 1fr;
 }
 
-.img-signUp {
-  background-image: url("http://172.34.9.154/portal_assets/img/dibujos/registrate.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100;
+.img-container-signUp img {
+  height: auto;
   width: 100%;
 }
 

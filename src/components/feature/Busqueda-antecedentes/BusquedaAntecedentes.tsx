@@ -16,7 +16,7 @@ import { BUSQUEDA_ANTECEDENTES_DATA } from "./../../../data/Busqueda-antecedente
 export const BusquedaAntecedentes = () => {
   // Boton SignUp
   const btnBusquedaAntecedentes: ButtonModel = {
-    color: "btn-action-white",
+    color: "btn-action-blue",
     url: ENLACES.BUSQUEDA_ANTECEDENTES,
     text: "Iniciar proceso",
     sameWindow: false,
@@ -32,8 +32,8 @@ export const BusquedaAntecedentes = () => {
       <div className="container-forma-busqueda-ante">
         {/* TITLE BUSQUEDA ANTE */}
         <div className="title-busqueda-ante pulse animated">
-          <p>Búsqueda </p>
-          <p>Antecetedentes</p>
+          <h1>BUSAN</h1>
+          <p>(Búsqueda Antecedentes)</p>
         </div>
         {/* TITLE BUSQUEDA ANTE */}
         {/* BTN TUTORIAL BUSQUEDA ANTE */}

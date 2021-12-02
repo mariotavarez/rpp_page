@@ -16,7 +16,7 @@ export const AlertaRegistral = () => {
   const btnAlertaRegistral: ButtonModel = {
     color: "btn-action-blue",
     url: ENLACES.ALERTA_REGISTRAL,
-    text: "Solicitar Alerta Registral",
+    text: "Solicitar Servicio",
     sameWindow: false,
   };
 
@@ -25,13 +25,14 @@ export const AlertaRegistral = () => {
       <div className="container-contenido-alerta-registral">
         <div className="title-alerta-registral">
           <h1>ALERI</h1>
-          <p>Alerta Registral</p>
+          <p>(Alerta Registral)</p>
         </div>
 
         <div className="text-alerta-registral">
           <p>
-            Puede solicitar el servicio, mediante el cual, se les informará de
+            Puede solicitar el servicio, mediante el cuál, se les informará de
             las peticiones de inscripción que se presenten al Registro Público
+            de la Propiedad
           </p>
         </div>
 

@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  height: 41rem;
+  height: 100vh;
   margin: 0 2rem 0 2rem;
   grid-template-areas: "container-info-validar-tramite preguntas-validar-tramite";
 }
@@ -13,7 +13,7 @@
   display: grid;
   grid-area: container-info-validar-tramite;
   grid-template-columns: 1fr;
-  grid-template-rows: 70px 100px 40px 200px;
+  grid-template-rows: 120px 100px 30px 120px;
   justify-items: center;
   grid-template-areas:
     "titulo-validar-tramite"
@@ -30,6 +30,11 @@
   letter-spacing: 0px;
   color: $color-black-3;
   opacity: 1;
+}
+.titulo-validar-tramite p {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #378de2, #00ddec);
+  -webkit-background-clip: text;
 }
 
 .texto-validar-tramite {

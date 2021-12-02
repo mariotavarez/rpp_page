@@ -49,9 +49,8 @@ export const ValidarTramite = () => {
       <div className="container-info-validar-tramite">
         {/* TITULO VALIDAR TRAMITE */}
         <div className="titulo-validar-tramite">
-          <h1>
-            Válida tu <strong>trámite</strong>
-          </h1>
+          <h1>QRECO</h1>
+          <p>(Validador de Trámites)</p>
         </div>
         {/* TITULO VALIDAR TRAMITE */}
         {/* TEXTO VALIDAR TRAMITE */}

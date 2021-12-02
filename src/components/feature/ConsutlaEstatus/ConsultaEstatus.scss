@@ -29,6 +29,11 @@
   letter-spacing: 0px;
   color: $color-black-1;
 }
+.title-consulta-estatus p {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #378de2, #00ddec);
+  -webkit-background-clip: text;
+}
 
 .subtitle-consulta-estatus {
   grid-area: subtitle-consulta-estatus;

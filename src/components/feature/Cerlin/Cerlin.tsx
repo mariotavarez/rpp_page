@@ -23,7 +23,7 @@ export const Cerlin = () => {
     <div className="container-cerlin">
       <div className="container-info-cerlin">
         <h1 className="titulo-cerlin pulse animated">
-          CERLIN <br /> <strong>(Certificados en línea)</strong>
+          CERLIN <br /> <strong>(Certificados en Línea)</strong>
         </h1>
         <p className="texto-cerlin">
           Podrán obtener las certificaciones sobre la existencia o inexistencia

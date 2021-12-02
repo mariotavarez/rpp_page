@@ -17,12 +17,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto 1fr;
   row-gap: 3rem;
-  background-image: url("https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/formas/busqueda-antecedentes.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: auto;
-  width: 100%;
   grid-template-areas:
     "title-busqueda-ante"
     "btn-tutorial-busqueda-ante"
@@ -37,12 +31,20 @@
   grid-area: title-busqueda-ante;
   font: normal normal bold 40px/65px SF Pro Display;
   letter-spacing: 0px;
-  color: rgba(255, 255, 255, 1);
+  color: $color-black-1;
+  text-align: center;
+}
+
+.title-busqueda-ante p {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #378de2, #00ddec);
+  -webkit-background-clip: text;
 }
 
 // BTN TUTORIAL BUSQUEDA ANTE
 .btn-tutorial-busqueda-ante {
   margin: 0 2rem 0 2rem;
+  justify-self: center;
   display: grid;
   grid-area: btn-tutorial-busqueda-ante;
 }
@@ -54,7 +56,9 @@
   grid-area: text-tutorial-busqueda-ante;
   font: normal normal bold 35px/48px SF Pro Display;
   letter-spacing: 0px;
-  color: rgba(255, 255, 255, 1);
+  color: $color-black-1;
+  justify-self: center;
+  text-align: center;
 }
 
 // BTN ACTION BUSQUEDA ANTE
@@ -62,6 +66,7 @@
   margin: 0 2rem 0 2rem;
   display: grid;
   grid-area: btn-action-busqueda-ante;
+  justify-self: center;
 }
 
 // CONTAINER PREGUNTAS BUSQUEDA

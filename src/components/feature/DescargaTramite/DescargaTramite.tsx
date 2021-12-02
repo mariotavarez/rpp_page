@@ -41,7 +41,7 @@ export const DescargaTramite = () => {
         {/* TITLE DESCARGA TRAMITE */}
         <div className="title-descarga-tramite">
           <h1>DESCO</h1>
-          <p>Descarga de trámites</p>
+          <p>(Descarga de Comprobantes)</p>
         </div>
         {/* TITLE DESCARGA TRAMITE */}
         {/* SUBTITLE DESCARGA TRAMITE */}

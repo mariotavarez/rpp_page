@@ -29,7 +29,11 @@ export const SignUp = () => {
         <h3>Da clic en el siguiente botón para registrarte</h3>
       </div>
       <div className="img-container-signUp">
-        <div className="img-signUp"></div>
+        <img
+          src="http://172.34.9.154/portal_assets/img/dibujos/registrate.png"
+          alt="Registrate"
+        />
+        {/* <div className="img-signUp"></div> */}
       </div>
       <div className="btn-signUp">
         <BtnAction buttonOptions={btnSignUp} onChildClick={() => {}} />

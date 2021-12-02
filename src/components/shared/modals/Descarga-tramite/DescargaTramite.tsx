@@ -163,31 +163,106 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
       });
   };
 
+  // Valida los campos del formulario
+  const validarCampos = (formDescargaTramite: any) => {
+    if (
+      formDescargaTramite.get("noAnio")?.toString() === "" ||
+      formDescargaTramite.get("noAnio")?.toString() === "0"
+    ) {
+      handleAlertNotification(
+        "info",
+        "Aviso",
+        "El campo Año de la Entrada es obligatorio"
+      );
+      return false;
+    }
+
+    if (
+      formDescargaTramite.get("noEntrada")?.toString() === "" ||
+      formDescargaTramite.get("noEntrada")?.toString() === "0"
+    ) {
+      handleAlertNotification(
+        "info",
+        "Aviso",
+        "El campo Número de Entrada es obligatorio"
+      );
+      return false;
+    }
+
+    if (
+      formDescargaTramite.get("subdireccion")?.toString() === "" ||
+      formDescargaTramite.get("subdireccion")?.toString() === "0"
+    ) {
+      handleAlertNotification(
+        "info",
+        "Aviso",
+        "El campo Subdirección es obligatorio"
+      );
+      return false;
+    }
+
+    if (
+      formDescargaTramite.get("numOrden")?.toString() === "" ||
+      formDescargaTramite.get("numOrden")?.toString() === "0"
+    ) {
+      handleAlertNotification(
+        "info",
+        "Aviso",
+        "El campo Número de Orden es obligatorio"
+      );
+      return false;
+    }
+
+    if (
+      formDescargaTramite.get("anioOrden")?.toString() === "" ||
+      formDescargaTramite.get("anioOrden")?.toString() === "0"
+    ) {
+      handleAlertNotification(
+        "info",
+        "Aviso",
+        "El campo Año de Orden es obligatorio"
+      );
+      return false;
+    }
+
+    return true;
+  };
+
   // Descarga el tramite del usuario
   const handleClickBuscarTramite = async () => {
     // Form Data Descarga Tramite
     const formDescargaTramite = new FormData(refDescargaTramite.current);
-    // Request de la peticion para buscar el comprobante
-    const buscarComprobante: BuscarComprobanteModel = {
-      anioEntrada: formDescargaTramite.get("noAnio")?.toString() || "0",
-      entrada: formDescargaTramite.get("noEntrada")?.toString() || "0",
-      subdireccion: formDescargaTramite.get("subdireccion")?.toString() || "0",
-      usuario: null,
-      origen: "36",
-      numOrden: formDescargaTramite.get("numOrden")?.toString() || "0",
-      anioOrden: formDescargaTramite.get("anioOrden")?.toString() || "0",
-    };
-    // Reealiza la peticion para buscar el comprobante de inscripcion
-    buscarTramite(buscarComprobante).then(
-      (response: ResponseBuscarComprobanteModel) => {
-        // Valida que la respuesta sea correcta
-        if (response.respuesta.codRes === 0) {
-          setTablaDescargaTramite(construirTabla(response));
-        } else {
-          handleAlertNotification("error", "Aviso", response.respuesta.msjRes);
+
+    if (validarCampos(formDescargaTramite)) {
+      // Request de la peticion para buscar el comprobante
+      const buscarComprobante: BuscarComprobanteModel = {
+        anioEntrada: formDescargaTramite.get("noAnio")?.toString() || "0",
+        entrada: formDescargaTramite.get("noEntrada")?.toString() || "0",
+        subdireccion:
+          formDescargaTramite.get("subdireccion")?.toString() || "0",
+        usuario: null,
+        origen: "36",
+        numOrden: formDescargaTramite.get("numOrden")?.toString() || "0",
+        anioOrden: formDescargaTramite.get("anioOrden")?.toString() || "0",
+      };
+      // Reealiza la peticion para buscar el comprobante de inscripcion
+      buscarTramite(buscarComprobante).then(
+        (response: ResponseBuscarComprobanteModel) => {
+          // Valida que la respuesta sea correcta
+          if (response.respuesta.codRes === 0) {
+            setTablaDescargaTramite(construirTabla(response));
+          } else {
+            handleAlertNotification(
+              "error",
+              "Aviso",
+              response.respuesta.msjRes
+            );
+          }
         }
-      }
-    );
+      );
+    } else {
+      return;
+    }
   };
 
   return (

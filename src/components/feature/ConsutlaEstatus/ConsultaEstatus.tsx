@@ -43,9 +43,8 @@ export const ConsultaEstatus = () => {
       <div className="container-info-estatus">
         {/* TITLE CONSULTA ESTATUS */}
         <div className="title-consulta-estatus">
-          <h1>
-            Consulta el <strong>estatus de tu trámite</strong>{" "}
-          </h1>
+          <h1>CONES</h1>
+          <p>(Consulta el Estatus de tu Trámite)</p>
         </div>
         {/* TITLE CONSULTA ESTATUS */}
         {/* SUBTITLE CONSULTA ESTATUS */}
