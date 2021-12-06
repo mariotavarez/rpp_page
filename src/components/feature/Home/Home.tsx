@@ -1,7 +1,7 @@
 // Styles
 import "./Home.scss";
 // Shared
-import { Carousel } from "../../shared/Screens/Carousel/Carousel";
+import { CarouselComponent } from "../../shared/Screens/Carousel/Carousel";
 export const Home = () => {
   const data = [
     {
@@ -27,7 +27,7 @@ export const Home = () => {
         href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
       />
 
-      <Carousel />
+      <CarouselComponent />
     </div>
   );
 };
