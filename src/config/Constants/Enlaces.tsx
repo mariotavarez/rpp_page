@@ -12,4 +12,5 @@ export const ENLACES = {
     "https://cerlin.ciasqro.gob.mx/sisemprpp/index.php?Dhhuhbbs36sdhshd4s6aDjd=1|pc",
   OLVIDE_CONTRASENA:
     "https://cerlin.ciasqro.gob.mx/recuperarPass/index.php?zhspdpjf74dd2d5s5dofhd54cd=1|pc",
+  INDEX: "portal",
 };

@@ -4,7 +4,7 @@ import { NavbarModel } from "./../models/navbar/navbarModel";
 export const NAVBAR_OPTIONS: NavbarModel[] = [
   {
     nombre: "Inicio",
-    url: "/",
+    url: "portal/",
     isSubMenu: false,
   },
   {
@@ -14,12 +14,12 @@ export const NAVBAR_OPTIONS: NavbarModel[] = [
   },
   {
     nombre: "Sitios de interés",
-    url: "sitios-interes",
+    url: "portal/sitios-interes",
     isSubMenu: false,
   },
   {
     nombre: "Contáctanos",
-    url: "contactanos",
+    url: "portal/contactanos",
     isSubMenu: false,
   },
 ];

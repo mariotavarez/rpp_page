@@ -38,8 +38,10 @@ export const MenuOpciones = ({ setShow }: { setShow: any }) => {
       <div className="w-full  max-w-lg  relative mx-auto my-auto rounded-xl shadow-lg  bg-white ">
         <div className="">
           <div className="text-center p-5 flex-auto justify-center">
-            <h1 className="text-3xl font-bold py-4 ">Trámites y servicios</h1>
-            <div className="h-64 grid grid-rows-2 p-4 grid-flow-col gap-10">
+            <h1 className="text-3xl font-bold py-4 pulse animated">
+              Trámites y Servicios
+            </h1>
+            <div className="h-64 grid grid-rows-2 p-4 grid-flow-col gap-10 pulse animated">
               {opcionesHTML}
             </div>
           </div>

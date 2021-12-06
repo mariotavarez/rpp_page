@@ -23,7 +23,7 @@ export const AlertaRegistral = () => {
   return (
     <div className="contenido-alerta-registral">
       <div className="container-contenido-alerta-registral">
-        <div className="title-alerta-registral">
+        <div className="title-alerta-registral pulse animated">
           <h1>ALERI</h1>
           <p>(Alerta Registral)</p>
         </div>

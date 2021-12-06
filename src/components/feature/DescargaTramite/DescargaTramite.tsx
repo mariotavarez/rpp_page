@@ -39,7 +39,7 @@ export const DescargaTramite = () => {
       {/* CONTAINER DESCARGA TRAMITE */}
       <div className="container-info-descarga-tramite">
         {/* TITLE DESCARGA TRAMITE */}
-        <div className="title-descarga-tramite">
+        <div className="title-descarga-tramite pulse animated">
           <h1>DESCO</h1>
           <p>(Descarga de Comprobantes)</p>
         </div>

@@ -7,7 +7,7 @@ export const Contactanos = () => {
   return (
     <div className="container-contactanos">
       {/* TITULO CONTACTANOS  */}
-      <div className="titulo-contactanos">
+      <div className="titulo-contactanos pulse animated">
         <h1>
           Envíanos tus <strong>comentarios y sugerencias</strong>
         </h1>

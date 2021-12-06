@@ -48,7 +48,7 @@ export const ValidarTramite = () => {
       {/* CONTAINER INFO VALIDAR TRAMITE */}
       <div className="container-info-validar-tramite">
         {/* TITULO VALIDAR TRAMITE */}
-        <div className="titulo-validar-tramite">
+        <div className="titulo-validar-tramite pulse animated">
           <h1>QRECO</h1>
           <p>(Validador de Trámites)</p>
         </div>

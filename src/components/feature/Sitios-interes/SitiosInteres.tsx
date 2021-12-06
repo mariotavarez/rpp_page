@@ -20,7 +20,7 @@ export const SitiosInteres = () => {
       </div>
       {/* IMG SITIOS INTERES */}
       {/* TITLE SITIOS INTERES */}
-      <div className="title-sitios-interes">
+      <div className="title-sitios-interes pulse animated">
         <h1>
           <strong>Sitios interés</strong>
         </h1>

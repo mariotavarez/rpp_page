@@ -42,7 +42,7 @@ export const ConsultaEstatus = () => {
 
       <div className="container-info-estatus">
         {/* TITLE CONSULTA ESTATUS */}
-        <div className="title-consulta-estatus">
+        <div className="title-consulta-estatus pulse animated">
           <h1>CONES</h1>
           <p>(Consulta el Estatus de tu Trámite)</p>
         </div>

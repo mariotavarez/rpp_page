@@ -21,6 +21,8 @@ import { SitiosInteres } from "./components/feature/Sitios-interes";
 import { Contactanos } from "./components/feature/Contactanos";
 // Routes
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ENLACES } from "./config/Constants/Enlaces";
+// Data
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -46,45 +48,52 @@ function App() {
             {/* TOOL OPTIONS */}
             <div className="main-content">
               <Routes>
-                <Route path="/" element={<Home />}>
+                <Route path={`${ENLACES.INDEX}/`} element={<Home />}>
                   {/* HOME */}
                   <Route index element={<Home />} />
                   {/* HOME */}
                 </Route>
+
                 <Route
-                  path="copias-certificadas"
+                  path={`${ENLACES.INDEX}/copias-certificadas`}
                   element={<CopiasCertificadas />}
                 ></Route>
                 <Route
-                  path="busqueda-antecedentes"
+                  path={`${ENLACES.INDEX}/busqueda-antecedentes`}
                   element={<BusquedaAntecedentes />}
                 ></Route>
-                <Route path="cerlin" element={<Cerlin />}></Route>
                 <Route
-                  path="consulta-inmobiliaria"
+                  path={`${ENLACES.INDEX}/cerlin`}
+                  element={<Cerlin />}
+                ></Route>
+                <Route
+                  path={`${ENLACES.INDEX}/consulta-inmobiliaria`}
                   element={<ConsultaInmobiliaria />}
                 ></Route>
                 <Route
-                  path="alerta-registral"
+                  path={`${ENLACES.INDEX}/alerta-registral`}
                   element={<AlertaRegistral />}
                 ></Route>
                 <Route
-                  path="consulta-estatus"
+                  path={`${ENLACES.INDEX}/consulta-estatus`}
                   element={<ConsultaEstatus />}
                 ></Route>
                 <Route
-                  path="validar-tramite"
+                  path={`${ENLACES.INDEX}/validar-tramite`}
                   element={<ValidarTramite />}
                 ></Route>
                 <Route
-                  path="descarga-tramite"
+                  path={`${ENLACES.INDEX}/descarga-tramite`}
                   element={<DescargaTramite />}
                 ></Route>
                 <Route
-                  path="sitios-interes"
+                  path={`${ENLACES.INDEX}/sitios-interes`}
                   element={<SitiosInteres />}
                 ></Route>
-                <Route path="contactanos" element={<Contactanos />}></Route>
+                <Route
+                  path={`${ENLACES.INDEX}/contactanos`}
+                  element={<Contactanos />}
+                ></Route>
               </Routes>
             </div>
             {/* FOOTER */}

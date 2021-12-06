@@ -26,7 +26,7 @@ export const ConsultaInmobiliaria = () => {
       {/* CONTAINER CONTENIDO CONSULTA WEB INMO */}
       <div className="container-contenido-consulta-web-inmo">
         {/* TITLE CONSULTA WEB INMO */}
-        <div className="title-consulta-web-inmo">
+        <div className="title-consulta-web-inmo pulse animated">
           <h1>CRI </h1>
           <p>(Consulta Remota de Inmuebles)</p>
         </div>

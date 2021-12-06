@@ -30,7 +30,7 @@ export const SignUp = () => {
       </div>
       <div className="img-container-signUp">
         <img
-          src="http://172.34.9.154/portal_assets/img/dibujos/registrate.png"
+          src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/registrate.png"
           alt="Registrate"
         />
         {/* <div className="img-signUp"></div> */}
