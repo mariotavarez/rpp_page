@@ -72,7 +72,7 @@ export const DescargaTramite = () => {
           />
           {/* BUTTON ACTION */}
           {/* VIDEO TUTORIAL */}
-          <BtnVideoTutorial urlVideo={TUTORIALES.DESCARGA_COMPROBANTES} />
+          {/* <BtnVideoTutorial urlVideo={TUTORIALES.DESCARGA_COMPROBANTES} /> */}
           {/* VIDEO TUTORIAL */}
         </div>
       </div>

@@ -38,7 +38,7 @@ export const BusquedaAntecedentes = () => {
         {/* TITLE BUSQUEDA ANTE */}
         {/* BTN TUTORIAL BUSQUEDA ANTE */}
         <div className="btn-tutorial-busqueda-ante">
-          <BtnVideoTutorial urlVideo={TUTORIALES.BUSQUEDA_ANTECEDENTES} />
+          {/* <BtnVideoTutorial urlVideo={TUTORIALES.BUSQUEDA_ANTECEDENTES} /> */}
         </div>
         {/* BTN TUTORIAL BUSQUEDA ANTE */}
         {/* TEXT TUTORIAL BUSQUEDA ANTE */}

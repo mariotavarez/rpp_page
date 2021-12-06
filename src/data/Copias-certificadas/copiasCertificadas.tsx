@@ -4,21 +4,31 @@ import { SectionQuestionModel } from "../../models/sectionQuestion/SectionQuesti
 import { TUTORIALES } from "./../../config/Constants/Tutoriales";
 
 export const COPIAS_CERTIFICADAS_DATA: SectionQuestionModel[] = [
+  // {
+  //   pregunta: "Si no conoces tu folio entra al siguiente enlace",
+  //   button: {
+  //     text: "Consulta y solicita",
+  //     url: TUTORIALES.CONSULTA_INMOBILIARIA,
+  //     action: () => {},
+  //     colorTxt: "text-blue-btn",
+  //     colorBtn: "bg-white",
+  //   },
+  // },
+  // {
+  //   pregunta: "¿Cómo consulto mi clave catastral?",
+  //   button: {
+  //     text: "Consulta y solicita",
+  //     url: TUTORIALES.CONSULTA_INMOBILIARIA,
+  //     action: () => {},
+  //     colorTxt: "text-blue-btn",
+  //     colorBtn: "bg-white",
+  //   },
+  // },
   {
-    pregunta: "Si no conoces tu folio entra al siguiente enlace",
+    pregunta: "¿Cómo solicitar Copias Certificadas del AGN?",
     button: {
-      text: "Consulta y solicita",
-      url: TUTORIALES.CONSULTA_INMOBILIARIA,
-      action: () => {},
-      colorTxt: "text-blue-btn",
-      colorBtn: "bg-white",
-    },
-  },
-  {
-    pregunta: "¿Cómo consulto mi clave catastral?",
-    button: {
-      text: "Consulta y solicita",
-      url: TUTORIALES.CONSULTA_INMOBILIARIA,
+      text: "Consultar",
+      url: "https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/documentos/Procedimiento%20para%20solictar%20copias%20certificadas%20AGN.pdf",
       action: () => {},
       colorTxt: "text-blue-btn",
       colorBtn: "bg-white",

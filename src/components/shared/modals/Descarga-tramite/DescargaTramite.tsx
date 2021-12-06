@@ -23,9 +23,9 @@ import { CargandoRequest } from "./../../Screens/Cargando-request/CargandoReques
 export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
   // Boton solicitar certificado
   const btnDescargar: ButtonModel = {
-    color: "btn-action-blue",
+    color: "btn-action-green",
     url: "",
-    text: "Descargar",
+    text: "Descargar comprobante",
     sameWindow: true,
   };
   // Form Descarga de tramite
@@ -62,55 +62,20 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
     responseBuscarComprobante: ResponseBuscarComprobanteModel
   ) => {
     return (
-      <div className="flex flex-col  ">
-        <div className="my-2  sm:-mx-6 lg:-mx-8">
-          <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
-            <div className="shadow  border-b border-gray-200 sm:rounded-lg">
-              <table className="w-full flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      Descripción
-                    </th>
-                    <th
-                      scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    ></th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
-                  {responseBuscarComprobante.lista.map((item, index) => (
-                    <tr key={index}>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-800">
-                          {item.tipoDoc}
-                        </span>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="text-sm text-gray-900">
-                          {/* BUTTON ACTION */}
-                          <BtnAction
-                            buttonOptions={btnDescargar}
-                            onChildClick={() =>
-                              handleClicDescargaTramite(
-                                item.cscImg,
-                                item.tipoDoc
-                              )
-                            }
-                          />
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+      <>
+        {responseBuscarComprobante.lista.map((item, index) => (
+          <div key={index} className="text-sm text-gray-900">
+            {/* BUTTON ACTION */}
+            <BtnAction
+              buttonOptions={btnDescargar}
+              onChildClick={() =>
+                handleClicDescargaTramite(item.cscImg, item.tipoDoc)
+              }
+            />
           </div>
-        </div>
-      </div>
+        ))}
+        {loadingDescargar && <CargandoRequest />}
+      </>
     );
   };
 
@@ -344,9 +309,7 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
                       id="subdireccion"
                       name="subdireccion"
                     >
-                      <option disabled selected>
-                        Seleccione la subdirección
-                      </option>
+                      <option disabled>Seleccione la subdirección</option>
                       {subdireccionesHTML}
                     </select>
                     <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
@@ -407,14 +370,12 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
               {loading ? (
                 <CargandoRequest />
               ) : (
-                <div className="overflow-scroll">
-                  <div>{tablaDescargaTramite}</div>
-                </div>
+                <div className="w-full">{tablaDescargaTramite}</div>
               )}
               {/* TABLA DESCARGA COMPROBANTE */}
             </form>
           </div>
-          <div className="p-3  mt-2 text-center space-x-4 md:block">
+          <div className=" text-center space-x-4 md:block">
             {/* CERRAR */}
             <button
               className="mb-2 md:mb-0 bg-white px-5 py-2 text-sm shadow-sm font-medium tracking-wider border text-gray-600 rounded-full hover:shadow-lg hover:bg-gray-100"
@@ -429,7 +390,7 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
               onClick={handleClickBuscarTramite}
               className="mb-2 md:mb-0 bg-blue-500 border  px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-lg hover:bg-blue-700"
             >
-              Descargar trámite
+              Consultar
             </button>
             {/* CONSULTA ESTATUS */}
           </div>

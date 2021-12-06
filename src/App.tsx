@@ -1,7 +1,7 @@
 import "./App.scss";
 import { Home } from "./components/feature/Home";
 // Navbar
-import { Navbar } from "./components/layout/navbar/Navbar";
+import { NavbarPortal } from "./components/layout/navbar/Navbar";
 // ToolOptions
 import { ToolOptions } from "./components/layout/toolOptions/ToolOptions";
 // Footer
@@ -36,7 +36,7 @@ function App() {
           <div className="App">
             {/* NAVBAR */}
             <div className="navbar-main">
-              <Navbar />
+              <NavbarPortal />
             </div>
             {/* NAVBAR */}
             {/* TOOL OPTIONS */}

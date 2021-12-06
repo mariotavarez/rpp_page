@@ -41,7 +41,7 @@ export const AlertaRegistral = () => {
             buttonOptions={btnAlertaRegistral}
             onChildClick={() => {}}
           />
-          <BtnVideoTutorial urlVideo={TUTORIALES.ALERTA_REGISTRAL} />
+          {/* <BtnVideoTutorial urlVideo={TUTORIALES.ALERTA_REGISTRAL} /> */}
         </div>
 
         <div className="img-alerta-registral">

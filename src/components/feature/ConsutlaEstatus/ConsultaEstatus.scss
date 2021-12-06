@@ -67,7 +67,8 @@
 .btn-consulta-estatus {
   display: grid;
   grid-area: btn-consulta-estatus;
-  grid-template-columns: 1fr 1fr;
+  // grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto;
   grid-template-rows: 1fr;
   justify-self: center;
   column-gap: 40px;

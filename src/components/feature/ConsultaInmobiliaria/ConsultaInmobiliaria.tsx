@@ -45,7 +45,7 @@ export const ConsultaInmobiliaria = () => {
           />
           {/* BTN ACTION */}
           {/* BTN VIDEO TUTORIAL */}
-          <BtnVideoTutorial urlVideo={TUTORIALES.CONSULTA_INMOBILIARIA} />
+          {/* <BtnVideoTutorial urlVideo={TUTORIALES.CONSULTA_INMOBILIARIA} /> */}
           {/* BTN VIDEO TUTORIAL */}
         </div>
         {/* BUTTONS CONSULTA WEB INMO */}

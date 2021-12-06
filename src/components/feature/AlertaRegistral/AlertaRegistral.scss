@@ -56,7 +56,8 @@
   column-gap: 30px;
   justify-self: center;
   display: grid;
-  grid-template-columns: auto auto;
+  // grid-template-columns: auto auto;
+  grid-template-columns: auto;
   grid-template-rows: auto;
 }
 

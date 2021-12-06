@@ -3,12 +3,14 @@
 .container-copias-certificadas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
   margin: 0 2rem 0 2rem;
+  row-gap: 1rem;
   grid-template-areas:
-    "instrucciones-copias titulo-copias-certificadas ."
-    "instrucciones-copias . section-question-copias"
-    "instrucciones-copias . .";
+    "titulo-copias-certificadas titulo-copias-certificadas titulo-copias-certificadas"
+    "opciones-copias-rpp . opciones-copias-agn"
+    ". importancia-copias ."
+    ". questions-copias .";
   background-color: $color-blue-5;
 }
 
@@ -35,34 +37,84 @@ strong {
   -webkit-background-clip: text;
 }
 
-.instrucciones-copias {
-  grid-area: instrucciones-copias;
-}
-
-.instrucciones-copias img {
-  height: auto;
-  width: 100%;
-}
-
-.section-question-copias {
+.opciones-copias-rpp {
+  grid-area: opciones-copias-rpp;
   display: grid;
-  grid-area: section-question-copias;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  row-gap: 1rem;
+  text-align: center;
 }
 
-.section-question-copias SectionQuestion {
+.opciones-copias-rpp h1 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.opciones-copias-rpp p {
+  font-size: 20px;
+  color: $color-blue-6;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.opciones-copias-rpp p:hover {
+  color: $color-blue-7;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+.opciones-copias-agn {
+  grid-area: opciones-copias-agn;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  text-align: center;
+}
+
+.opciones-copias-agn p {
+  font-size: 20px;
+  color: $color-blue-6;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+.opciones-copias-agn p:hover {
+  color: $color-blue-7;
+  font-size: 17px;
+  transition: 0.4s;
+}
+
+.opciones-copias-agn h1 {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.importancia-copias {
+  grid-area: importancia-copias;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+}
+
+.importancia-copias P {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.importancia-copias BtnVideoTutorial {
   justify-self: center;
 }
 
-.justify-end-btn-tutorial {
-  justify-self: end;
-}
-
-.container-buttons-copias-certificadas {
-  justify-items: end;
+.question-copias {
+  grid-area: questions-copias;
   display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 20px;
+  margin: 2rem;
 }

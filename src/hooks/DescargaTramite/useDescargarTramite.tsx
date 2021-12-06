@@ -14,11 +14,16 @@ export const useDescargarTramite = () => {
   const getKeyDocumento = async (
     descargaComprobanteModel: DescargaComprobanteModel
   ) => {
+    // Setea el loading
+    setLoading(true);
     // Realiza la peticion
     const response = await axios.post(
       `${URL.API_CIAS}/ws_rpp_compb_inscp_general/consultaDoc`,
       descargaComprobanteModel
     );
+
+    // Setea el loading
+    setLoading(false);
 
     return response.data;
   };

@@ -1,48 +1,47 @@
 import logo from "../../../assets/img/logos/logo.png";
+import logo_rpp from "../../../assets/img/logos/logo_rpp.png";
 
 import "./Navbar.scss";
 // Models
 import { NavbarModel } from "./../../../models/navbar/navbarModel";
 // Router Link
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { MenuOpciones } from "./../../shared/modals/Menu-optiones/MenuOpciones";
+// Data
+import { NAVBAR_OPTIONS } from "./../../../data/navbar";
 
-export const Navbar = () => {
-  const navbarOptions: NavbarModel[] = [
-    {
-      nombre: "Inicio",
-      url: "/",
-    },
-    // {
-    //   nombre: "Organización",
-    //   url: "",
-    // },
-    // {
-    //   nombre: "Trámites y servicios",
-    //   url: "",
-    // },
-    {
-      nombre: "Sitios de interés",
-      url: "sitios-interes",
-    },
-    // {
-    //   nombre: "Transparencia",
-    //   url: "",
-    // },
-    {
-      nombre: "Contáctanos",
-      url: "contactanos",
-    },
-  ];
+export const NavbarPortal = () => {
+  const [show, setShow] = useState(false);
+
+  const navbarOptions: NavbarModel[] = NAVBAR_OPTIONS.slice();
   // Menu Desktop
-  const navbarOptionsMenuDesktop = navbarOptions.map((option, index) => (
-    <Link
-      key={index}
-      className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-semibold"
-      to={option.url}
-    >
-      {option.nombre}
-    </Link>
-  ));
+  const navbarOptionsMenuDesktop = navbarOptions.map((option, index) =>
+    option.isSubMenu ? (
+      <a
+        key={index}
+        href={option.url}
+        onClick={() => setShow(true)}
+        className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-md font-semibold"
+      >
+        {option.nombre}
+      </a>
+    ) : (
+      <Link
+        key={index}
+        className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-semibold"
+        to={option.url}
+      >
+        {option.nombre}
+      </Link>
+    )
+  );
+
+  const hangleClickMenu = (event: any) => {
+    event.preventDefault();
+    alert(show);
+    setShow(true);
+  };
   // Menu Mobile
   const navbarOptionsMenuMobile = navbarOptions.map((option, index) => (
     <a
@@ -56,6 +55,8 @@ export const Navbar = () => {
 
   return (
     <div>
+      {show && <MenuOpciones setShow={setShow} />}
+
       <nav className="navbar-background">
         <div className="max-w-8xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
@@ -68,7 +69,7 @@ export const Navbar = () => {
               >
                 <span className="sr-only">Abrir menú</span>
                 <svg
-                  className="block h-6 w-6"
+                  className="block h-10 w-8"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -83,7 +84,7 @@ export const Navbar = () => {
                   />
                 </svg>
                 <svg
-                  className="hidden h-6 w-6"
+                  className="hidden h-10 w-8"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -102,17 +103,29 @@ export const Navbar = () => {
             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex-shrink-0 flex items-center">
                 <img
-                  className="block lg:hidden h-8 w-auto"
-                  src={logo}
+                  className="block lg:hidden h-12 w-auto"
+                  src={logo_rpp}
                   alt="RPP QRO"
                 />
                 <img
-                  className="hidden lg:block h-8 w-auto"
-                  src={logo}
+                  className="hidden lg:block h-12 w-auto"
+                  src={logo_rpp}
                   alt="RPP QRO"
                 />
               </div>
-              <div className="hidden sm:block sm:ml-6">
+              <div className="flex-shrink-0 flex items-center">
+                <img
+                  className="block lg:hidden h-12 w-auto"
+                  src={logo}
+                  alt="QRO"
+                />
+                <img
+                  className="hidden lg:block h-12 w-auto"
+                  src={logo}
+                  alt="QRO"
+                />
+              </div>
+              <div className="hidden sm:block sm:ml-8 items-center">
                 <div className="flex space-x-4">{navbarOptionsMenuDesktop}</div>
               </div>
             </div>
@@ -120,7 +133,7 @@ export const Navbar = () => {
         </div>
 
         <div className="sm:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="px-2 pt-2 pb-1 space-y-1">
             {navbarOptionsMenuMobile}
           </div>
         </div>

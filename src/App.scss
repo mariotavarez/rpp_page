@@ -4,7 +4,18 @@
 
 body {
   background-color: $color-blue-3;
-  font-family: SF Pro Display -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: Century Gothic, sans-serif;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Century Gothic, sans-serif;
 }
 
 .App {
@@ -73,6 +84,10 @@ body {
   background: $color-blue-4;
   color: $color-white-1;
 }
+.btn-action-green {
+  background: $color-green-1;
+  color: $color-white-1;
+}
 // BUTTON ACTION BLUE WHITE
 .btn-action-white {
   background: $color-white-1;
@@ -91,6 +106,53 @@ body {
   background: transparent
     linear-gradient(113deg, #0077ed 0%, rgba(0, 201, 47, 1) 100%) 0% 0%
     no-repeat padding-box;
+}
+
+.bg-gradient-1 {
+  background: #56ccf2;
+  background: -webkit-linear-gradient(to right, #2f80ed, #08ade4);
+  background: linear-gradient(to right, #2f80ed, #0190c0);
+}
+
+.bg-gradient-2 {
+  background: #f2994a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f2c94c,
+    #f2994a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f2c94c,
+    #f2994a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-gradient-3 {
+  background: #4568dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b06ab3,
+    #4568dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b06ab3,
+    #4568dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.bg-gradient-4 {
+  background: #3494e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .glow-on-hover {

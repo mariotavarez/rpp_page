@@ -25,7 +25,7 @@ export const ContactanosForm = () => {
   // Alert notification
   const { handleAlertNotification } = useAlertNotification();
   // Hook para Enviar formulario
-  const { enviarFormulario, loading } = useEnviarFormulario();
+  const { enviarFormulario, loading, setLoading } = useEnviarFormulario();
   // Valida que el formulario este llenado de manera correcta
   const validarFormulario = (formularioContactanos: any) => {
     if (
@@ -78,7 +78,6 @@ export const ContactanosForm = () => {
       handleAlertNotification("info", "Aviso", `El campo estado es necesario`);
       return false;
     }
-
     if (
       formularioContactanos.get("comentarios") === "0" ||
       formularioContactanos.get("comentarios") === ""
@@ -86,7 +85,7 @@ export const ContactanosForm = () => {
       handleAlertNotification(
         "info",
         "Aviso",
-        `El campo comentarios es necesario `
+        `El campo comentarios es necesario`
       );
       return false;
     }
@@ -137,6 +136,7 @@ export const ContactanosForm = () => {
           }
         })
         .catch((error) => {
+          setLoading(false);
           handleAlertNotification("error", "Error", `${error}`);
         });
     } else {
@@ -228,7 +228,7 @@ export const ContactanosForm = () => {
               name="celular"
               autoComplete="off"
               maxLength={15}
-              type="number"
+              type="text"
               placeholder="xxxxxxxxxx"
             />
             <p className="text-gray-500 text-xs italic">Ingrese su célular</p>
@@ -290,6 +290,7 @@ export const ContactanosForm = () => {
             <input
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="comentarios"
+              name="comentarios"
               type="text"
               autoComplete="off"
               maxLength={200}

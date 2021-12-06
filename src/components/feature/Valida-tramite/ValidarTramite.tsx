@@ -83,7 +83,7 @@ export const ValidarTramite = () => {
           />
           {/* BUTTON ACTION */}
           {/* VIDEO TUTORIAL */}
-          <BtnVideoTutorial urlVideo={TUTORIALES.CERLIN} />
+          {/* <BtnVideoTutorial urlVideo={TUTORIALES.CERLIN} /> */}
           {/* VIDEO TUTORIAL */}
         </div>
         {/* BOTONES VALIDAR TRAMITE */}

@@ -15,7 +15,7 @@ import { ToolOptionsModel } from "../models/toolOptions/toolOptionsModel";
 export const TOOL_OPTIONS: ToolOptionsModel[] = [
   {
     img: COPIAS_CERTIFICADAS,
-    nombre: "COPICE",
+    nombre: "Copias Certificadas",
     url: "copias-certificadas",
     isExternal: false,
   },
@@ -27,37 +27,37 @@ export const TOOL_OPTIONS: ToolOptionsModel[] = [
   },
   {
     img: BUSQUEDA_ANTECEDENTES,
-    nombre: "BUSAN",
+    nombre: "Búsqueda de Antecedentes",
     url: "busqueda-antecedentes",
     isExternal: false,
   },
   {
     img: CONSULTA_INMOBILIARIA,
-    nombre: "CRI",
+    nombre: "Consulta Inmobiliaria",
     url: "consulta-inmobiliaria",
     isExternal: false,
   },
   {
     img: ALERTA_REGISTRAL,
-    nombre: "ALERI",
+    nombre: "Alerta Registral",
     url: "alerta-registral",
     isExternal: false,
   },
   {
     img: VALIDAR_TRAMITE,
-    nombre: "QRECO",
+    nombre: "Validar Trámite",
     url: "validar-tramite",
     isExternal: false,
   },
   {
     img: CONSULTA_ESTATUS,
-    nombre: "CONES",
+    nombre: "Consulta Estatus",
     url: "consulta-estatus",
     isExternal: false,
   },
   {
     img: DESCARTA_TRAMITE,
-    nombre: "DESCO",
+    nombre: "Descarga Comprobantes",
     url: "descarga-tramite",
     isExternal: false,
   },

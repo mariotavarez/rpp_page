@@ -75,7 +75,8 @@
   padding-bottom: 5rem;
   display: grid;
   column-gap: 40px;
-  grid-template-columns: auto auto;
+  // grid-template-columns: auto auto;
+  grid-template-columns: auto;
 }
 
 .preguntas-validar-tramite {

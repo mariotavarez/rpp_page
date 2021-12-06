@@ -25,8 +25,12 @@ export const useEnviarFormulario = () => {
       formulario
     );
     setLoading(false);
+
+    if (!response.data) {
+      setLoading(false);
+    }
     return response.data;
   };
 
-  return { enviarFormulario, loading };
+  return { enviarFormulario, loading, setLoading };
 };

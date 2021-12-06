@@ -4,13 +4,20 @@ import "./Cerlin.scss";
 import { BtnVideoTutorial } from "./../../shared/buttons/BtnVideoTutorial";
 import { BtnAction } from "./../../shared/buttons/BtnAction";
 import { SignUp } from "./../../shared/signUp/SignUp";
+import { GeneralModal } from "./../../shared/modals/General/General";
 // Config
 import { TUTORIALES } from "../../../config/Constants/Tutoriales";
 import { ENLACES } from "./../../../config/Constants/Enlaces";
 // Models
 import { ButtonModel } from "./../../../models/buttons/ButtonModel";
+// Hooks
+import { useState } from "react";
+// Data
+import { CERLIN_DATA } from "./../../../data/Cerlin/Cerlin";
 
 export const Cerlin = () => {
+  // Cerlin Data
+  const cerlinData = CERLIN_DATA;
   // Boton solicitar certificado
   const btnSolicitarCertificado: ButtonModel = {
     color: "btn-action-blue",
@@ -19,8 +26,26 @@ export const Cerlin = () => {
     sameWindow: false,
   };
 
+  // Hook para abrir modal General
+  const [show, setShow] = useState(false);
+  // Modal Options
+  const [modalOpctions, setModalOptions] = useState({ title: "", body: "" });
+  const { title, body } = modalOpctions;
+
+  // Funcion para abrir setear valores al modal
+  const handleClickModal = (event: any) => {
+    // Previene el evento por defecto
+    event.preventDefault();
+    setModalOptions({
+      title: cerlinData.TIPOS_CERTIFICADOS.titulo,
+      body: cerlinData.TIPOS_CERTIFICADOS.body,
+    });
+    setShow(true);
+  };
+
   return (
     <div className="container-cerlin">
+      {show && <GeneralModal setShow={setShow} title={title} texto={body} />}
       <div className="container-info-cerlin">
         <h1 className="titulo-cerlin pulse animated">
           CERLIN <br /> <strong>(Certificados en Línea)</strong>
@@ -28,6 +53,9 @@ export const Cerlin = () => {
         <p className="texto-cerlin">
           Podrán obtener las certificaciones sobre la existencia o inexistencia
           de las inscripciones o anotaciones registrales.
+        </p>
+        <p className="enlace-cerlin" onClick={handleClickModal}>
+          Tipos de certificados
         </p>
         <div className="botones-cerlin">
           {/* BUTTON ACTION */}
@@ -37,7 +65,7 @@ export const Cerlin = () => {
           />
           {/* BUTTON ACTION */}
           {/* VIDEO TUTORIAL */}
-          <BtnVideoTutorial urlVideo={TUTORIALES.CERLIN} />
+          {/* <BtnVideoTutorial urlVideo={TUTORIALES.CERLIN} /> */}
           {/* VIDEO TUTORIAL */}
         </div>
         <div className="container-img-forma-cerlin">

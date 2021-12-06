@@ -74,7 +74,7 @@ export const ConsultaEstatus = () => {
           />
           {/* BUTTON ACTION */}
           {/* VIDEO TUTORIAL */}
-          <BtnVideoTutorial urlVideo={TUTORIALES.CONSULTA_ESTATUS} />
+          {/* <BtnVideoTutorial urlVideo={TUTORIALES.CONSULTA_ESTATUS} /> */}
           {/* VIDEO TUTORIAL */}
         </div>
       </div>
