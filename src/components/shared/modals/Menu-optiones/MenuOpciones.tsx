@@ -41,11 +41,11 @@ export const MenuOpciones = ({ setShow }: { setShow: any }) => {
             <h1 className="text-3xl font-bold py-4 pulse animated">
               Trámites y Servicios
             </h1>
-            <div className="h-64 grid grid-rows-2 p-4 grid-flow-col gap-10 pulse animated">
+            <div className="h-64 grid grid-rows-2 p-2 grid-flow-col gap-20 pulse animated">
               {opcionesHTML}
             </div>
           </div>
-          <div className="p-3  mt-2 text-center space-x-4 md:block">
+          <div className="p-4  mt-20 text-center space-x-4 md:block">
             <button
               className="mb-2 md:mb-0 bg-blue-500 px-5 py-2 text-sm shadow-sm font-medium tracking-wider border text-white rounded-full hover:shadow-lg hover:bg-blue-300 hover:text-white"
               onClick={handleClose}

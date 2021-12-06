@@ -34,4 +34,14 @@ export const COPIAS_CERTIFICADAS_DATA: SectionQuestionModel[] = [
       colorBtn: "bg-white",
     },
   },
+  {
+    pregunta: "¿Cómo solicitar un Informe de Testamento del AGN?",
+    button: {
+      text: "Consultar",
+      url: "https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/documentos/Procedimiento%20para%20solictar%20informe%20de%20testamento%20en%20AGN%202021.pdf",
+      action: () => {},
+      colorTxt: "text-blue-btn",
+      colorBtn: "bg-white",
+    },
+  },
 ];

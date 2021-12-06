@@ -9,6 +9,11 @@
   align-items: center;
 }
 
+.scroll-general-servicios {
+  overflow: scroll;
+  max-height: 50rem;
+}
+
 .option-menu p {
   font-size: 15px;
   font-weight: bold;
