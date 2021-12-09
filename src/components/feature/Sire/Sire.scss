@@ -1,0 +1,85 @@
+@import "../../../assets/scss/colors.scss";
+
+.container-sire {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-template-rows: auto auto;
+  row-gap: 2rem;
+  grid-template-areas:
+    "sire-title"
+    "sire-content";
+}
+
+.sire-title {
+  grid-area: sire-title;
+  display: grid;
+  text-align: center;
+  font: normal normal bold 40px/40px SF Pro Display;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #378de2, #00ddec);
+  -webkit-background-clip: text;
+  padding-bottom: 10px;
+}
+
+.sire-content {
+  grid-area: sire-content;
+  display: grid;
+}
+
+.tab-content {
+  max-height: 0;
+  -webkit-transition: max-height 0.35s;
+  -o-transition: max-height 0.35s;
+  transition: max-height 0.35s;
+}
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+.tab input:checked + label {
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  border-left-width: 2px;
+  border-color: $color-blue-4;
+  background-color: $color-white-2;
+  color: $color-blue-4;
+}
+.tab label::after {
+  float: right;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  text-align: center;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.tab input[type="checkbox"] + label::after {
+  content: "+";
+  font-weight: bold;
+  border-width: 1px;
+  border-radius: 9999px;
+  border-color: #b8c2cc;
+}
+.tab input[type="radio"] + label::after {
+  content: "\25BE";
+  font-weight: bold;
+  border-width: 1px;
+  border-radius: 9999px;
+  border-color: #b8c2cc;
+}
+/* Icon formatting - open */
+.tab input[type="checkbox"]:checked + label::after {
+  transform: rotate(315deg);
+  background-color: $color-blue-4;
+  color: $color-white-2;
+}
+.tab input[type="radio"]:checked + label::after {
+  transform: rotateX(180deg);
+  background-color: $color-blue-4;
+  color: $color-white-2;
+}

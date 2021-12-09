@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto;
-  row-gap: 10px;
   justify-items: center;
   align-items: center;
 }
@@ -15,17 +14,19 @@
 }
 
 .option-menu p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   color: $color-black-1;
+  padding: 5px;
 }
 
 .container-card-option {
   display: grid;
   border-radius: 20px;
+  row-gap: 10px;
   padding: 10px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   justify-items: center;
   align-items: center;
   cursor: pointer;
@@ -35,6 +36,6 @@
 }
 
 .container-card-option:hover {
-  height: 105px;
-  width: 105px;
+  width: 85px;
+  height: 85px;
 }

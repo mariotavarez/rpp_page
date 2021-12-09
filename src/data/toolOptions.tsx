@@ -23,7 +23,7 @@ export const TOOL_OPTIONS: ToolOptionsModel[] = [
   },
   {
     img: CERLIN,
-    nombre: "CERLIN",
+    nombre: "Certificados en Línea",
     url: `${ENLACES.INDEX}/cerlin`,
     isExternal: false,
   },

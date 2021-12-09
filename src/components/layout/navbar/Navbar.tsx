@@ -18,14 +18,25 @@ export const NavbarPortal = () => {
   // Menu Desktop
   const navbarOptionsMenuDesktop = navbarOptions.map((option, index) =>
     option.isSubMenu ? (
-      <a
-        key={index}
-        href={option.url}
-        onClick={() => setShow(true)}
-        className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-md font-semibold"
-      >
-        {option.nombre}
-      </a>
+      option.targetBlank ? (
+        <a
+          key={index}
+          href={option.url}
+          target="_blank"
+          className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-md font-semibold"
+        >
+          {option.nombre}
+        </a>
+      ) : (
+        <a
+          key={index}
+          href={option.url}
+          onClick={() => setShow(true)}
+          className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-md font-semibold"
+        >
+          {option.nombre}
+        </a>
+      )
     ) : (
       <Link
         key={index}

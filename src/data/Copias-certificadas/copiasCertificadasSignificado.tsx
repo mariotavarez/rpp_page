@@ -22,4 +22,36 @@ export const COPIAS_CERTIFICADAS_SIGNIFICADO_DATA = {
 <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri","sans-serif";text-align:justify;'><span style='font-family:"Century Gothic","sans-serif";'>Si no se presenta la documentaci&oacute;n donde acredite su inter&eacute;s jur&iacute;dico, el cual var&iacute;a dependiendo el acto se&ntilde;alado en la escritura, <strong>NO SE ENTREGAR&Aacute; EL TR&Aacute;MITE</strong>.</span></p>
     `,
   },
+  SUBDIRECCIONES: {
+    titulo: "ELIGA LA SUBDIRECCIÓN CORRESPONDIENTE",
+    body: `
+    <a style="color:#378de2; font-weight:bold;" href="https://forms.gle/Gejz9HnEQiB6Yt7s8"
+    title="QUERÉTARO, EL MARQUÉS, CORREGIDORA" target="_blank">1. Querétaro, El
+    Marqués, Corregidora</a>
+    <br>
+    <br>
+    <a style="color:#378de2; font-weight:bold;" href="https://forms.gle/iKFVLGmGPa6gFXc49"
+    title="SAN JUAN DEL RÍO, PEDRO ESCOBEDO, TEQUISQUIAPAN" target="_blank">2. San Juan del Río, Pedro Escobedo,
+    Tequisquiapan</a>
+    <br>
+    <br>
+    <a style="color:#378de2; font-weight:bold;" href="https://forms.gle/1s4ZyrCFjBdrcNdg9" title="TOLIMÁN, PEÑAMILLER, COLÓN"
+    target="_blank">3. Tolimán,
+    Peñamiller, Colón</a>
+    <br>
+    <br>
+    <a style="color:#378de2; font-weight:bold;" href="https://forms.gle/xFN7SBUDsBLZphqZ8" target="_blank"
+    title="CADEREYTA, EZEQUIEL MONTES, SAN JOAQUÍN">4. Cadereyta,
+    Ezequiel Montes, San
+    Joaquín</a>
+    <br>
+    <br>
+    <a style="color:#378de2; font-weight:bold;" href="https://forms.gle/fxa9pv26AE1S76Zo7" target="_blank">5. Amealco, Huimilpan</a>
+    <br>
+    <br>
+    <a style="color:#378de2; font-weight:bold;" href="https://forms.gle/UBCgaSJvU4wxZ2bT8" target="_blank">6. Jalpan, Landa de
+    Matamoro, Pinal de
+    Amoles, Arroyo Seco</a>
+    `,
+  },
 };

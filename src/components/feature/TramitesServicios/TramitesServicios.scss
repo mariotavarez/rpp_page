@@ -1,0 +1,74 @@
+@import "../../../assets/scss/colors.scss";
+
+.container-tramites-servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  row-gap: 1rem;
+  grid-template-areas:
+    "title-tramites-servicios"
+    "content-tramites-servicios";
+}
+
+.title-tramites-servicios {
+  justify-self: center;
+  grid-area: title-tramites-servicios;
+  font-size: 30px;
+  text-align: left;
+  font: normal normal bold 40px/65px SF Pro Display;
+  letter-spacing: 0px;
+  opacity: 1;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, $color-blue-2, $color-aqua-1);
+  -webkit-background-clip: text;
+}
+
+.content-tramites-servicios {
+  grid-area: content-tramites-servicios;
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "input-busqueda-tramites"
+    "container-tramites-mas-buscados";
+}
+
+.title-termino-busqueda p {
+  display: grid;
+  grid-column: 2 / span 1;
+}
+
+.container-tramites-mas-buscados img {
+  width: 100%;
+  height: auto;
+}
+
+.input-busqueda-tramites {
+  grid-area: input-busqueda-tramites;
+  display: grid;
+  justify-items: center;
+}
+
+.container-tramites-mas-buscados {
+  grid-area: container-tramites-mas-buscados;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 30% auto;
+  grid-template-rows: auto auto;
+}
+
+.container-documentos-pdf {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.container-documentos-pdf p {
+  font-size: 18px;
+  padding-bottom: 1rem;
+  color: $color-black-3;
+  font-weight: bold;
+  text-align: center;
+  justify-self: center;
+}

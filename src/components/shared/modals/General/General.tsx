@@ -1,5 +1,7 @@
 import "./General.scss";
 
+import purify from "dompurify";
+
 export const GeneralModal = ({
   title,
   texto,
@@ -15,7 +17,7 @@ export const GeneralModal = ({
       id="modal-id"
     >
       <div className="absolute bg-black opacity-80 inset-0 z-0"></div>
-      <div className="w-full max-w-lg p-5 relative mx-auto my-auto rounded-xl shadow-lg  bg-white ">
+      <div className="animate__animated animate__flipInX w-full max-w-lg p-5 relative mx-auto my-auto rounded-xl shadow-lg  bg-white ">
         <div className="container-general">
           <div className="text-center p-5 flex-auto justify-center">
             <h2 className="text-xl font-bold py-4 ">{title}</h2>

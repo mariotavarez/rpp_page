@@ -9,19 +9,28 @@ export const CarouselComponent = () => {
       autoPlay={true}
       infiniteLoop={true}
       interval={5000}
+      showStatus={true}
       showArrows={true}
+      axis={"horizontal"}
+      showIndicators={true}
+      autoFocus={true}
+      showThumbs={true}
+      useKeyboardArrows={true}
       transitionTime={2000}
       stopOnHover={true}
       swipeable={true}
     >
       <div>
-        <img src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/cancelacion-hipoteca.png" />
+        <img
+          className="responsive-carousel"
+          src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/aviso-oficial.png"
+        />
       </div>
       <div>
         <img src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/copias-certificadas.png" />
       </div>
       <div>
-        <img src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/aviso-oficial.jpg" />
+        <img src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/cancelacion-hipoteca.png" />
       </div>
     </Carousel>
   );

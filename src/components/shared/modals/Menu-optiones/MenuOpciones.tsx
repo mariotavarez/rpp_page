@@ -4,6 +4,7 @@ import "./MenuOpciones.scss";
 import { MenuTramitesServiciosModel } from "./../../../../models/menu-tramites-servicios/MenuTramitesServiciosModel";
 // Data
 import { MENU_TRAMITES_SERVICIOS_DATA } from "./../../../../data/Menu-tramites-servicios/MenuTramitesServices";
+import { Link } from "react-router-dom";
 
 export const MenuOpciones = ({ setShow }: { setShow: any }) => {
   // Cierra el modal
@@ -12,21 +13,36 @@ export const MenuOpciones = ({ setShow }: { setShow: any }) => {
   const opciones: MenuTramitesServiciosModel[] =
     MENU_TRAMITES_SERVICIOS_DATA.slice();
   // Opciones HTML
-  const opcionesHTML = opciones.map((opcion, index) => (
-    <div
-      key={index}
-      className={`option-menu`}
-      onClick={() => goToUrl(opcion.url)}
-    >
-      <div className={`container-card-option ${opcion.theme}`}>
-        {opcion.icono}
+  const opcionesHTML = opciones.map((opcion, index) =>
+    !opcion.isExternal ? (
+      <Link
+        key={index}
+        className="option-menu"
+        to={opcion.url}
+        onClick={() => setShow(false)}
+      >
+        <div className={`container-card-option ${opcion.theme}`}>
+          {opcion.icono}
+        </div>
+        <p>{opcion.title}</p>
+      </Link>
+    ) : (
+      <div
+        key={index}
+        className={`option-menu`}
+        onClick={() => goToUrl(opcion)}
+      >
+        <div className={`container-card-option ${opcion.theme}`}>
+          {opcion.icono}
+        </div>
+        <p>{opcion.title}</p>
       </div>
-      <p>{opcion.title}</p>
-    </div>
-  ));
+    )
+  );
 
-  const goToUrl = (url: string) => {
-    window.open(url, "_blank");
+  const goToUrl = (opcion: MenuTramitesServiciosModel) => {
+    // Valida si es un enlace externo o interno
+    window.open(opcion.url, "_blank");
   };
 
   return (
@@ -35,7 +51,7 @@ export const MenuOpciones = ({ setShow }: { setShow: any }) => {
       id="modal-id"
     >
       <div className="absolute bg-black opacity-80 inset-0 z-0"></div>
-      <div className="w-full  max-w-lg  relative mx-auto my-auto rounded-xl shadow-lg  bg-white ">
+      <div className="animate__animated animate__flipInX w-full max-w-lg  relative mx-auto my-auto rounded-xl shadow-lg  bg-white ">
         <div className="">
           <div className="text-center p-5 flex-auto justify-center">
             <h1 className="text-3xl font-bold py-4 pulse animated">

@@ -23,7 +23,7 @@ export const AlertaRegistral = () => {
   return (
     <div className="contenido-alerta-registral">
       <div className="container-contenido-alerta-registral">
-        <div className="title-alerta-registral pulse animated">
+        <div className="title-alerta-registral animate__animated animate__zoomInUp">
           <h1>ALERI</h1>
           <p>(Alerta Registral)</p>
         </div>
@@ -32,7 +32,7 @@ export const AlertaRegistral = () => {
           <p>
             Puede solicitar el servicio, mediante el cuál, se les informará de
             las peticiones de inscripción que se presenten al Registro Público
-            de la Propiedad
+            de la Propiedad.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export const AlertaRegistral = () => {
           {/* <BtnVideoTutorial urlVideo={TUTORIALES.ALERTA_REGISTRAL} /> */}
         </div>
 
-        <div className="img-alerta-registral">
+        <div className="img-alerta-registral animate__animated animate__slideInDown">
           <img
             src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/alerta-registral.png"
             alt=""

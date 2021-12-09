@@ -42,7 +42,7 @@ export const ConsultaEstatus = () => {
 
       <div className="container-info-estatus">
         {/* TITLE CONSULTA ESTATUS */}
-        <div className="title-consulta-estatus pulse animated">
+        <div className="title-consulta-estatus animate__animated animate__zoomInUp">
           <h1>CONES</h1>
           <p>(Consulta el Estatus de tu Trámite)</p>
         </div>
@@ -56,10 +56,10 @@ export const ConsultaEstatus = () => {
         </div>
         {/* SUBTITLE CONSULTA ESTATUS */}
 
-        <div className="ingresando-datos-consulta-estatus">
+        {/* <div className="ingresando-datos-consulta-estatus">
           <p>Ingresando los siguientes datos:</p>
-        </div>
-        <div className="img-requisitos-consulta-estatus">
+        </div> */}
+        <div className="img-requisitos-consulta-estatus animate__animated animate__heartBeat">
           <img
             src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/estatus-tramite.png"
             alt="REQUISITOS"
@@ -78,10 +78,10 @@ export const ConsultaEstatus = () => {
           {/* VIDEO TUTORIAL */}
         </div>
       </div>
-      <div className="img-consulta-estatus">
+      <div className="img-consulta-estatus animate__animated animate__slideInDown">
         <img
           src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/estatus-tramite-2.png"
-          alt=""
+          alt="Consulta Estatus"
         />
       </div>
     </div>

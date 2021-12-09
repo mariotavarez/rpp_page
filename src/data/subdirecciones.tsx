@@ -16,14 +16,14 @@ export const SUBDIRECCIONES_DATA: CatalogosModel[] = [
   },
   {
     name: "TOLIMÁN",
-    value: "4",
-  },
-  {
-    name: "JALPAN DE SERRA",
     value: "5",
   },
   {
-    name: "AMEALCO",
+    name: "JALPAN DE SERRA",
     value: "6",
+  },
+  {
+    name: "AMEALCO",
+    value: "4",
   },
 ];

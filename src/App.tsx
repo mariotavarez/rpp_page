@@ -1,4 +1,7 @@
+// Styles
 import "./App.scss";
+import "animate.css";
+
 import { Home } from "./components/feature/Home";
 // Navbar
 import { NavbarPortal } from "./components/layout/navbar/Navbar";
@@ -18,17 +21,20 @@ import { DescargaTramite } from "./components/feature/DescargaTramite";
 import { ValidarTramite } from "./components/feature/Valida-tramite";
 import { CopiasCertificadas } from "./components/feature/Copias-certificadas/CopiasCertificadas";
 import { SitiosInteres } from "./components/feature/Sitios-interes";
+import { TramitesServicios } from "./components/feature/TramitesServicios";
+import { Sire } from "./components/feature/Sire/Sire";
+import { MarcoJuridico } from "./components/feature/MarcoJuridico/MarcoJuridico";
 import { Contactanos } from "./components/feature/Contactanos";
+import { Organizacion } from "./components/feature/Organizacion";
 // Routes
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ENLACES } from "./config/Constants/Enlaces";
-// Data
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
+    setTimeout(() => setLoading(false), 1500);
   });
 
   return (
@@ -89,6 +95,22 @@ function App() {
                 <Route
                   path={`${ENLACES.INDEX}/sitios-interes`}
                   element={<SitiosInteres />}
+                ></Route>
+                <Route
+                  path={`${ENLACES.INDEX}/organizacion`}
+                  element={<Organizacion />}
+                ></Route>
+                <Route
+                  path={`${ENLACES.INDEX}/tramites-servicios`}
+                  element={<TramitesServicios />}
+                ></Route>
+                <Route
+                  path={`${ENLACES.INDEX}/sire`}
+                  element={<Sire />}
+                ></Route>
+                <Route
+                  path={`${ENLACES.INDEX}/marco-juridico`}
+                  element={<MarcoJuridico />}
                 ></Route>
                 <Route
                   path={`${ENLACES.INDEX}/contactanos`}

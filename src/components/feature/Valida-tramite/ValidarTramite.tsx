@@ -48,7 +48,7 @@ export const ValidarTramite = () => {
       {/* CONTAINER INFO VALIDAR TRAMITE */}
       <div className="container-info-validar-tramite">
         {/* TITULO VALIDAR TRAMITE */}
-        <div className="titulo-validar-tramite pulse animated">
+        <div className="titulo-validar-tramite animate__animated animate__zoomInUp">
           <h1>QRECO</h1>
           <p>(Validador de Trámites)</p>
         </div>
@@ -57,7 +57,7 @@ export const ValidarTramite = () => {
         <div className="texto-validar-tramite">
           <p>
             Es importante dar seguridad y certeza jurídica. Ponemos a tu
-            diposición el validador de trámites
+            diposición el validador de trámites.
           </p>
         </div>
         {/* TEXTO VALIDAR TRAMITE */}
@@ -67,7 +67,7 @@ export const ValidarTramite = () => {
         </div>
         {/* SUB TEXTO VALIDAR TRAMITE */}
         {/* IMG FORMA VALIDAR TRAMITE */}
-        <div className="img-forma-validar-tramite">
+        <div className="img-forma-validar-tramite animate__animated animate__heartBeat">
           <img
             src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/identificador.png"
             alt="IDENTIFICADOR"

@@ -28,7 +28,7 @@ export const SignUp = () => {
       <div className="text-signUp">
         <h3>Da clic en el siguiente botón para registrarte</h3>
       </div>
-      <div className="img-container-signUp">
+      <div className="img-container-signUp animate__animated animate__slideInDown">
         <img
           src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/registrate.png"
           alt="Registrate"
@@ -37,6 +37,15 @@ export const SignUp = () => {
       </div>
       <div className="btn-signUp">
         <BtnAction buttonOptions={btnSignUp} onChildClick={() => {}} />
+        <p>
+          <a
+            href={ENLACES.OLVIDE_CONTRASENA}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Olvidé mi contraseña
+          </a>{" "}
+        </p>
       </div>
     </div>
   );

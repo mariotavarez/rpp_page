@@ -7,9 +7,9 @@ export const Contactanos = () => {
   return (
     <div className="container-contactanos">
       {/* TITULO CONTACTANOS  */}
-      <div className="titulo-contactanos pulse animated">
+      <div className="titulo-contactanos animate__animated animate__zoomInUp">
         <h1>
-          Envíanos tus <strong>comentarios y sugerencias</strong>
+          <strong>Envíanos tus comentarios y sugerencias</strong>
         </h1>
       </div>
       {/* TITULO CONTACTANOS  */}

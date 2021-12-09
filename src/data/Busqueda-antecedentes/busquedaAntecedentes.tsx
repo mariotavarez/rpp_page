@@ -7,7 +7,7 @@ export const BUSQUEDA_ANTECEDENTES_DATA: SectionQuestionModel[] = [
   {
     pregunta: "Si no conoces tu folio entra al siguiente enlace",
     button: {
-      text: "Consulta y solicita",
+      text: "Video Tutorial",
       url: TUTORIALES.CONSULTA_INMOBILIARIA,
       action: () => {},
       colorTxt: "text-blue-btn",
@@ -17,7 +17,7 @@ export const BUSQUEDA_ANTECEDENTES_DATA: SectionQuestionModel[] = [
   {
     pregunta: "¿Cómo consulto mi clave catastral?",
     button: {
-      text: "Consulta y solicita",
+      text: "Video Tutorial",
       url: TUTORIALES.CONSULTA_INMOBILIARIA,
       action: () => {},
       colorTxt: "text-blue-btn",

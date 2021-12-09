@@ -47,7 +47,7 @@ export const Cerlin = () => {
     <div className="container-cerlin">
       {show && <GeneralModal setShow={setShow} title={title} texto={body} />}
       <div className="container-info-cerlin">
-        <h1 className="titulo-cerlin pulse animated">
+        <h1 className="titulo-cerlin animate__animated animate__zoomInUp ">
           CERLIN <br /> <strong>(Certificados en Línea)</strong>
         </h1>
         <p className="texto-cerlin">
@@ -57,7 +57,7 @@ export const Cerlin = () => {
         <p className="enlace-cerlin" onClick={handleClickModal}>
           Tipos de certificados
         </p>
-        <div className="botones-cerlin">
+        <div className="botones-cerlin animate__animated animate__flipInX">
           {/* BUTTON ACTION */}
           <BtnAction
             buttonOptions={btnSolicitarCertificado}

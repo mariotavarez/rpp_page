@@ -12,7 +12,7 @@ export const SitiosInteres = () => {
     // CONTAINER SITIOS INTERES
     <div className="container-sitios-interes">
       {/* IMG SITIOS INTERES */}
-      <div className="img-sitios-interes">
+      <div className="img-sitios-interes animate__animated animate__slideInDown">
         <img
           src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/sitios-interes.png"
           alt="Sitios de interes"
@@ -20,9 +20,9 @@ export const SitiosInteres = () => {
       </div>
       {/* IMG SITIOS INTERES */}
       {/* TITLE SITIOS INTERES */}
-      <div className="title-sitios-interes pulse animated">
+      <div className="title-sitios-interes animate__animated animate__zoomInUp">
         <h1>
-          <strong>Sitios interés</strong>
+          <strong>Sitios de Interés</strong>
         </h1>
       </div>
       {/* TITLE SITIOS INTERES */}
@@ -40,7 +40,7 @@ export const SitiosInteres = () => {
                         scope="col"
                         className="px-6 py-3 text-left text-md font-medium text-white uppercase tracking-wider"
                       >
-                        Nombre del sitrio
+                        Nombre del sitio
                       </th>
                       <th
                         scope="col"

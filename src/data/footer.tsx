@@ -13,7 +13,7 @@ export const FOOTER: FooterModel[] = [
         url: "",
       },
       {
-        text: "Búsqueda antecedentes",
+        text: "Búsqueda de antecedentes",
         url: "",
       },
       {
@@ -22,34 +22,34 @@ export const FOOTER: FooterModel[] = [
       },
     ],
   },
-  {
-    tituloMenu: {
-      text: "Organización",
-      url: "",
-    },
-    opcionMenu: [
-      {
-        text: "Directorio y ubicación",
-        url: "",
-      },
-      {
-        text: "AGN",
-        url: "",
-      },
-      {
-        text: "Instalaciones",
-        url: "",
-      },
-      {
-        text: "Marco jurídico",
-        url: "",
-      },
-      {
-        text: "Historia del RPP",
-        url: "",
-      },
-    ],
-  },
+  // {
+  //   tituloMenu: {
+  //     text: "Organización",
+  //     url: "",
+  //   },
+  //   opcionMenu: [
+  //     {
+  //       text: "Directorio y ubicación",
+  //       url: "",
+  //     },
+  //     {
+  //       text: "AGN",
+  //       url: "",
+  //     },
+  //     {
+  //       text: "Instalaciones",
+  //       url: "",
+  //     },
+  //     {
+  //       text: "Marco jurídico",
+  //       url: "",
+  //     },
+  //     {
+  //       text: "Historia del RPP",
+  //       url: "",
+  //     },
+  //   ],
+  // },
   {
     tituloMenu: {
       text: "Trámites y servicios",
@@ -57,19 +57,23 @@ export const FOOTER: FooterModel[] = [
     },
     opcionMenu: [
       {
-        text: "Certificados en línea (CERLIN)",
+        text: "Copias Certificadas AGN",
         url: "",
       },
       {
-        text: "Guía de trámites y servicios",
+        text: "Copias Certificadas Comercio",
         url: "",
       },
       {
-        text: "Descarga de solicitudes",
+        text: "Costos de Trámites y Servicios",
         url: "",
       },
       {
-        text: "Costos de trámites y servicios",
+        text: "Información catastral registral",
+        url: "",
+      },
+      {
+        text: "Solicitudes de informe de testamento",
         url: "",
       },
     ],
@@ -83,16 +87,23 @@ export const FOOTER: FooterModel[] = [
   },
   {
     tituloMenu: {
-      text: "Transparencia",
+      text: "Portal notarial",
       url: "",
     },
-    opcionMenu: [
-      {
-        text: "Convenios de colaboración",
-        url: "",
-      },
-    ],
+    opcionMenu: [],
   },
+  // {
+  //   tituloMenu: {
+  //     text: "Transparencia",
+  //     url: "",
+  //   },
+  //   opcionMenu: [
+  //     {
+  //       text: "Convenios de colaboración",
+  //       url: "",
+  //     },
+  //   ],
+  // },
   {
     tituloMenu: {
       text: "Contáctanos",

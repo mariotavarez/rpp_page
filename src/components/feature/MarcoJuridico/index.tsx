@@ -1,0 +1,1 @@
+export { MarcoJuridico } from "./MarcoJuridico";

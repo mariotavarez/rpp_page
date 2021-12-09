@@ -3,4 +3,5 @@ export interface MenuTramitesServiciosModel {
   icono: any;
   url: string;
   theme: string;
+  isExternal: boolean;
 }

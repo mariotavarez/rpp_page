@@ -28,6 +28,7 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
   // Subdirecciones
   const subdirecciones: CatalogosModel[] = SUBDIRECCIONES_DATA.slice();
   const [tablaEstatus, setTablaEstatus] = useState<any>(null);
+
   // Subdirecciones HTML
   const subdireccionesHTML = subdirecciones.map((subdireccion) => (
     <option key={subdireccion.value} value={subdireccion.value}>
@@ -38,7 +39,8 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
   const construirTabla = (
     responseEstatusTramite: ResponseEstatusTramiteModel
   ) => {
-    return (
+    return responseEstatusTramite.estatus !== "" &&
+      responseEstatusTramite.estatus !== null ? (
       <div className="flex flex-col">
         <div className="-my-2 overflow-x-auto overflow-y-auto sm:-mx-6 lg:-mx-8">
           <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -79,11 +81,10 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
           </div>
         </div>
       </div>
-    );
+    ) : null;
   };
 
   const validarFormulario = (formDataEstatus: any) => {
-    console.log(formDataEstatus.get("noEntrada")?.toString());
     if (
       formDataEstatus.get("noEntrada")?.toString() === "0" ||
       formDataEstatus.get("noEntrada")?.toString() === ""
@@ -141,9 +142,16 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
       responseValidarEstatus.then((response: ResponseEstatusTramiteModel) => {
         // Valida que le peticion se haya hecho correctamente
         if (response.codRes === "0") {
-          setTablaEstatus(construirTabla(response));
-        } else {
-          handleAlertNotification("error", "Aviso", response.msjRes);
+          if (response.estatus === "" || response.estatus === null) {
+            handleAlertNotification(
+              "info",
+              "Aviso",
+              "No se encontraron resultados"
+            );
+            setTablaEstatus(construirTabla(response));
+          } else {
+            setTablaEstatus(construirTabla(response));
+          }
         }
       });
     } else {
@@ -157,7 +165,7 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
       id="modal-id"
     >
       <div className="absolute bg-black opacity-80 inset-0 z-0"></div>
-      <div className="w-full max-w-lg p-5 relative mx-auto my-auto rounded-xl shadow-lg  bg-white ">
+      <div className="animate__animated animate__flipInX w-full max-w-lg p-5 relative mx-auto my-auto rounded-xl shadow-lg  bg-white ">
         <div className="">
           <div className="text-center p-5 flex-auto justify-center">
             <svg

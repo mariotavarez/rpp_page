@@ -8,11 +8,9 @@ export const useValidaTramiteById = () => {
   // const [resTramite, setResTramite] = useState<any>({});
 
   const validarTramiteById = async (id: any) => {
-    return await axios
-      .post(`${URL.API_CIAS}/qreco_obtener_documento/obtenerDocumento?id=${id}`)
-      .then((res) => {
-        return res;
-      });
+    return await axios.get(
+      `${URL.API_CIAS}/qreco_obtener_documento/obtenerDocumento?id=${id}`
+    );
 
     // setResTramite(data);
   };

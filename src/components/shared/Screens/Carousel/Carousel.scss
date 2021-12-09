@@ -1,3 +1,5 @@
+@import "../../../../assets/scss/colors.scss";
+
 .carousel-open:checked + .carousel-item {
   position: static;
   opacity: 100;
@@ -13,7 +15,13 @@
 #carousel-3:checked ~ .control-3 {
   display: block;
 }
+.dot {
+  background-color: $color-blue-4 !important;
+}
 
+.carousel.carousel-slider .control-arrow {
+  background-color: $color-black-4 !important;
+}
 .img-1 {
   background-repeat: no-repeat;
 
@@ -24,6 +32,11 @@
   background-repeat: no-repeat;
   height: 500px;
   background-image: url(https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/copias-certificadas.png);
+}
+
+.responsive-carousel {
+  height: auto;
+  width: 65% !important;
 }
 
 .carousel-indicators {

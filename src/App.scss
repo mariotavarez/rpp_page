@@ -1,10 +1,18 @@
 @import "./assets/scss/colors.scss";
+@import "./assets/scss/table.scss";
 
 @import url("https://fonts.googleapis.com/css?family=Cookie");
 
 body {
   background-color: $color-blue-3;
   font-family: Century Gothic, sans-serif;
+}
+
+html {
+  background: transparent
+    linear-gradient(91deg, #0146a1 0%, #0077ed 0%, #1e54a2 100%) 0% 0% no-repeat
+    padding-box;
+  opacity: 1;
 }
 
 p,
@@ -15,12 +23,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Century Gothic, sans-serif;
+  font-family: Century Gothic, sans-serif !important;
 }
 
 .App {
   display: grid;
-  transition: 5s;
+  transition: 3s;
+  padding: 0 !important;
+  margin: 0 !important;
   animation-name: FadeIn;
   animation-duration: 3s;
   transition-timing-function: linear;
@@ -46,7 +56,7 @@ h6 {
 .main-content {
   grid-area: main-content;
   display: grid;
-  // margin-bottom: 4rem;
+  background-color: $color-blue-1;
 }
 
 .footer-main {
@@ -169,6 +179,19 @@ h6 {
     #0082c8,
     #0082c8,
     #667db6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.bg-gradient-6 {
+  background: #cb2d3e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ef473a,
+    #cb2d3e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ef473a,
+    #cb2d3e
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 

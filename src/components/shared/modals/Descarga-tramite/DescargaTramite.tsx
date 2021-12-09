@@ -52,11 +52,11 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
   // Subdirecciones
   const subdirecciones: CatalogosModel[] = SUBDIRECCIONES_DATA.slice();
   // Subdirecciones HTML
-  const subdireccionesHTML = subdirecciones.map((subdireccion) => (
-    <option key={subdireccion.value} value={subdireccion.value}>
-      {subdireccion.name}
-    </option>
-  ));
+  // const subdireccionesHTML = subdirecciones.map((subdireccion) => (
+  //   <option key={subdireccion.value} value={subdireccion.value}>
+  //     {subdireccion.name}
+  //   </option>
+  const subdireccionesHTML = <option value={4}>AMEALCO</option>;
   // Construir tabla
   const construirTabla = (
     responseBuscarComprobante: ResponseBuscarComprobanteModel
@@ -236,7 +236,7 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
       id="modal-id"
     >
       <div className="absolute bg-black opacity-80 inset-0 z-0"></div>
-      <div className="w-full  max-w-xl p-5 relative mx-auto my-auto rounded-xl shadow-lg  bg-white ">
+      <div className="animate__animated animate__flipInX w-full max-w-xl p-5 relative mx-auto my-auto rounded-xl shadow-lg  bg-white ">
         <div className="">
           <div className="text-center p-5 flex-auto justify-center ">
             <svg

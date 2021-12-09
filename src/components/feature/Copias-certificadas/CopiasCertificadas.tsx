@@ -31,9 +31,9 @@ export const CopiasCertificadas = () => {
   // Boton Solicitar copias certificadas
   const btnCopiasCertificadasRPP: ButtonModel = {
     color: "btn-action-blue",
-    url: ENLACES.COPIAS_CERTIFICADAS,
+    url: "",
     text: "Solicitar Copias Certificadas RPP",
-    sameWindow: false,
+    sameWindow: true,
   };
   // Boton Solicitar archivo general de notarias
   const btnCopiasCertificadasAGN: ButtonModel = {
@@ -52,10 +52,15 @@ export const CopiasCertificadas = () => {
         title: copiasCertificadasSignificadoData.AGN.titulo,
         body: copiasCertificadasSignificadoData.AGN.body,
       });
-    } else {
+    } else if (opcion === "RPP") {
       setModalOptions({
         title: copiasCertificadasSignificadoData.RPP.titulo,
         body: copiasCertificadasSignificadoData.RPP.body,
+      });
+    } else {
+      setModalOptions({
+        title: copiasCertificadasSignificadoData.SUBDIRECCIONES.titulo,
+        body: copiasCertificadasSignificadoData.SUBDIRECCIONES.body,
       });
     }
     setShow(true);
@@ -64,7 +69,7 @@ export const CopiasCertificadas = () => {
   return (
     <div className="container-copias-certificadas">
       {show && <GeneralModal setShow={setShow} title={title} texto={body} />}
-      <div className="titulo-copias-certificadas pulse animated">
+      <div className="titulo-copias-certificadas animate__animated animate__zoomInUp">
         <h1>COPICE</h1>
         <p>(Solicitud de copias certificadas)</p>
       </div>
@@ -73,11 +78,11 @@ export const CopiasCertificadas = () => {
         <div>
           <BtnAction
             buttonOptions={btnCopiasCertificadasRPP}
-            onChildClick={() => {}}
+            onChildClick={() => handleClickModal("SUB")}
           />
         </div>
         <p onClick={() => handleClickModal("RPP")}>
-          ¿Cuando solicitar las copias del RPP?
+          ¿Cuándo solicitar las copias del RPP?
         </p>
       </div>
       <div className="opciones-copias-agn">
@@ -89,11 +94,8 @@ export const CopiasCertificadas = () => {
           />
         </div>
         <p onClick={() => handleClickModal("AGN")}>
-          ¿Cuando solicitar las copias del AGN?
+          ¿Cuándo solicitar las copias del AGN?
         </p>
-      </div>
-      <div className="importancia-copias">
-        <p>¿Por qué es importante tramitar tus Copias Certificadas?</p>
       </div>
 
       <div className="question-copias">

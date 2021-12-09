@@ -39,7 +39,7 @@ export const DescargaTramite = () => {
       {/* CONTAINER DESCARGA TRAMITE */}
       <div className="container-info-descarga-tramite">
         {/* TITLE DESCARGA TRAMITE */}
-        <div className="title-descarga-tramite pulse animated">
+        <div className="title-descarga-tramite animate__animated animate__zoomInUp">
           <h1>DESCO</h1>
           <p>(Descarga de Comprobantes)</p>
         </div>
@@ -47,17 +47,17 @@ export const DescargaTramite = () => {
         {/* SUBTITLE DESCARGA TRAMITE */}
         <div className="subtitle-descarga-tramite">
           <p>
-            Podrás consultar el estatus de tu trámite de manera fácil y
-            sencilla, solo necesitas los siguientes datos:
+            Podrás descargar tus comprobantes de manera fácil y sencilla. Solo
+            necesitas los siguientes datos:
           </p>
         </div>
         {/* SUBTITLE DESCARGA TRAMITE */}
         {/* INGRESANDO DATOS DESCARGA TRAMITE */}
-        <div className="ingresando-datos-descarga-tramite">
+        {/* <div className="ingresando-datos-descarga-tramite">
           <p>Ingresando los siguientes datos:</p>
-        </div>
+        </div> */}
         {/* INGRESANDO DATOS DESCARGA TRAMITE */}
-        <div className="img-requisitos-descarga-tramite">
+        <div className="img-requisitos-descarga-tramite animate__animated animate__heartBeat">
           <img
             src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/descarga-tramite.png"
             alt="DESCARGA DE TRAMITE"
@@ -77,7 +77,7 @@ export const DescargaTramite = () => {
         </div>
       </div>
       {/* CONTAINER DESCARGA TRAMITE */}
-      <div className="img-descarga-tramite">
+      <div className="img-descarga-tramite animate__animated animate__slideInDown">
         <img
           src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/descarga-tramite-2.png"
           alt="Descarga trámite"

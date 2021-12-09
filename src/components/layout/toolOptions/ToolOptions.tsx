@@ -29,6 +29,13 @@ export const ToolOptions = () => {
     }
   };
 
+  // Valida que la url sea segura
+  const validateURL = (url: string) => {
+    const parsed = new URL(url);
+    return ["https:", "http:"].includes(parsed.protocol);
+  };
+
+  // Barra de opciones
   const toolOptionsImg = toolOptions.map((option, index) => (
     // CONTAINER MRNU ARRAY OPTIONS
     <div
@@ -46,7 +53,7 @@ export const ToolOptions = () => {
           {!option.isExternal ? (
             <Link to={option.url}>{option.nombre}</Link>
           ) : (
-            <a href={option.url} target="_blank">
+            <a href={validateURL(option.url) ? option.url : ""} target="_blank">
               {option.nombre}
             </a>
           )}

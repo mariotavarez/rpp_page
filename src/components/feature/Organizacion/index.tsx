@@ -1,0 +1,1 @@
+export { Organizacion } from "./Organizacion";

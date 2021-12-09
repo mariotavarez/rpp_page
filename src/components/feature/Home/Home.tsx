@@ -3,23 +3,6 @@ import "./Home.scss";
 // Shared
 import { CarouselComponent } from "../../shared/Screens/Carousel/Carousel";
 export const Home = () => {
-  const data = [
-    {
-      image:
-        "http://172.35.9.154/portal_assets/img/avisos/copias-certificadas.png",
-      caption: `Copias Certificadas`,
-    },
-    {
-      image:
-        "https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/cancelacion-hipoteca.png",
-      caption: `Cancelación Infonavit`,
-    },
-  ];
-
-  const flickityOptions = {
-    initialIndex: 2,
-  };
-
   return (
     <div className="container-home">
       <link

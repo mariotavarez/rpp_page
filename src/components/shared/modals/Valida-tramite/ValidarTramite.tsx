@@ -3,13 +3,13 @@ import { useValidaTramiteById } from "../../../../hooks/ValidarTramite/useValida
 // Hooks
 import { useRef } from "react";
 import { useAlertNotification } from "./../../../../hooks/Generals/useAlertNotification";
+// Config
+import { URL } from "../../../../config/Env/Url";
 
 export const ValidarTramiteModal = ({ setShow }: { setShow: any }) => {
   // Cierra el modal
   const handleClose = () => setShow(false);
 
-  // Hook que devuelve la funcion pora validar el tramite por id
-  const { validarTramiteById } = useValidaTramiteById();
   // Hook que permite visualizar una notificacion de alerta
   const { handleAlertNotification } = useAlertNotification();
 
@@ -45,21 +45,13 @@ export const ValidarTramiteModal = ({ setShow }: { setShow: any }) => {
       );
       return;
     }
-    // Invoca la funcion para validar el tramite por id
-    const response = validarTramiteById(identificador);
-    // Obtiene la respuesta de la peticion
-    response.then((data) => {
-      // Valida si el estatus que devuelve es 200, si es 200 todo es correcto
-      if (data.status.toString() === "200") {
-        window.open(data.config.url, "_blank");
-      } else {
-        handleAlertNotification(
-          "error",
-          "Aviso",
-          "No se encontró el identificador"
-        );
-      }
-    });
+    // Abre la ventana para validar el documento
+    window.open(
+      `${
+        URL.API_CIAS
+      }/qreco_obtener_documento/obtenerDocumento?id=${identificador?.toString()}`,
+      "_blank"
+    );
   };
 
   return (
@@ -80,7 +72,7 @@ export const ValidarTramiteModal = ({ setShow }: { setShow: any }) => {
               viewBox="0 0 16 16"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
               />
               <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
