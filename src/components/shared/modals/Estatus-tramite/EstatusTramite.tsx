@@ -42,7 +42,7 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
     return responseEstatusTramite.estatus !== "" &&
       responseEstatusTramite.estatus !== null ? (
       <div className="flex flex-col">
-        <div className="-my-2 overflow-x-auto overflow-y-auto sm:-mx-6 lg:-mx-8">
+        <div className="-my-2  sm:-mx-6 lg:-mx-8">
           <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
             <div className="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
               <table className="min-w-full divide-y divide-gray-200">
@@ -62,12 +62,12 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
                     </th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200">
+                <tbody className="overflow-hidden bg-white divide-y divide-gray-200  ">
                   <tr>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <span className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-800">
+                    <td className="px-6 py-4 ">
+                      <p className="word-break-estatus">
                         {responseEstatusTramite.estatus}
-                      </span>
+                      </p>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="text-sm text-gray-900">
@@ -161,7 +161,7 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
 
   return (
     <div
-      className="min-w-screen h-screen animated fadeIn faster scroll-estatus  fixed  left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none bg-no-repeat bg-center bg-cover"
+      className="min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none bg-no-repeat bg-center bg-cover"
       id="modal-id"
     >
       <div className="absolute bg-black opacity-80 inset-0 z-0"></div>
