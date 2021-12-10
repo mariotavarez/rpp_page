@@ -8,10 +8,16 @@
   row-gap: 1rem;
   grid-template-areas:
     "titulo-copias-certificadas titulo-copias-certificadas titulo-copias-certificadas"
-    "opciones-copias-rpp . opciones-copias-agn"
+    "opciones-copias-rpp btn-video-tutorial-copias opciones-copias-agn"
     ". importancia-copias ."
     ". questions-copias .";
   background-color: $color-blue-5;
+}
+
+.btn-video-tutorial-copias {
+  grid-area: btn-video-tutorial-copias;
+  justify-self: center;
+  align-self: center;
 }
 
 .titulo-copias-certificadas {

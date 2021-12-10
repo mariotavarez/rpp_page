@@ -18,14 +18,14 @@ export const Footer = () => {
       {/* NAVBAR ITEM */}
       <div className="navbar-footer-item">
         {/* NAVBAR TITLE H1 */}
-        <h1>{option.tituloMenu.text}</h1>
+        {/* <h1>{option.tituloMenu.text}</h1> */}
         {/* NAVBAR TITLE H1 */}
         {/* NAVBAR OPTION */}
-        {option.opcionMenu.map((opcionMenu, indexMenu) => (
+        {/* {option.opcionMenu.map((opcionMenu, indexMenu) => (
           <div key={indexMenu}>
             <p>{opcionMenu.text}</p>
           </div>
-        ))}
+        ))} */}
         {/* NAVBAR OPTION */}
       </div>
       {/* NAVBAR ITEM */}
@@ -44,7 +44,7 @@ export const Footer = () => {
     // CONTAINER FOOTER
     <div className="container-footer">
       {/* NAVBAR FOOTER */}
-      <div className="navbar-footer">{footerOptions}</div>
+      {/* <div className="navbar-footer">{footerOptions}</div> */}
       {/* NAVBAR FOOTER */}
       {/* POLITICAS */}
       <div className="politicas">
@@ -58,7 +58,7 @@ export const Footer = () => {
         <hr />
         {/* HR */}
         {/* POLITICAS OPTIONS */}
-        <div className="politicas-options">{politicasOption}</div>
+        {/* <div className="politicas-options">{politicasOption}</div> */}
         {/* POLITICAS OPTIONS */}
       </div>
       {/* POLITICAS */}

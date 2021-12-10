@@ -6,6 +6,10 @@ import { BtnAction } from "./../buttons/BtnAction";
 import { ButtonModel } from "./../../../models/buttons/ButtonModel";
 // Config
 import { ENLACES } from "./../../../config/Constants/Enlaces";
+// Shared
+import { BtnVideoTutorial } from "./../buttons/BtnVideoTutorial";
+// Tutoriales
+import { TUTORIALES } from "./../../../config/Constants/Tutoriales";
 
 export const SignUp = () => {
   // Boton SignUp
@@ -24,6 +28,7 @@ export const SignUp = () => {
           Si aún no estas registrado a los servicios en línea del Registro
           Público de la Propiedad
         </h2>
+        <BtnVideoTutorial urlVideo={TUTORIALES.REGISTRARSE} />
       </div>
       <div className="text-signUp">
         <h3>Da clic en el siguiente botón para registrarte</h3>

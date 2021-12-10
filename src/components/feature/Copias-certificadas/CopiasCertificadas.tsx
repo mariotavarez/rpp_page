@@ -68,6 +68,12 @@ export const CopiasCertificadas = () => {
 
   return (
     <div className="container-copias-certificadas">
+      {/* <video width="320" height="240" controls preload={"metadata"}>
+        <source
+          src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/videos/Consulta remota1.mp4"
+          type="video/mp4"
+        />
+      </video> */}
       {show && <GeneralModal setShow={setShow} title={title} texto={body} />}
       <div className="titulo-copias-certificadas animate__animated animate__zoomInUp">
         <h1>COPICE</h1>
@@ -84,6 +90,9 @@ export const CopiasCertificadas = () => {
         <p onClick={() => handleClickModal("RPP")}>
           ¿Cuándo solicitar las copias del RPP?
         </p>
+      </div>
+      <div className="btn-video-tutorial-copias">
+        <BtnVideoTutorial urlVideo={TUTORIALES.COPIAS_CERTIFICADAS} />
       </div>
       <div className="opciones-copias-agn">
         <h1>De Archivo General de Notarías</h1>
