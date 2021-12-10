@@ -2,12 +2,14 @@
 import "./TramitesServicios.scss";
 // Hooks
 import { useState, useEffect } from "react";
-import { useBusquedaTramites } from "./../../../hooks/TramitesServicios/useBusquedaTramites";
+import { useBusquedaTramites } from "../../../hooks/TramitesServicios/useBusquedaTramites";
 // Models
 import { TramitesResponseModel } from "./../../../models/tramites-servicios/TramitesResponseModel";
 import { TramitesModel } from "./../../../models/tramites-servicios/TramitesModel";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
+// import "bootstrap-css-only/css/bootstrap.min.css";
+// import "mdbreact/dist/css/mdb.css";
 
 import { MDBDataTable, MDBAnimation } from "mdbreact";
 // Models
@@ -112,6 +114,7 @@ export const TramitesServicios = () => {
             {tramites.length > 0 && (
               <MDBAnimation type="slideInDown">
                 <MDBDataTable
+                  size={"lg"}
                   striped
                   displayEntries={false}
                   hover
@@ -120,7 +123,6 @@ export const TramitesServicios = () => {
                   }
                   bordered
                   entries={5}
-                  responsive
                   entrieslabel={"Número de registros"}
                   noBottomColumns={true}
                   exportToCSV={true}
@@ -128,7 +130,7 @@ export const TramitesServicios = () => {
                   paginationLabel={["Previo", "Siguiente"]}
                   info={false}
                   searching={true}
-                  searchingLabel={"Buscar"}
+                  searchinglabel={"Buscar"}
                   fullPagination
                 />
               </MDBAnimation>

@@ -16,6 +16,16 @@ textarea {
   border-radius: 1rem;
 }
 
+table.table th,
+table.table td {
+  padding-top: 1.1rem;
+  padding-bottom: 1rem;
+  justify-self: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .pagination-item {
   padding: 10px;
 }

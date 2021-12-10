@@ -2,7 +2,7 @@
 
 .container-contactanos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 60% auto;
   grid-template-rows: auto auto;
   grid-template-areas:
     "titulo-contactanos titulo-contactanos"
@@ -19,6 +19,7 @@
 
 .img-contactanos {
   grid-area: img-contactanos;
+  align-self: center;
 }
 .img-contactanos img {
   height: auto;
@@ -32,6 +33,7 @@
 }
 
 .formulario-contact-background {
-  justify-self: center;
+  // justify-self: center;
+  padding-left: 2rem;
   border-radius: 10px;
 }

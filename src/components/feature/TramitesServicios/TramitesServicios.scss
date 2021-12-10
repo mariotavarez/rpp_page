@@ -43,6 +43,7 @@
 .container-tramites-mas-buscados img {
   width: 100%;
   height: auto;
+  align-self: center;
 }
 
 .input-busqueda-tramites {
@@ -55,13 +56,14 @@
   grid-area: container-tramites-mas-buscados;
   display: grid;
   justify-items: center;
-  grid-template-columns: 30% auto;
+  grid-template-columns: 20% auto;
   grid-template-rows: auto auto;
 }
 
 .container-documentos-pdf {
   display: grid;
   grid-template-rows: auto auto;
+  grid-template-columns: 150vh;
 }
 
 .container-documentos-pdf p {

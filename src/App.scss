@@ -25,6 +25,27 @@ h5,
 h6 {
   font-family: Century Gothic, sans-serif !important;
 }
+.floating {
+  padding: 10px;
+  display: block;
+}
+
+.float-question {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: $color-blue-4;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+  margin-top: 22px;
+}
 
 .App {
   display: grid;

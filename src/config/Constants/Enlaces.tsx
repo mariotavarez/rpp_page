@@ -13,4 +13,6 @@ export const ENLACES = {
   OLVIDE_CONTRASENA:
     "https://cerlin.ciasqro.gob.mx/recuperarPass/index.php?zhspdpjf74dd2d5s5dofhd54cd=1|pc",
   INDEX: "portal",
+  PREGUNTAS_FRECUENTES:
+    "https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/docs/PREGUNTAS/formato_de_preguntas_frecuentes_10 DICIEMBRE_2021 REVISADO.pdf",
 };

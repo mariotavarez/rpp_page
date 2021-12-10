@@ -15,8 +15,8 @@ export const MarcoJuridico = () => {
       {/* IMG SITIOS INTERES */}
       <div className="img-marco-juridico animate__animated animate__slideInDown">
         <img
-          src="http://localhost/portal_assets/img/dibujos/marco-juridico.png"
-          alt="Sitios de interes"
+          src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/marco-juridico.png"
+          alt="Marco Jurídico"
         />
       </div>
       {/* IMG SITIOS INTERES */}

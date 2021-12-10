@@ -79,4 +79,17 @@ export const SUBDIRECCIONES_DATA: SubdireccionesOrganizacionModel[] = [
     ),
     subdireccion: "AMEALCO",
   },
+  {
+    src: (
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9210825396044!2d-100.39809958507468!3d20.59128018623698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35ad358bf725f%3A0x1b4583678d67b7d5!2sRegistro%20P%C3%BAblico%20de%20la%20Propiedad%20y%20del%20Comercio%20del%20Estado%20de%20Quer%C3%A9taro!5e0!3m2!1ses!2smx!4v1605570622930!5m2!1ses!2smx"
+        frameBorder="0"
+        width="100%"
+        allowFullScreen={true}
+        aria-hidden="false"
+        tabIndex={0}
+      ></iframe>
+    ),
+    subdireccion: "AGN",
+  },
 ];

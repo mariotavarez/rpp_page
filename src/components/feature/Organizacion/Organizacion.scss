@@ -3,20 +3,43 @@
 .container-organizacion {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
     "title-organizacion"
+    "subdireccion-actual"
     "content-organizacion"
+    "subtitle-organizacion"
     "container-cards";
+}
+
+.subdireccion-actual {
+  text-align: center;
+  grid-area: subdireccion-actual;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem;
+  color: $color-black-2;
 }
 
 .title-organizacion {
   grid-area: title-organizacion;
   color: $color-black-1;
-  font-size: 35px;
+  font-size: 40px;
+  font-weight: bold;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(90deg, #378de2, #00ddec);
   -webkit-background-clip: text;
+  text-align: center;
+}
+
+.subtitle-organizacion {
+  grid-area: subtitle-organizacion;
+  justify-self: center;
+  text-align: center;
+  font-weight: 600;
+  color: $color-black-3;
+  font-size: 20px;
+  padding: 2rem;
 }
 
 .content-organizacion {
@@ -24,6 +47,7 @@
   grid-area: content-organizacion;
   display: grid;
   column-gap: 10px;
+  row-gap: 10px;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
 }
@@ -43,4 +67,11 @@
     0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 14px;
+}
+
+.overflow-card-information {
+  max-height: 12rem;
+  overflow-y: scroll;
+  // text-overflow: ellipsis;
+  // white-space: nowrap;
 }

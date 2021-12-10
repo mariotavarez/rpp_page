@@ -153,7 +153,7 @@ export const ContactanosForm = () => {
       >
         <div className="flex flex-wrap -mx-3 mb-6">
           {/* NOMBRE */}
-          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <div className="w-full md:w-full px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="nombre"
@@ -173,7 +173,7 @@ export const ContactanosForm = () => {
           </div>
           {/* NOMBRE */}
           {/* CORREO */}
-          <div className="w-full md:w-1/2 px-3">
+          <div className="w-full md:w-full px-3">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               htmlFor="correo"
@@ -287,15 +287,15 @@ export const ContactanosForm = () => {
             >
               Comentarios
             </label>
-            <input
-              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            <textarea
               id="comentarios"
               name="comentarios"
-              type="text"
               autoComplete="off"
+              className="form-textarea mt-1 block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              rows={3}
               maxLength={200}
               placeholder="Ingrese sus comentarios"
-            />
+            ></textarea>
             <p className="text-gray-500 text-xs italic">
               Ingrese sus comentarios
             </p>

@@ -6,26 +6,82 @@ import { POLITICAS_SEGURIDAD } from "./../../../data/politicasSeguridad";
 // Models
 import { FooterModel } from "./../../../models/footer/FooterModel";
 import { FooterOptionModel } from "./../../../models/footer/FooterOptionModel";
+// Link
+import { Link } from "react-router-dom";
+// Hooks
+import { useState } from "react";
+// Shared
+import { MenuOpciones } from "./../../shared/modals/Menu-optiones/MenuOpciones";
 
 export const Footer = () => {
   // Data del footer
   const footerData: FooterModel[] = FOOTER.slice();
   // Año actual
   const currentYear = new Date().getFullYear();
+
+  const [show, setShow] = useState(false);
   // Footer Options
   const footerOptions = footerData.map((option, index) => (
     <div key={index}>
       {/* NAVBAR ITEM */}
       <div className="navbar-footer-item">
         {/* NAVBAR TITLE H1 */}
-        {/* <h1>{option.tituloMenu.text}</h1> */}
+        {option.tituloMenu.isSubMenu ? (
+          option.tituloMenu.targetBlank ? (
+            <a
+              key={index}
+              href={option.tituloMenu.url}
+              target="_blank"
+              className="font-bold text-gray-800 hover:bg-gray-200  px-3 py-2 rounded-md text-md"
+            >
+              {option.tituloMenu.text}
+            </a>
+          ) : (
+            <a
+              key={index}
+              href={option.tituloMenu.url}
+              onClick={() => setShow(true)}
+              className="font-bold text-gray-800 hover:bg-gray-200  px-3 py-2 rounded-md text-md"
+            >
+              {option.tituloMenu.text}
+            </a>
+          )
+        ) : (
+          <Link
+            key={index}
+            className="font-bold text-gray-800 hover:bg-gray-200  px-3 py-2 rounded-md text-md"
+            to={option.tituloMenu.url}
+          >
+            {option.tituloMenu.text}
+          </Link>
+        )}
+
+        {/* <h1>
+          {option.tituloMenu}</h1> */}
         {/* NAVBAR TITLE H1 */}
         {/* NAVBAR OPTION */}
-        {/* {option.opcionMenu.map((opcionMenu, indexMenu) => (
+        {option.opcionMenu.map((opcionMenu, indexMenu) => (
           <div key={indexMenu}>
-            <p>{opcionMenu.text}</p>
+            {opcionMenu.targetBlank ? (
+              <a
+                key={index}
+                href={opcionMenu.url}
+                target="_blank"
+                className="font-bold text-gray-500 hover:bg-gray-200  px-3 py-2 rounded-md text-sm"
+              >
+                {opcionMenu.text}
+              </a>
+            ) : (
+              <Link
+                key={index}
+                className="font-bold text-gray-500 hover:bg-gray-200  px-3 py-2 rounded-md text-sm"
+                to={opcionMenu.url}
+              >
+                {opcionMenu.text}
+              </Link>
+            )}
           </div>
-        ))} */}
+        ))}
         {/* NAVBAR OPTION */}
       </div>
       {/* NAVBAR ITEM */}
@@ -43,8 +99,9 @@ export const Footer = () => {
   return (
     // CONTAINER FOOTER
     <div className="container-footer">
+      {show && <MenuOpciones setShow={setShow} />}
       {/* NAVBAR FOOTER */}
-      {/* <div className="navbar-footer">{footerOptions}</div> */}
+      <div className="navbar-footer">{footerOptions}</div>
       {/* NAVBAR FOOTER */}
       {/* POLITICAS */}
       <div className="politicas">
@@ -58,7 +115,7 @@ export const Footer = () => {
         <hr />
         {/* HR */}
         {/* POLITICAS OPTIONS */}
-        {/* <div className="politicas-options">{politicasOption}</div> */}
+        <div className="politicas-options">{politicasOption}</div>
         {/* POLITICAS OPTIONS */}
       </div>
       {/* POLITICAS */}

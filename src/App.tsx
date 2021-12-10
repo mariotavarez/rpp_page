@@ -39,9 +39,20 @@ function App() {
 
   return (
     <>
+      <a
+        href={ENLACES.PREGUNTAS_FRECUENTES}
+        title="Preguntas Frecuentes"
+        className="float-question"
+        target="_blank"
+      >
+        <i className="fa fa-question my-float"></i>
+      </a>
       {!loading ? (
         <BrowserRouter>
           <div className="App">
+            {/* <div className="light">
+              <ul className="line"></ul>
+            </div> */}
             {/* NAVBAR */}
             <div className="navbar-main">
               <NavbarPortal />
