@@ -55,3 +55,48 @@
 .text-toolOption a {
   color: $color-black-2 !important;
 }
+
+.show-tool-desktop {
+}
+
+.show-tool-responsive {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  // .container-menu-array-options {
+  //   display: grid;
+  //   grid-template-columns: auto auto auto auto;
+  //   grid-template-rows: auto auto;
+  //   cursor: pointer;
+  // }
+
+  .container-toolOptions {
+    background: $color-white-1 0% 0% no-repeat padding-box;
+    display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 1fr;
+    height: 25vh;
+    max-height: 35vh;
+    justify-items: center;
+    align-items: center;
+    opacity: 1;
+    overflow-y: scroll;
+    text-align: center;
+  }
+
+  .container-menu-array-options {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    cursor: pointer;
+  }
+  .show-tool-responsive {
+    display: grid;
+  }
+
+  .show-tool-desktop {
+    display: none;
+  }
+}

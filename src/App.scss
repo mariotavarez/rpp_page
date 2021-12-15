@@ -452,3 +452,22 @@ h6 {
     margin: 0 15px 20px 15px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .App {
+    display: grid;
+    transition: 3s;
+    padding: 0 !important;
+    margin: 0 !important;
+    animation-name: FadeIn;
+    animation-duration: 3s;
+    transition-timing-function: linear;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "navbar-main"
+      "toolOptions-main"
+      "main-content"
+      "footer-main";
+  }
+}

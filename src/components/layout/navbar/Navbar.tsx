@@ -47,22 +47,38 @@ export const NavbarPortal = () => {
       </Link>
     )
   );
-
-  const hangleClickMenu = (event: any) => {
-    event.preventDefault();
-    alert(show);
-    setShow(true);
-  };
   // Menu Mobile
-  const navbarOptionsMenuMobile = navbarOptions.map((option, index) => (
-    <a
-      key={index}
-      href={option.url}
-      className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-semibold"
-    >
-      {option.nombre}
-    </a>
-  ));
+  const navbarOptionsMenuMobile = navbarOptions.map((option, index) =>
+    option.isSubMenu ? (
+      option.targetBlank ? (
+        <a
+          key={index}
+          href={option.url}
+          target="_blank"
+          className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-semibold"
+        >
+          {option.nombre}
+        </a>
+      ) : (
+        <a
+          key={index}
+          href={option.url}
+          onClick={() => setShow(true)}
+          className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-semibold"
+        >
+          {option.nombre}
+        </a>
+      )
+    ) : (
+      <Link
+        key={index}
+        className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-semibold"
+        to={option.url}
+      >
+        {option.nombre}
+      </Link>
+    )
+  );
 
   return (
     <div>

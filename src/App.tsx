@@ -50,9 +50,9 @@ function App() {
       {!loading ? (
         <BrowserRouter>
           <div className="App">
-            {/* <div className="light">
+            <div className="light">
               <ul className="line"></ul>
-            </div> */}
+            </div>
             {/* NAVBAR */}
             <div className="navbar-main">
               <NavbarPortal />

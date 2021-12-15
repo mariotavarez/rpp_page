@@ -13,3 +13,12 @@
   height: auto;
   width: 25%;
 }
+
+@media only screen and (max-width: 600px) {
+  .container-loading img {
+    justify-self: center;
+    align-self: center;
+    height: auto;
+    width: 100%;
+  }
+}

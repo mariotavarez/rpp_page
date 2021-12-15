@@ -68,10 +68,14 @@ export const ToolOptions = () => {
   return (
     // CONTAINER-TOOLOPTIONS
     <div className="container-toolOptions">
-      <div className="grid grid-cols-9 gap-1 items-center justify-items-center ">
+      <div className="grid grid-cols-2 sm:grid-cols-9 gap-1 items-center justify-items-center show-tool-desktop">
         {toolOptionsImg}
       </div>
+      <div className="container mx-auto show-tool show-tool-responsive">
+        <div className="grid grid-cols-2 gap-4">{toolOptionsImg}</div>
+      </div>
     </div>
+
     // CONTAINER-TOOLOPTIONS
   );
 };
