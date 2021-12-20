@@ -99,3 +99,34 @@
   grid-area: container-question-busqueda-ante;
   margin: 0 2rem 0 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .container-busqueda-ante {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    height: auto;
+    background-color: $color-blue-5;
+    margin: 0 0 2rem 0;
+    grid-template-areas:
+      "container-forma-busqueda-ante"
+      "container-preguntas-busqueda";
+  }
+
+  .container-preguntas-busqueda {
+    padding-top: 20px;
+  }
+
+  .img-laptop-busqueda-ante {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    grid-area: img-laptop-busqueda-ante;
+    background-image: url("https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/dibujos/busqueda-antecedentes.png");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+}

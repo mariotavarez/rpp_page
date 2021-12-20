@@ -67,7 +67,6 @@
 .btn-consulta-estatus {
   display: grid;
   grid-area: btn-consulta-estatus;
-  // grid-template-columns: 1fr 1fr;
   grid-template-columns: auto;
   grid-template-rows: 1fr;
   justify-self: center;
@@ -87,4 +86,23 @@
 .img-consulta-estatus img {
   height: auto;
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-consulta-estatus {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "img-consulta-estatus"
+      "container-info-estatus";
+    height: 100%;
+    margin: 0 2rem 0 2rem;
+  }
+
+  .img-requisitos-consulta-estatus img {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+  }
 }

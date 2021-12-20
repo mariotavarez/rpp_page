@@ -110,3 +110,4 @@ export const ValidarTramite = () => {
     // CONTAINER VALIDAR TRAMITE
   );
 };
+export default ValidarTramite;

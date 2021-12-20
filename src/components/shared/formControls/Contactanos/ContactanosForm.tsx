@@ -155,7 +155,7 @@ export const ContactanosForm = () => {
           {/* NOMBRE */}
           <div className="w-full md:w-full px-3 mb-6 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-gray-700  md:text-xs sm:text-lg font-bold mb-2"
               htmlFor="nombre"
             >
               Nombre
@@ -169,13 +169,15 @@ export const ContactanosForm = () => {
               type="text"
               placeholder="Nombre"
             />
-            <p className="text-gray-500 text-xs italic">Ingrese su nombre</p>
+            <p className="text-gray-500  md:text-xs sm:text-lg italic">
+              Ingrese su nombre
+            </p>
           </div>
           {/* NOMBRE */}
           {/* CORREO */}
           <div className="w-full md:w-full px-3">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-gray-700  md:text-xs sm:text-lg font-bold mb-2"
               htmlFor="correo"
             >
               Correo
@@ -189,7 +191,9 @@ export const ContactanosForm = () => {
               type="email"
               placeholder="usuario@mail.com"
             />
-            <p className="text-gray-500 text-xs italic">Ingrese su correo</p>
+            <p className="text-gray-500  md:text-xs sm:text-lg italic">
+              Ingrese su correo
+            </p>
           </div>
           {/* CORREO */}
         </div>
@@ -197,7 +201,7 @@ export const ContactanosForm = () => {
           {/* TELEFONO */}
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-gray-700  md:text-xs sm:text-lg font-bold mb-2"
               htmlFor="telefono"
             >
               Teléfono
@@ -211,13 +215,15 @@ export const ContactanosForm = () => {
               maxLength={15}
               placeholder="xxxxxxxxxx"
             />
-            <p className="text-gray-500 text-xs italic">Ingrese su teléfono</p>
+            <p className="text-gray-500  md:text-xs sm:text-lg italic">
+              Ingrese su teléfono
+            </p>
           </div>
           {/* TELEFONO */}
           {/* CELULAR */}
           <div className="w-full md:w-1/2 px-3">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-gray-700  md:text-xs sm:text-lg font-bold mb-2"
               htmlFor="celular"
             >
               Célular
@@ -231,7 +237,9 @@ export const ContactanosForm = () => {
               type="text"
               placeholder="xxxxxxxxxx"
             />
-            <p className="text-gray-500 text-xs italic">Ingrese su célular</p>
+            <p className="text-gray-500  md:text-xs sm:text-lg italic">
+              Ingrese su célular
+            </p>
           </div>
           {/* CELULAR */}
         </div>
@@ -239,7 +247,7 @@ export const ContactanosForm = () => {
           {/* PAIS */}
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-gray-700  md:text-xs sm:text-lg font-bold mb-2"
               htmlFor="pais"
             >
               País
@@ -253,13 +261,15 @@ export const ContactanosForm = () => {
               type="text"
               placeholder="Ej: MÉXICO"
             />
-            <p className="text-gray-500 text-xs italic">Ingrese su país</p>
+            <p className="text-gray-500  md:text-xs sm:text-lg italic">
+              Ingrese su país
+            </p>
           </div>
           {/* PAIS */}
           {/* ESTADO */}
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-gray-700  md:text-xs sm:text-lg font-bold mb-2"
               htmlFor="estado"
             >
               Estado
@@ -273,7 +283,9 @@ export const ContactanosForm = () => {
               type="text"
               placeholder="Ej: Querétaro"
             />
-            <p className="text-gray-500 text-xs italic">Ingrese su estado</p>
+            <p className="text-gray-500  md:text-xs sm:text-lg italic">
+              Ingrese su estado
+            </p>
           </div>
           {/* ESTADO */}
         </div>
@@ -282,7 +294,7 @@ export const ContactanosForm = () => {
           {/* COMENTARIOS */}
           <div className="w-full px-3">
             <label
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              className="block uppercase tracking-wide text-gray-700  md:text-xs sm:text-lg font-bold mb-2"
               htmlFor="comentarios"
             >
               Comentarios
@@ -296,7 +308,7 @@ export const ContactanosForm = () => {
               maxLength={200}
               placeholder="Ingrese sus comentarios"
             ></textarea>
-            <p className="text-gray-500 text-xs italic">
+            <p className="text-gray-500  md:text-xs sm:text-lg italic">
               Ingrese sus comentarios
             </p>
           </div>

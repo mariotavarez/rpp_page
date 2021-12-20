@@ -84,3 +84,35 @@
   height: auto;
   width: 40%;
 }
+
+@media only screen and (max-width: 600px) {
+  .container-consulta-web-inmo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    margin: 0 0 0 0;
+    grid-template-areas:
+      "container-contenido-consulta-web-inmo"
+      "registrate-consulta-web-inmo";
+  }
+
+  .container-contenido-consulta-web-inmo {
+    row-gap: 20px;
+  }
+
+  .buttons-consulta-web-inmo {
+    grid-area: buttons-consulta-web-inmo;
+    row-gap: 20px;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .img-consulta-web-inmo img {
+    justify-self: center;
+    height: auto;
+    width: 100%;
+  }
+}

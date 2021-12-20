@@ -87,3 +87,5 @@ export const ConsultaEstatus = () => {
     </div>
   );
 };
+
+export default ConsultaEstatus;

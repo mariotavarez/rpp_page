@@ -69,7 +69,6 @@
 .btn-descarga-tramite {
   display: grid;
   grid-area: btn-descarga-tramite;
-  // grid-template-columns: 1fr 1fr;
   grid-template-columns: auto;
   grid-template-rows: 1fr;
   justify-self: center;
@@ -89,4 +88,37 @@
 .img-descarga-tramite img {
   height: auto;
   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-descarga-tramite {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "img-descarga-tramite"
+      "container-info-descarga-tramite";
+    height: 100%;
+    margin: 3rem 4rem 0 4rem;
+  }
+
+  .container-info-descarga-tramite {
+    grid-area: container-info-descarga-tramite;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+    grid-template-areas:
+      "title-descarga-tramite"
+      "subtitle-descarga-tramite"
+      "ingresando-datos-descarga-tramite"
+      "img-requisitos-descarga-tramite"
+      "btn-descarga-tramite";
+  }
+
+  .img-requisitos-descarga-tramite img {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+  }
 }

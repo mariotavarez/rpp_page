@@ -75,3 +75,25 @@
   // text-overflow: ellipsis;
   // white-space: nowrap;
 }
+
+@media only screen and (max-width: 600px) {
+  .content-organizacion {
+    justify-items: center;
+    grid-area: content-organizacion;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  .container-cards {
+    grid-area: container-cards;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto auto auto;
+    column-gap: 10px;
+    overflow-x: scroll;
+    justify-items: center;
+  }
+}

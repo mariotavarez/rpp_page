@@ -29,7 +29,7 @@ export const BtnAction = ({
     <div>
       <button
         onClick={handleClick}
-        className={`${buttonOptions.color}  btn-portal-rounded hover:bg-gray-700  text-white font-bold px-4 rounded  items-center`}
+        className={`${buttonOptions.color}  btn-portal-rounded hover:bg-gray-700  text-white font-extrabold px-4 rounded  items-center`}
       >
         <span>{buttonOptions.text}</span>
       </button>

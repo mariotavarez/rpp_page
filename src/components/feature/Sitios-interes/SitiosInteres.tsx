@@ -81,3 +81,4 @@ export const SitiosInteres = () => {
     // CONTAINER SITIOS INTERES
   );
 };
+export default SitiosInteres;

@@ -39,3 +39,28 @@
   width: 85px;
   height: 85px;
 }
+
+.show-menu-opciones-desktop {
+  display: grid;
+}
+
+.show-menu-opciones-mobile {
+  display: none;
+}
+
+.scroll-menu-opciones {
+}
+
+@media only screen and (max-width: 600px) {
+  .show-menu-opciones-desktop {
+    display: none;
+  }
+  .show-menu-opciones-mobile {
+    display: grid;
+  }
+  .scroll-menu-opciones {
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+}

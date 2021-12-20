@@ -3,7 +3,7 @@
 .container-signUp {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto 1fr auto auto;
+  grid-template-rows: auto auto auto auto;
   height: 35rem;
   padding: 0 2rem 0 2rem;
   grid-template-areas:
@@ -41,16 +41,14 @@
 .img-container-signUp {
   display: grid;
   grid-area: img-container-signUp;
-  height: 100%;
-  width: 40%;
-  background-position: 0 100%;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
 }
 
 .img-container-signUp img {
   height: auto;
-  width: 100%;
+  width: 30%;
+  justify-self: center;
 }
 
 .btn-signUp {
@@ -70,4 +68,42 @@
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-signUp {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto 200px;
+    height: auto;
+    padding: 0 2rem 0 2rem;
+    grid-template-areas:
+      "title-signUp"
+      "text-signUp"
+      "btn-signUp"
+      "img-container-signUp";
+    background-image: linear-gradient(
+        151deg,
+        $color-rgba-blue-1,
+        $color-rgba-blue-2
+      ),
+      url("https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/backgrounds/registrate.jpg");
+    justify-items: center;
+    align-items: center;
+  }
+
+  .img-container-signUp {
+    display: grid;
+    grid-area: img-container-signUp;
+    height: auto;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .img-container-signUp img {
+    height: auto;
+    width: 55%;
+    justify-self: center;
+  }
 }

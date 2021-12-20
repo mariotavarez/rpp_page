@@ -30,6 +30,7 @@
 }
 
 .img-marco-juridico {
+  grid-area: img-marco-juridico;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -44,10 +45,35 @@
 }
 .text-url {
   word-wrap: break-word;
-
-  // max-width: 100px;
 }
 
-.table-auto {
-  // overflow-y: hidden;
+@media only screen and (max-width: 600px) {
+  .container-marco-juridico {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title-marco-juridico"
+      "img-marco-juridico"
+      "tabla-marco-juridico";
+  }
+
+  .img-marco-juridico {
+    grid-area: img-marco-juridico;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .img-marco-juridico img {
+    height: auto;
+    width: 40%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .tabla-marco-juridico {
+    max-height: 30rem;
+    font-size: 20px;
+  }
 }

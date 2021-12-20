@@ -110,3 +110,46 @@
 .appearance-none {
   text-transform: uppercase !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .container-validar-tramite {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    height: auto;
+    grid-template-areas:
+      "container-info-validar-tramite"
+      "preguntas-validar-tramite";
+  }
+
+  .container-info-validar-tramite {
+    display: grid;
+    grid-area: container-info-validar-tramite;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    justify-items: center;
+    grid-template-areas:
+      "titulo-validar-tramite"
+      "texto-validar-tramite"
+      "img-forma-validar-tramite"
+      "sub-texto-validar-tramite"
+      "botones-validar-tramite";
+  }
+
+  .preguntas-validar-tramite {
+    display: grid;
+    grid-area: preguntas-validar-tramite;
+    grid-template-rows: auto auto;
+    padding-top: 2rem;
+    grid-template-areas:
+      "section-question-validar-tramites"
+      "dibujo-mano-certificado";
+  }
+
+  .dibujo-mano-certificado img {
+    justify-self: center;
+    align-self: start;
+    height: auto;
+    width: 100%;
+  }
+}

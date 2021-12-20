@@ -33,7 +33,22 @@
 }
 
 .formulario-contact-background {
-  // justify-self: center;
   padding-left: 2rem;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .formulario-contact-background {
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .container-contactanos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "titulo-contactanos"
+      "img-contactanos"
+      "formulario-contactanos ";
+  }
 }

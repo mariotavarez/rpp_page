@@ -28,6 +28,7 @@
 }
 
 .img-sitios-interes {
+  grid-area: img-sitios-interes;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -48,4 +49,24 @@
 
 .table-auto {
   // overflow-y: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-sitios-interes {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "title-sitios-interes"
+      "img-sitios-interes"
+      "tabla-sitios-interes";
+  }
+
+  .img-sitios-interes {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-row: 1 / span 1;
+  }
 }

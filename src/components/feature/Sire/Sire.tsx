@@ -103,3 +103,4 @@ export const Sire = () => {
     </div>
   );
 };
+export default Sire;

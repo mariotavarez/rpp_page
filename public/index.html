@@ -8,10 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Registro Público de la Propiedad del Estado de Querétaro">
-  <link href="https://unpkg.com/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
   <meta name="author" content="Mario Josue Tavarez Mendoza">
 
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
   <meta name="keywords"
     content="rpp, rppc, rppc qro, rppc de qro, rpp qro, rppc queretaro, rpp queretaro, rppc del estado de queretaro, rpp del estado de queretaro, registro, publico, queretaro, propiedad, registropublico, registro publico, qro, registro publico de queretaro, registro publico de la propiedad de queretaro, registro publico de la propiedad del estado de queretaro">
   <!--
@@ -19,15 +18,18 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
+  <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-MTVFP75');</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-209490900-1"></script>
   <script>
-    const btn = document.querySelector("button.mobile-menu-button");
-    const menu = document.querySelector(".mobile-menu");
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    });
+    gtag('config', 'UA-209490900-1');
   </script>
+
+  <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -40,7 +42,7 @@
   <title>Registro Público de la Propiedad del Estado de Querétaro</title>
 </head>
 
-<body class=" items-center justify-center">
+<body class=" overflow-scroll flex items-center justify-center">
 
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>

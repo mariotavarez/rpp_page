@@ -23,14 +23,21 @@ export const CarouselComponent = () => {
       <div>
         <img
           className="responsive-carousel"
+          alt="AVISO 1"
           src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/aviso-oficial.png"
         />
       </div>
       <div>
-        <img src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/copias-certificadas.png" />
+        <img
+          src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/copias-certificadas.png"
+          alt="AVISO 2"
+        />
       </div>
       <div>
-        <img src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/cancelacion-hipoteca.png" />
+        <img
+          src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/cancelacion-hipoteca.png"
+          alt="AVISO 3"
+        />
       </div>
     </Carousel>
   );

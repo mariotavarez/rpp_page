@@ -86,3 +86,5 @@ export const DescargaTramite = () => {
     </div>
   );
 };
+
+export default DescargaTramite;

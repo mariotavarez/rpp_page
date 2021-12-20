@@ -147,3 +147,5 @@ export const Organizacion = () => {
     </div>
   );
 };
+
+export default Organizacion;

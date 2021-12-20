@@ -113,3 +113,5 @@ export const CopiasCertificadas = () => {
     </div>
   );
 };
+
+export default CopiasCertificadas;

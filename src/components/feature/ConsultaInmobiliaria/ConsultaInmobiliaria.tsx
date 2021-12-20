@@ -68,3 +68,5 @@ export const ConsultaInmobiliaria = () => {
     // CONTAINER CONSULTA WEB INMO
   );
 };
+
+export default ConsultaInmobiliaria;

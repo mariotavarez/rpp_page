@@ -124,3 +124,21 @@ strong {
   display: grid;
   margin: 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .container-copias-certificadas {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    margin: 0 0 0 0;
+    row-gap: 1rem;
+    grid-template-areas:
+      "titulo-copias-certificadas "
+      "btn-video-tutorial-copias"
+      "opciones-copias-rpp"
+      "opciones-copias-agn"
+      "importancia-copias"
+      "questions-copias";
+    background-color: $color-blue-5;
+  }
+}

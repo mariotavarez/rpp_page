@@ -83,3 +83,5 @@ export const Cerlin = () => {
     </div>
   );
 };
+
+export default Cerlin;

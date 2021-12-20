@@ -73,3 +73,37 @@
   width: 100%;
   height: auto;
 }
+
+@media only screen and (max-width: 600px) {
+  .contenido-alerta-registral {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    height: auto;
+    margin: 0 0 0 0;
+    grid-template-areas:
+      "container-contenido-alerta-registral"
+      "registrate-alerta-registral";
+  }
+
+  .container-contenido-alerta-registral {
+    display: grid;
+    grid-area: container-contenido-alerta-registral;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "title-alerta-registral"
+      "text-alerta-registral"
+      "buttons-alerta-registral"
+      "img-alerta-registral";
+  }
+
+  .img-alerta-registral {
+    padding-bottom: 2rem;
+    justify-self: center;
+    display: grid;
+    grid-area: img-alerta-registral;
+    max-width: 200px;
+  }
+}

@@ -3,7 +3,7 @@ import "./ToolOptions.scss";
 import { TOOL_OPTIONS } from "./../../../data/toolOptions";
 // Models
 import { ToolOptionsModel } from "./../../../models/toolOptions/toolOptionsModel";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export const ToolOptions = () => {
   // Arreglo de las opciones del tool tips
@@ -49,9 +49,16 @@ export const ToolOptions = () => {
         <img src={option.img} alt={option.nombre} />
         {/* CONTAINER MENU ITEM IMG*/}
         {/* CONTAINER MENU ITEM P*/}
-        <p className="text-toolOption">
+        <p>
           {!option.isExternal ? (
-            <Link to={option.url}>{option.nombre}</Link>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "text-toolOption-active" : "text-toolOption"
+              }
+              to={option.url}
+            >
+              {option.nombre}
+            </NavLink>
           ) : (
             <a href={validateURL(option.url) ? option.url : ""} target="_blank">
               {option.nombre}

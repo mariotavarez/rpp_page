@@ -79,3 +79,23 @@
   justify-self: end;
   grid-area: registrate-cerlin;
 }
+
+@media only screen and (max-width: 600px) {
+  .container-cerlin {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "container-info-cerlin"
+      "registrate-cerlin";
+    height: auto;
+    margin: 0 0 0 0;
+    background-color: $color-blue-5;
+  }
+
+  .container-img-forma-cerlin img {
+    height: auto;
+    width: 100%;
+    object-position: 0 0;
+  }
+}

@@ -50,13 +50,13 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
                   <tr>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left md:text-xs sm:text-lg font-medium text-gray-500 uppercase tracking-wider"
                     >
                       Estatus
                     </th>
                     <th
                       scope="col"
-                      className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      className="px-6 py-3 text-left md:text-xs sm:text-lg font-medium text-gray-500 uppercase tracking-wider"
                     >
                       Fecha
                     </th>
@@ -191,7 +191,7 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
               <div className="flex flex-wrap -mx-3 mb-6">
                 {/* ENTRADA */}
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  <label className="block uppercase tracking-wide text-gray-700 md:text-xs sm:text-lg font-bold mb-2">
                     No. Entrada
                   </label>
                   <input
@@ -203,14 +203,14 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
                     autoComplete="off"
                     placeholder="Ej: 432457"
                   />
-                  <p className="text-gray-600 text-xs italic">
+                  <p className="text-gray-600 md:text-xs sm:text-lg italic">
                     Ingrese su número de entrada
                   </p>
                 </div>
                 {/* ENTRADA */}
                 {/* ANIO DE ENTRADA */}
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  <label className="block uppercase tracking-wide text-gray-700 md:text-xs sm:text-lg font-bold mb-2">
                     Año de la entrada
                   </label>
                   <input
@@ -222,14 +222,14 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
                     type="text"
                     placeholder={`Ej: ${currectYear}`}
                   />
-                  <p className="text-gray-600 text-xs italic">
+                  <p className="text-gray-600 md:text-xs sm:text-lg italic">
                     Ingrese el año de la entrada
                   </p>
                 </div>
                 {/* ANIO DE ENTRADA */}
                 {/* SUBDIRECCION */}
                 <div className="w-full px-3 pt-4">
-                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  <label className="block uppercase tracking-wide text-gray-700 md:text-xs sm:text-lg font-bold mb-2">
                     Subdirección
                   </label>
                   <div className="relative">
@@ -253,7 +253,7 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
                       </svg>
                     </div>
                   </div>
-                  <p className="text-gray-600 text-xs italic">
+                  <p className="text-gray-600 md:text-xs sm:text-lg italic">
                     Seleccione la subdirección a la que corresponde su trámite
                   </p>
                 </div>
@@ -267,7 +267,7 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
           <div className="p-3  mt-2 text-center space-x-4 md:block">
             {/* CERRAR */}
             <button
-              className="mb-2 md:mb-0 bg-white px-5 py-2 text-sm shadow-sm font-medium tracking-wider border text-gray-600 rounded-full hover:shadow-lg hover:bg-gray-100"
+              className="mb-2 md:mb-0 bg-white px-5 py-2 md:text-sm sm:text-lg shadow-sm font-medium tracking-wider border text-gray-600 rounded-full hover:shadow-lg hover:bg-gray-100"
               onClick={handleClose}
             >
               Cerrar
@@ -277,7 +277,7 @@ export const EstatusTramiteModal = ({ setShow }: { setShow: any }) => {
             <button
               type="button"
               onClick={handleClickEstatusTramite}
-              className="mb-2 md:mb-0 bg-blue-500 border  px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-lg hover:bg-blue-700"
+              className="mb-2 md:mb-0 bg-blue-500 border  px-5 py-2  md:text-sm sm:text-lg shadow-sm font-medium tracking-wider text-white rounded-full hover:shadow-lg hover:bg-blue-700"
             >
               Consultar estatus
             </button>

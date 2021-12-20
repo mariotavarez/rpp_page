@@ -55,12 +55,12 @@ export const MarcoJuridico = () => {
                     {marcoJuridico.map((item, index) => (
                       <tr key={index}>
                         <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="text-sm text-gray-900 transition delay-150 duration-300 ease-in-out">
+                          <div className="md:text-sm sm:text-lg text-gray-900 transition delay-150 duration-300 ease-in-out">
                             {item.nombre}
                           </div>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
-                          <div className="text-sm text-gray-500 transition text-url delay-150 duration-300 ease-in-out">
+                          <div className="md:text-sm sm:text-lg text-gray-500 transition text-url delay-150 duration-300 ease-in-out">
                             <a href={item.url} target="_blank" rel={item.url}>
                               {" "}
                               {item.url}
@@ -82,3 +82,4 @@ export const MarcoJuridico = () => {
     // CONTAINER SITIOS INTERES
   );
 };
+export default MarcoJuridico;

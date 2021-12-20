@@ -98,3 +98,5 @@ export const BusquedaAntecedentes = () => {
     // CONTAINER BUSQUEDA ANTE
   );
 };
+
+export default BusquedaAntecedentes;

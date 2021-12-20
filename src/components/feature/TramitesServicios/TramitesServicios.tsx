@@ -142,3 +142,5 @@ export const TramitesServicios = () => {
     </div>
   );
 };
+
+export default TramitesServicios;

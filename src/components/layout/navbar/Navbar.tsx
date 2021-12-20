@@ -5,7 +5,7 @@ import "./Navbar.scss";
 // Models
 import { NavbarModel } from "./../../../models/navbar/navbarModel";
 // Router Link
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { MenuOpciones } from "./../../shared/modals/Menu-optiones/MenuOpciones";
 // Data
@@ -15,6 +15,8 @@ export const NavbarPortal = () => {
   const [show, setShow] = useState(false);
 
   const navbarOptions: NavbarModel[] = NAVBAR_OPTIONS.slice();
+  // Valida si muestra el menu responsivo
+  const [showResponsiveMenu, setShowResponsiveMenu] = useState(false);
   // Menu Desktop
   const navbarOptionsMenuDesktop = navbarOptions.map((option, index) =>
     option.isSubMenu ? (
@@ -23,7 +25,7 @@ export const NavbarPortal = () => {
           key={index}
           href={option.url}
           target="_blank"
-          className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-md font-semibold"
+          className="font-bold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md"
         >
           {option.nombre}
         </a>
@@ -32,19 +34,23 @@ export const NavbarPortal = () => {
           key={index}
           href={option.url}
           onClick={() => setShow(true)}
-          className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-md font-semibold"
+          className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md"
         >
           {option.nombre}
         </a>
       )
     ) : (
-      <Link
+      <NavLink
         key={index}
-        className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-semibold"
+        className={({ isActive }) =>
+          isActive
+            ? '"font-bold bg-gray-700 text-white block px-3 py-2  rounded-md text-md font-bold"'
+            : '"font-bold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md"'
+        }
         to={option.url}
       >
         {option.nombre}
-      </Link>
+      </NavLink>
     )
   );
   // Menu Mobile
@@ -70,13 +76,17 @@ export const NavbarPortal = () => {
         </a>
       )
     ) : (
-      <Link
+      <NavLink
         key={index}
-        className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-semibold"
+        className={({ isActive }) =>
+          isActive
+            ? '"font-bold bg-gray-700 text-white block px-3 py-2  rounded-md text-md font-bold"'
+            : '"font-bold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md"'
+        }
         to={option.url}
       >
         {option.nombre}
-      </Link>
+      </NavLink>
     )
   );
 
@@ -96,17 +106,18 @@ export const NavbarPortal = () => {
               >
                 <span className="sr-only">Abrir menú</span>
                 <svg
+                  onClick={() => setShowResponsiveMenu((valor) => !valor)}
                   className="block h-10 w-8"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  aria-hidden="true"
+                  aria-hidden={true}
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
+                    strokeWidth={2}
                     d="M4 6h16M4 12h16M4 18h16"
                   />
                 </svg>
@@ -116,12 +127,12 @@ export const NavbarPortal = () => {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  aria-hidden="true"
+                  aria-hidden={true}
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="2"
+                    strokeWidth={2}
                     d="M6 18L18 6M6 6l12 12"
                   />
                 </svg>
@@ -152,18 +163,23 @@ export const NavbarPortal = () => {
                   alt="QRO"
                 />
               </div>
-              <div className="hidden sm:block sm:ml-8 items-center">
+              <div className="hidden sm:block sm:ml-8 items-center ">
                 <div className="flex space-x-4">{navbarOptionsMenuDesktop}</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="sm:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-1 space-y-1">
-            {navbarOptionsMenuMobile}
+        {showResponsiveMenu && (
+          <div
+            className="sm:hidden animate__animated animate__slideInDown transition-navbar"
+            id="mobile-menu"
+          >
+            <div className="px-2 pt-2 pb-1 space-y-1">
+              {navbarOptionsMenuMobile}
+            </div>
           </div>
-        </div>
+        )}
       </nav>
     </div>
   );

@@ -232,7 +232,7 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
 
   return (
     <div
-      className="  min-w-screen h-screen animated fadeIn faster  fixed  left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none bg-no-repeat bg-center bg-cover"
+      className="min-w-screen  animated fadeIn faster  fixed  left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none bg-no-repeat bg-center bg-cover"
       id="modal-id"
     >
       <div className="absolute bg-black opacity-80 inset-0 z-0"></div>
@@ -257,12 +257,12 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
             <form
               onSubmit={handleClickBuscarTramite}
               ref={refDescargaTramite}
-              className=" max-w-lg "
+              className="max-w-lg overflow-tramites "
             >
               <div className="flex flex-wrap -mx-3 mb-6">
                 {/* ENTRADA */}
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  <label className="block uppercase tracking-wide text-gray-700 md:text-xs sm:text-lg font-bold mb-2">
                     No. Entrada
                   </label>
                   <input
@@ -274,14 +274,14 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
                     autoComplete="off"
                     placeholder="Ej: 432457"
                   />
-                  <p className="text-gray-600 text-xs italic">
+                  <p className="text-gray-600 md:text-xs sm:text-lg italic">
                     Ingrese su número de entrada
                   </p>
                 </div>
                 {/* ENTRADA */}
                 {/* ANIO DE ENTRADA */}
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  <label className="block uppercase tracking-wide text-gray-700 md:text-xs sm:text-lg font-bold mb-2">
                     Año de la entrada
                   </label>
                   <input
@@ -293,14 +293,14 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
                     type="text"
                     placeholder={`Ej: ${currectYear}`}
                   />
-                  <p className="text-gray-600 text-xs italic">
+                  <p className="text-gray-600 md:text-xs sm:text-lg italic">
                     Ingrese el año de la entrada
                   </p>
                 </div>
                 {/* ANIO DE ENTRADA */}
                 {/* SUBDIRECCION */}
                 <div className="w-full px-3 pt-4">
-                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  <label className="block uppercase tracking-wide text-gray-700 md:text-xs sm:text-lg font-bold mb-2">
                     Subdirección
                   </label>
                   <div className="relative">
@@ -322,14 +322,14 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
                       </svg>
                     </div>
                   </div>
-                  <p className="text-gray-600 text-xs italic">
+                  <p className="text-gray-600 md:text-xs sm:text-lg italic">
                     Seleccione la subdirección a la que corresponde su trámite
                   </p>
                 </div>
                 {/* SUBDIRECCION */}
                 {/* NO ORDEN DE PAGO */}
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0 pt-4">
-                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  <label className="block uppercase tracking-wide text-gray-700 md:text-xs sm:text-lg font-bold mb-2">
                     No. orden de pago
                   </label>
                   <input
@@ -341,14 +341,14 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
                     autoComplete="off"
                     placeholder="Ej: 432457"
                   />
-                  <p className="text-gray-600 text-xs italic">
+                  <p className="text-gray-600 md:text-xs sm:text-lg italic">
                     Ingrese su orden de pago
                   </p>
                 </div>
                 {/* NO ORDEN DE PAGO */}
                 {/* ANIO ORDEN DE PAGO */}
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0  pt-4">
-                  <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+                  <label className="block uppercase tracking-wide text-gray-700 md:text-xs sm:text-lg font-bold mb-2">
                     Año de orden de pago
                   </label>
                   <input
@@ -360,7 +360,7 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
                     type="text"
                     placeholder={`Ej: ${currectYear}`}
                   />
-                  <p className="text-gray-600 text-xs italic">
+                  <p className="text-gray-600 md:text-xs sm:text-lg italic">
                     Ingrese el año de orden de pago
                   </p>
                 </div>

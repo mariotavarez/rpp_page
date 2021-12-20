@@ -58,3 +58,5 @@ export const AlertaRegistral = () => {
     </div>
   );
 };
+
+export default AlertaRegistral;
