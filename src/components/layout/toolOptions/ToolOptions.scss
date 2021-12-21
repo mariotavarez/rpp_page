@@ -66,6 +66,12 @@
 .show-tool-responsive {
   display: none;
 }
+.container-tool-option-skeleton {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(9, 1fr);
+}
 
 @media only screen and (max-width: 600px) {
   .container-toolOptions {

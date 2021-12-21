@@ -15,7 +15,9 @@ import { MDBDataTable, MDBAnimation } from "mdbreact";
 // Models
 import { ButtonModel } from "./../../../models/buttons/ButtonModel";
 import { BtnAction } from "./../../shared/buttons/BtnAction";
-import { CargandoRequest } from "../../shared/Screens/Cargando-request/CargandoRequest";
+// Skeleton
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 export const TramitesServicios = () => {
   // Hook que realiza la busqueda de tramites
@@ -110,7 +112,17 @@ export const TramitesServicios = () => {
           {/* TABLA */}
           <div className="container-documentos-pdf">
             <p>{labelTramites}</p>
-            {loading ? <CargandoRequest /> : null}
+            {loading ? (
+              <SkeletonTheme baseColor="#b1b1b1" highlightColor="#7d7d7d">
+                <Skeleton count={1} height={20} />
+                <Skeleton count={1} height={40} />
+                <Skeleton count={1} height={20} />
+                <Skeleton count={1} height={20} />
+                <Skeleton count={1} height={20} />
+                <Skeleton count={1} height={20} />
+                <Skeleton count={1} height={20} />
+              </SkeletonTheme>
+            ) : null}
             {tramites.length > 0 && (
               <MDBAnimation type="slideInDown">
                 <MDBDataTable

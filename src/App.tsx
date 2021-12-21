@@ -17,7 +17,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Routes as RoutesApp } from "./routes";
 import { Suspense } from "react";
 import { ENLACES } from "./config/Constants/Enlaces";
-
+// Skeleton
 function App() {
   return (
     <>

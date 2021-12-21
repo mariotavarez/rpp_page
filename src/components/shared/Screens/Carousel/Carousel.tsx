@@ -2,11 +2,11 @@
 import "./Carousel.scss";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-
+// Skeleton
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+// React
 import React from "react";
-// Hooks
 
 export class CarouselComponent extends React.Component<
   {},

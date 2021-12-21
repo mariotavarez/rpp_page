@@ -1,12 +1,10 @@
 // Styles
 import "./Cerlin.scss";
 // Shared
-import { BtnVideoTutorial } from "./../../shared/buttons/BtnVideoTutorial";
 import { BtnAction } from "./../../shared/buttons/BtnAction";
 import { SignUp } from "./../../shared/signUp/SignUp";
 import { GeneralModal } from "./../../shared/modals/General/General";
 // Config
-import { TUTORIALES } from "../../../config/Constants/Tutoriales";
 import { ENLACES } from "./../../../config/Constants/Enlaces";
 // Models
 import { ButtonModel } from "./../../../models/buttons/ButtonModel";
