@@ -6,7 +6,12 @@ import { ENLACES } from "./../../../../config/Constants/Enlaces";
 export const Questions = () => {
   return (
     <div>
-      <button className="float-question">
+      <button
+        className="float-question"
+        onClick={() => {
+          window.open(`${ENLACES.PREGUNTAS_FRECUENTES}`, "_blank");
+        }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="12"

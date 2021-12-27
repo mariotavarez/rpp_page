@@ -17,6 +17,14 @@
   color: $color-black-1 !important;
 }
 
+.titulo-contactanos h1 strong {
+  color: $color-black-1;
+  font-size: 40px;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #378de2, #00ddec);
+  -webkit-background-clip: text;
+}
+
 .img-contactanos {
   grid-area: img-contactanos;
   align-self: center;

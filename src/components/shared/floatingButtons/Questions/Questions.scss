@@ -14,12 +14,14 @@
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: $color-blue-4;
+  // background-color: $color-blue-4;
   color: #fff;
   border-radius: 50px;
   text-align: center;
-  box-shadow: 2px 2px 3px #999;
+  // box-shadow: 2px 2px 3px #999;
   z-index: 5;
+  background: transparent linear-gradient(113deg, #0077ed 0%, #7650df 100%) 0%
+    0% no-repeat padding-box;
 }
 
 .my-float {

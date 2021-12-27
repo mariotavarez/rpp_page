@@ -29,6 +29,14 @@
   overflow-y: scroll !important;
 }
 
+.title-marco-juridico h1 strong {
+  color: $color-black-1;
+  font-size: 40px;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #378de2, #00ddec);
+  -webkit-background-clip: text;
+}
+
 .img-marco-juridico {
   grid-area: img-marco-juridico;
   display: grid;

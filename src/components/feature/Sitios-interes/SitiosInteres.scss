@@ -27,6 +27,14 @@
   overflow-y: hidden !important;
 }
 
+.title-sitios-interes h1 strong {
+  color: $color-black-1;
+  font-size: 40px;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #378de2, #00ddec);
+  -webkit-background-clip: text;
+}
+
 .img-sitios-interes {
   grid-area: img-sitios-interes;
   display: grid;
