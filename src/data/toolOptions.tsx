@@ -63,10 +63,10 @@ export const TOOL_OPTIONS: ToolOptionsModel[] = [
     url: `${ENLACES.INDEX}/descarga-tramite`,
     isExternal: false,
   },
-  {
-    img: INFONAVIT,
-    nombre: "INFONAVIT",
-    url: "https://rppc.queretaro.gob.mx/portal/videos/VIDEO_INFONAVIT.mp4",
-    isExternal: true,
-  },
+  // {
+  //   img: INFONAVIT,
+  //   nombre: "INFONAVIT",
+  //   url: "https://rppc.queretaro.gob.mx/portal/videos/VIDEO_INFONAVIT.mp4",
+  //   isExternal: true,
+  // },
 ];

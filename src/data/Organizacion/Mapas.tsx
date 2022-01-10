@@ -162,11 +162,11 @@ export const MAPAS_DATA: MapasModel[] = [
   {
     titulo: "Subdirección del RPP en San Juan del Río",
     subdireccion: "SAN JUAN DEL RÍO",
-    nombreEncargado: "Lic. Arlette Elizabeth López Ruíz",
-    email: "alopezru@queretaro.gob.mx",
+    nombreEncargado: "",
+    email: "",
     cargo: "SUBDIRECTOR",
     horario: "Oficialía de partes: 08:00h a 14:30h de Lunes a Viernes",
-    img: "https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/personas/agn.jpg",
+    img: "",
     telefono: "427 272 3224",
     ubicacion:
       "Valentin Gómez Farias #7 int.118, Planta baja, Plaza Aguarica, Centro San Juan del Río, Qro. C.P. 76800",

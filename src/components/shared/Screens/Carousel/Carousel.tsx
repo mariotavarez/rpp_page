@@ -53,13 +53,6 @@ export class CarouselComponent extends React.Component<
       >
         <div>
           <img
-            className="responsive-carousel"
-            alt="AVISO 1"
-            src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/aviso-oficial.png"
-          />
-        </div>
-        <div>
-          <img
             src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/copias-certificadas.png"
             alt="AVISO 2"
           />

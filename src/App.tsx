@@ -23,7 +23,7 @@ function App() {
     <>
       <Suspense fallback={<Cargando />}>
         <BrowserRouter>
-          <Questions />
+          {/* <Questions /> */}
           <div className="App">
             <div className="light">
               <ul className="line"></ul>
