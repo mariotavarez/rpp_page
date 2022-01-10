@@ -206,11 +206,11 @@ export const MAPAS_DATA: MapasModel[] = [
   {
     titulo: "Subdirección del Archivo General de Notarías",
     subdireccion: "AGN",
-    nombreEncargado: "Lic. Anabel Nieves Reséndiz",
-    email: "anieves@queretaro.gob.mx",
+    nombreEncargado: "Lic. Arlette Elizabeth López Ruíz",
+    email: "alopezru@queretaro.gob.mx",
     cargo: "SUBDIRECTOR",
-    horario: "Lunes a Viernes de 08:00h a 14:30h de Lunes a Viernes",
-    img: "",
+    horario: "Lunes a Viernes de 08:00h a 14:30h",
+    img: "https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/personas/agn.jpg",
     telefono: "442 224 1250",
     ubicacion:
       "Centro de Justicia del Poder Judicial del Estado de Querétaro. Edificio de Archivos, Segundo piso.",
