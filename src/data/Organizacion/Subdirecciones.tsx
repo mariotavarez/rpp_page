@@ -31,7 +31,7 @@ export const SUBDIRECCIONES_DATA: SubdireccionesOrganizacionModel[] = [
   {
     src: (
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.076917197417!2d-99.93253838506935!3d20.90922488606323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d48768b7c6d3f9%3A0xe9cf60370a1baea0!2sRegistro%20P%C3%BAblico%20de%20la%20Propiedad%20y%20del%20Comercio%20del%20Estado%20de%20Quer%C3%A9taro!5e0!3m2!1ses-419!2smx!4v1605570672796!5m2!1ses-419!2smx"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.400151040319!2d-99.81668828507296!3d20.69396938618065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3838aad8bdbdb%3A0xa7d7dfb395e1f757!2sRegistro%20Publico%20de%20la%20Propiedad!5e0!3m2!1ses-419!2smx!4v1605570694691!5m2!1ses-419!2smx"
         frameBorder="0"
         width="100%"
         allowFullScreen={true}
@@ -82,7 +82,7 @@ export const SUBDIRECCIONES_DATA: SubdireccionesOrganizacionModel[] = [
   {
     src: (
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.9210825396044!2d-100.39809958507468!3d20.59128018623698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35ad358bf725f%3A0x1b4583678d67b7d5!2sRegistro%20P%C3%BAblico%20de%20la%20Propiedad%20y%20del%20Comercio%20del%20Estado%20de%20Quer%C3%A9taro!5e0!3m2!1ses!2smx!4v1605570622930!5m2!1ses!2smx"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14941.26953711774!2d-100.38523053022456!3d20.575092400000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d345dd22c747f7%3A0xb052d7e3ee120e05!2sArchivo%20General%20de%20Notarias%20Queretaro!5e0!3m2!1ses-419!2smx!4v1642173946498!5m2!1ses-419!2smx"
         frameBorder="0"
         width="100%"
         allowFullScreen={true}

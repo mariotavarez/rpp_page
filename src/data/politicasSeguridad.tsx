@@ -20,10 +20,10 @@ export const POLITICAS_SEGURIDAD: FooterOptionModel[] = [
     isSubMenu: false,
     targetBlank: false,
   },
-  {
-    text: "Mapa de sitio",
-    url: "",
-    isSubMenu: false,
-    targetBlank: false,
-  },
+  // {
+  //   text: "Mapa de sitio",
+  //   url: "",
+  //   isSubMenu: false,
+  //   targetBlank: false,
+  // },
 ];
