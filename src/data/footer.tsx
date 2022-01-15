@@ -68,15 +68,7 @@ export const FOOTER: FooterModel[] = [
       // },
     ],
   },
-  {
-    tituloMenu: {
-      text: "Organización",
-      url: "portal/organizacion",
-      isSubMenu: false,
-      targetBlank: false,
-    },
-    opcionMenu: [],
-  },
+
   {
     tituloMenu: {
       text: "Trámites y servicios",
@@ -90,6 +82,24 @@ export const FOOTER: FooterModel[] = [
     tituloMenu: {
       text: "Sitios de interés",
       url: "portal/sitios-interes",
+      isSubMenu: false,
+      targetBlank: false,
+    },
+    opcionMenu: [],
+  },
+  {
+    tituloMenu: {
+      text: "Organización",
+      url: "portal/organizacion",
+      isSubMenu: false,
+      targetBlank: false,
+    },
+    opcionMenu: [],
+  },
+  {
+    tituloMenu: {
+      text: "Marco jurídico",
+      url: "portal/marco-juridico",
       isSubMenu: false,
       targetBlank: false,
     },

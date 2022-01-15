@@ -11,8 +11,8 @@ export const SITIOS_INTERES_DATA: SitiosInteresModel[] = [
     url: "http://www.infonavit.gob.mx/",
   },
   {
-    nombre: "LVI Legislatura",
-    url: "http://www.legislaturaqro.gob.mx/",
+    nombre: "LX Legislatura",
+    url: "http://legislaturaqueretaro.gob.mx/",
   },
   {
     nombre: "Página del Gobierno del Estado de Querétaro",
