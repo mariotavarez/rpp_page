@@ -5,7 +5,7 @@ import "./Navbar.scss";
 // Models
 import { NavbarModel } from "./../../../models/navbar/navbarModel";
 // Router Link
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { MenuOpciones } from "./../../shared/modals/Menu-optiones/MenuOpciones";
 // Data
@@ -59,6 +59,7 @@ export const NavbarPortal = () => {
       option.targetBlank ? (
         <a
           key={index}
+          onClick={() => setShowResponsiveMenu(false)}
           href={option.url}
           target="_blank"
           className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-semibold"
@@ -69,7 +70,7 @@ export const NavbarPortal = () => {
         <a
           key={index}
           href={option.url}
-          onClick={() => setShow(true)}
+          onClick={() => setShowResponsiveMenu(false)}
           className="font-bold text-gray-100 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-lg font-semibold"
         >
           {option.nombre}
@@ -78,10 +79,11 @@ export const NavbarPortal = () => {
     ) : (
       <NavLink
         key={index}
+        onClick={() => setShowResponsiveMenu(false)}
         className={({ isActive }) =>
           isActive
-            ? '"font-bold bg-gray-700 text-white block px-3 py-2  rounded-md text-md font-bold"'
-            : '"font-bold text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md"'
+            ? '"font-bold text-white block px-3 py-2 bg-gray-700 rounded-md text-md font-bold"'
+            : '"font-bold text-white block px-3 py-2   rounded-md text-md font-bold""'
         }
         to={option.url}
       >

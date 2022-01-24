@@ -52,7 +52,6 @@ export class SectionQuestion extends React.Component<
         <SkeletonTheme baseColor="#b1b1b1" highlightColor="#7d7d7d">
           <Skeleton count={1} height={35} />
           <Skeleton count={1} height={35} />
-          <Skeleton count={1} height={35} />
         </SkeletonTheme>
       </div>
     ) : (

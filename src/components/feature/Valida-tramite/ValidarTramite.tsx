@@ -91,12 +91,14 @@ export const ValidarTramite = () => {
       {/* CONTAINER INFO VALIDAR TRAMITE */}
       <div className="preguntas-validar-tramite">
         <div className="section-question-validar-tramites">
-          {/* SECTION QUESTION */}
-          <SectionQuestion
-            options={options}
-            gradient="bg-gradient-blue-purple"
-          />
-          {/* SECTION QUESTION */}
+          <div>
+            {/* SECTION QUESTION */}
+            <SectionQuestion
+              options={options}
+              gradient="bg-gradient-blue-purple"
+            />
+            {/* SECTION QUESTION */}
+          </div>
         </div>
         <div className="dibujo-mano-certificado">
           <img

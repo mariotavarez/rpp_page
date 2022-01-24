@@ -53,7 +53,7 @@ export const MAPAS_DATA: MapasModel[] = [
       "Subdirección del RPP de Registro de Comercio y Certificaciones en Qro.",
     subdireccion: "QUERÉTARO",
     nombreEncargado: "Lic. Blanca Sánchez Blanco",
-    email: "bsanchez@queretaro.gob.mx",
+    email: "bsanchezb@queretaro.gob.mx",
     cargo: "SUBDIRECTOR",
     horario:
       "Oficialía de partes de certificados: 08:00h a 14:30h de Lunes a Viernes",

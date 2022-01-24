@@ -23,7 +23,7 @@ export const MENU_TRAMITES_SERVICIOS_DATA: MenuTramitesServiciosModel[] = [
     isExternal: true,
   },
   {
-    title: "Copias Certificadas Comercio",
+    title: "Trámites de Comercio",
     icono: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

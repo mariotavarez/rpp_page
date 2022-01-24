@@ -14,16 +14,10 @@ import "./CopiasCertificadas.scss";
 import { TUTORIALES } from "./../../../config/Constants/Tutoriales";
 // Config
 import { ENLACES } from "./../../../config/Constants/Enlaces";
-// Hooks
-import { useState } from "react";
 // Generals
 import { GeneralModal } from "./../../shared/modals/General/General";
 // React
 import React from "react";
-
-// Skeleton
-import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 
 export const CopiasCertificadas = () => {
   return <ScreenCopiasCertificadas />;
@@ -40,7 +34,6 @@ class ScreenCopiasCertificadas extends React.Component<
       show: false,
       modalOpctions: { title: "", body: "" },
     };
-    console.log(this.state);
   }
 
   componentDidMount() {
@@ -107,72 +100,36 @@ class ScreenCopiasCertificadas extends React.Component<
           />
         )}
         <div className="titulo-copias-certificadas animate__animated animate__zoomInUp">
-          {!this.state.loading ? (
-            <SkeletonTheme baseColor="#b1b1b1" highlightColor="#7d7d7d">
-              <Skeleton count={1} width={200} />
-              <Skeleton count={1} width={100} />
-              <Skeleton count={1} width={200} />
-            </SkeletonTheme>
-          ) : (
-            <>
-              <h1>COPICE</h1>
-              <p>(Solicitud de copias certificadas)</p>
-            </>
-          )}
+          <h1>COPICE</h1>
+          <p>(Solicitud de copias certificadas)</p>
         </div>
         <div className="opciones-copias-rpp">
-          {!this.state.loading ? (
-            <SkeletonTheme baseColor="#b1b1b1" highlightColor="#7d7d7d">
-              <Skeleton count={1} width={200} />
-              <Skeleton count={1} width={100} />
-              <Skeleton count={1} width={200} />
-            </SkeletonTheme>
-          ) : (
-            <>
-              <h1>Del Registro Público</h1>
-              <div>
-                <BtnAction
-                  buttonOptions={btnCopiasCertificadasRPP}
-                  onChildClick={() => handleClickModal("SUB")}
-                />
-              </div>
-              <p onClick={() => handleClickModal("RPP")}>
-                ¿Cuándo solicitar las copias del RPP?
-              </p>
-            </>
-          )}
+          <h1>Del Registro Público</h1>
+          <div>
+            <BtnAction
+              buttonOptions={btnCopiasCertificadasRPP}
+              onChildClick={() => handleClickModal("SUB")}
+            />
+          </div>
+          <p onClick={() => handleClickModal("RPP")}>
+            ¿Cuándo solicitar las copias del RPP?
+          </p>
         </div>
 
         <div className="btn-video-tutorial-copias">
-          {!this.state.loading ? (
-            <SkeletonTheme baseColor="#b1b1b1" highlightColor="#7d7d7d">
-              <Skeleton count={1} width={200} />
-            </SkeletonTheme>
-          ) : (
-            <BtnVideoTutorial urlVideo={TUTORIALES.COPIAS_CERTIFICADAS} />
-          )}
+          <BtnVideoTutorial urlVideo={TUTORIALES.COPIAS_CERTIFICADAS} />
         </div>
         <div className="opciones-copias-agn">
-          {!this.state.loading ? (
-            <SkeletonTheme baseColor="#b1b1b1" highlightColor="#7d7d7d">
-              <Skeleton count={1} width={200} />
-              <Skeleton count={1} width={100} />
-              <Skeleton count={1} width={200} />
-            </SkeletonTheme>
-          ) : (
-            <>
-              <h1>De Archivo General de Notarías</h1>
-              <div>
-                <BtnAction
-                  buttonOptions={btnCopiasCertificadasAGN}
-                  onChildClick={() => {}}
-                />
-              </div>
-              <p onClick={() => handleClickModal("AGN")}>
-                ¿Cuándo solicitar las copias del AGN?
-              </p>
-            </>
-          )}
+          <h1>De Archivo General de Notarías</h1>
+          <div>
+            <BtnAction
+              buttonOptions={btnCopiasCertificadasAGN}
+              onChildClick={() => {}}
+            />
+          </div>
+          <p onClick={() => handleClickModal("AGN")}>
+            ¿Cuándo solicitar las copias del AGN?
+          </p>
         </div>
 
         <div className="question-copias">

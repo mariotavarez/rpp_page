@@ -16,7 +16,7 @@ export const VALIDAR_TRAMITE_DATA: SectionQuestionModel[] = [
     pregunta: "¿Cómo puedo activar las ventanas emergentes?",
     button: {
       text: "Ver guía",
-      url: "https://cerlin.ciasqro.gob.mx/app_assets/qreco_assets/MANUAL_DE_ACTIVACI%C3%93N_DE_VENTANAS_EMERGENTES.pdf",
+      url: "https://cerlin.ciasqro.gob.mx/app_assets/qreco_assets/GUÍA DE ACTIVACIÓN DE VENTANAS EMERGENTES.pdf",
       action: () => {},
       colorTxt: "text-blue-btn",
       colorBtn: "bg-white",

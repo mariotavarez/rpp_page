@@ -3,11 +3,12 @@ import { RoutesModel } from "./models/Routes/RoutesModel";
 // Constants
 import { ENLACES } from "./config/Constants/Enlaces";
 import { lazy } from "react";
-// Home
-const Home = lazy(() => import("./components/feature/Home/Home"));
 // Copias certificadas
 const CopiasCertificadas = lazy(
-  () => import("./components/feature/Copias-certificadas/CopiasCertificadas")
+  () =>
+    import(
+      /* webpackChunkName: "Copias Certificadas" */ "./components/feature/Copias-certificadas/CopiasCertificadas"
+    )
 );
 // Busqueda antecedentes
 const BusquedaAntecedentes = lazy(

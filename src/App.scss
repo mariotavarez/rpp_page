@@ -6,6 +6,8 @@
 body {
   background-color: $color-blue-3;
   font-family: Century Gothic, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -13,6 +15,8 @@ html {
     linear-gradient(91deg, #0146a1 0%, #0077ed 0%, #1e54a2 100%) 0% 0% no-repeat
     padding-box;
   opacity: 1;
+  padding: 0;
+  margin: 0;
 }
 
 p,
