@@ -57,18 +57,18 @@ export class CarouselComponent extends React.Component<
             alt="AVISO 2"
           />
         </div>
-        <div>
+        {/* <div>
           <img
             src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/copias-certificadas.png"
             alt="AVISO 2"
           />
-        </div>
-        {/* <div>
+        </div> */}
+        <div>
           <img
             src="https://cerlin.ciasqro.gob.mx/app_assets/portal_assets/img/avisos/cancelacion-hipoteca.png"
             alt="AVISO 3"
           />
-        </div> */}
+        </div>
       </Carousel>
     );
   }

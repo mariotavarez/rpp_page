@@ -54,12 +54,12 @@ export const FOOTER: FooterModel[] = [
         isSubMenu: false,
         targetBlank: false,
       },
-      {
-        text: "Descarga Comprobantes",
-        url: `${ENLACES.INDEX}/descarga-tramite`,
-        isSubMenu: false,
-        targetBlank: false,
-      },
+      // {
+      //   text: "Descarga Comprobantes",
+      //   url: `${ENLACES.INDEX}/descarga-tramite`,
+      //   isSubMenu: false,
+      //   targetBlank: false,
+      // },
       // {
       //   text: "INFONAVIT",
       //   url: `https://rppc.queretaro.gob.mx/portal/videos/VIDEO_INFONAVIT.mp4`,

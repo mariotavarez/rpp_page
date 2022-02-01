@@ -57,12 +57,12 @@ export const TOOL_OPTIONS: ToolOptionsModel[] = [
     url: `${ENLACES.INDEX}/consulta-estatus`,
     isExternal: false,
   },
-  {
-    img: DESCARTA_TRAMITE,
-    nombre: "Descarga Comprobantes",
-    url: `${ENLACES.INDEX}/descarga-tramite`,
-    isExternal: false,
-  },
+  // {
+  //   img: DESCARTA_TRAMITE,
+  //   nombre: "Descarga Comprobantes",
+  //   url: `${ENLACES.INDEX}/descarga-tramite`,
+  //   isExternal: false,
+  // },
   // {
   //   img: INFONAVIT,
   //   nombre: "INFONAVIT",
