@@ -42,12 +42,12 @@ export const FOOTER: FooterModel[] = [
         isSubMenu: false,
         targetBlank: false,
       },
-      {
-        text: "Validar Trámite",
-        url: `${ENLACES.INDEX}/validar-tramite`,
-        isSubMenu: false,
-        targetBlank: false,
-      },
+      // {
+      //   text: "Validar Trámite",
+      //   url: `${ENLACES.INDEX}/validar-tramite`,
+      //   isSubMenu: false,
+      //   targetBlank: false,
+      // },
       {
         text: "Consulta Estatus",
         url: `${ENLACES.INDEX}/consulta-estatus`,
