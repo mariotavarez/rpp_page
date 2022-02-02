@@ -124,30 +124,30 @@ export const Routes: RoutesModel[] = [
     name: "Consulta Inmobiliaria",
     Component: ConsultaInmobiliaria,
   },
-  {
-    to: `${ENLACES.INDEX}/alerta-registral`,
-    path: `${ENLACES.INDEX}/alerta-registral`,
-    name: "Alerta Registral",
-    Component: AlertaRegistral,
-  },
+  // {
+  //   to: `${ENLACES.INDEX}/alerta-registral`,
+  //   path: `${ENLACES.INDEX}/alerta-registral`,
+  //   name: "Alerta Registral",
+  //   Component: AlertaRegistral,
+  // },
   {
     to: `${ENLACES.INDEX}/consulta-estatus`,
     path: `${ENLACES.INDEX}/consulta-estatus`,
     name: "Consulta Estatus",
     Component: ConsultaEstatus,
   },
-  {
-    to: `${ENLACES.INDEX}/validar-tramite`,
-    path: `${ENLACES.INDEX}/validar-tramite`,
-    name: "Validar Trámite",
-    Component: ValidarTramite,
-  },
-  {
-    to: `${ENLACES.INDEX}/descarga-tramite`,
-    path: `${ENLACES.INDEX}/descarga-tramite`,
-    name: "Descarga Trámite",
-    Component: DescargarTramite,
-  },
+  // {
+  //   to: `${ENLACES.INDEX}/validar-tramite`,
+  //   path: `${ENLACES.INDEX}/validar-tramite`,
+  //   name: "Validar Trámite",
+  //   Component: ValidarTramite,
+  // },
+  // {
+  //   to: `${ENLACES.INDEX}/descarga-tramite`,
+  //   path: `${ENLACES.INDEX}/descarga-tramite`,
+  //   name: "Descarga Trámite",
+  //   Component: DescargarTramite,
+  // },
   {
     to: `${ENLACES.INDEX}/sitios-interes`,
     path: `${ENLACES.INDEX}/sitios-interes`,
