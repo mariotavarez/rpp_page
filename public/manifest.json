@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "RPP",
+  "name": "Registro Público del Estado de Querétaro",
+  "description": "Registro Público del Estado de Querétaro",
   "icons": [
     {
       "src": "favicon.ico",

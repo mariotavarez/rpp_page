@@ -42,24 +42,24 @@ export const FOOTER: FooterModel[] = [
       //   isSubMenu: false,
       //   targetBlank: false,
       // },
-      // {
-      //   text: "Validar Trámite",
-      //   url: `${ENLACES.INDEX}/validar-tramite`,
-      //   isSubMenu: false,
-      //   targetBlank: false,
-      // },
+      {
+        text: "Validar Trámite",
+        url: `${ENLACES.INDEX}/validar-tramite`,
+        isSubMenu: false,
+        targetBlank: false,
+      },
       {
         text: "Consulta Estatus",
         url: `${ENLACES.INDEX}/consulta-estatus`,
         isSubMenu: false,
         targetBlank: false,
       },
-      // {
-      //   text: "Descarga Comprobantes",
-      //   url: `${ENLACES.INDEX}/descarga-tramite`,
-      //   isSubMenu: false,
-      //   targetBlank: false,
-      // },
+      {
+        text: "Descarga Comprobantes",
+        url: `${ENLACES.INDEX}/descarga-tramite`,
+        isSubMenu: false,
+        targetBlank: false,
+      },
       // {
       //   text: "INFONAVIT",
       //   url: `https://rppc.queretaro.gob.mx/portal/videos/VIDEO_INFONAVIT.mp4`,

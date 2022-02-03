@@ -136,18 +136,18 @@ export const Routes: RoutesModel[] = [
     name: "Consulta Estatus",
     Component: ConsultaEstatus,
   },
-  // {
-  //   to: `${ENLACES.INDEX}/validar-tramite`,
-  //   path: `${ENLACES.INDEX}/validar-tramite`,
-  //   name: "Validar Trámite",
-  //   Component: ValidarTramite,
-  // },
-  // {
-  //   to: `${ENLACES.INDEX}/descarga-tramite`,
-  //   path: `${ENLACES.INDEX}/descarga-tramite`,
-  //   name: "Descarga Trámite",
-  //   Component: DescargarTramite,
-  // },
+  {
+    to: `${ENLACES.INDEX}/validar-tramite`,
+    path: `${ENLACES.INDEX}/validar-tramite`,
+    name: "Validar Trámite",
+    Component: ValidarTramite,
+  },
+  {
+    to: `${ENLACES.INDEX}/descarga-tramite`,
+    path: `${ENLACES.INDEX}/descarga-tramite`,
+    name: "Descarga Trámite",
+    Component: DescargarTramite,
+  },
   {
     to: `${ENLACES.INDEX}/sitios-interes`,
     path: `${ENLACES.INDEX}/sitios-interes`,

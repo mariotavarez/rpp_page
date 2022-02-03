@@ -118,7 +118,7 @@ export class ScreenToolOptions extends React.Component<
       </div>
     ) : (
       <div className="container-toolOptions">
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-1 items-center justify-items-center show-tool-desktop">
+        <div className="grid grid-cols-2 sm:grid-cols-7 gap-1 items-center justify-items-center show-tool-desktop">
           {toolOptionsImg}
         </div>
         <div className="container mx-auto show-tool show-tool-responsive">

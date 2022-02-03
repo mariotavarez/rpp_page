@@ -45,24 +45,24 @@ export const TOOL_OPTIONS: ToolOptionsModel[] = [
   //   url: `${ENLACES.INDEX}/alerta-registral`,
   //   isExternal: false,
   // },
-  // {
-  //   img: VALIDAR_TRAMITE,
-  //   nombre: "Validar Trámite",
-  //   url: `${ENLACES.INDEX}/validar-tramite`,
-  //   isExternal: false,
-  // },
+  {
+    img: VALIDAR_TRAMITE,
+    nombre: "Validar Trámite",
+    url: `${ENLACES.INDEX}/validar-tramite`,
+    isExternal: false,
+  },
   {
     img: CONSULTA_ESTATUS,
     nombre: "Consulta Estatus",
     url: `${ENLACES.INDEX}/consulta-estatus`,
     isExternal: false,
   },
-  // {
-  //   img: DESCARTA_TRAMITE,
-  //   nombre: "Descarga Comprobantes",
-  //   url: `${ENLACES.INDEX}/descarga-tramite`,
-  //   isExternal: false,
-  // },
+  {
+    img: DESCARTA_TRAMITE,
+    nombre: "Descarga Comprobantes",
+    url: `${ENLACES.INDEX}/descarga-tramite`,
+    isExternal: false,
+  },
   // {
   //   img: INFONAVIT,
   //   nombre: "INFONAVIT",
