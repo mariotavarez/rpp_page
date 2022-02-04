@@ -154,16 +154,16 @@ export const NavbarPortal = () => {
                 />
               </div>
               <div className="flex-shrink-0 flex items-center">
-                <img
+                {/* <img
                   className="block lg:hidden h-12 w-auto"
                   src={logo}
                   alt="QRO"
-                />
-                <img
+                /> */}
+                {/* <img
                   className="hidden lg:block h-12 w-auto"
                   src={logo}
                   alt="QRO"
-                />
+                /> */}
               </div>
               <div className="hidden sm:block sm:ml-8 items-center ">
                 <div className="flex space-x-4">{navbarOptionsMenuDesktop}</div>

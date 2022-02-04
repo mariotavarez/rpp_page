@@ -36,12 +36,12 @@ export const FOOTER: FooterModel[] = [
         isSubMenu: false,
         targetBlank: false,
       },
-      // {
-      //   text: "Alerta Registral",
-      //   url: `${ENLACES.INDEX}/alerta-registral`,
-      //   isSubMenu: false,
-      //   targetBlank: false,
-      // },
+      {
+        text: "Alerta Registral",
+        url: `${ENLACES.INDEX}/alerta-registral`,
+        isSubMenu: false,
+        targetBlank: false,
+      },
       {
         text: "Validar Trámite",
         url: `${ENLACES.INDEX}/validar-tramite`,

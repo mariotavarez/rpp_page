@@ -124,12 +124,12 @@ export const Routes: RoutesModel[] = [
     name: "Consulta Inmobiliaria",
     Component: ConsultaInmobiliaria,
   },
-  // {
-  //   to: `${ENLACES.INDEX}/alerta-registral`,
-  //   path: `${ENLACES.INDEX}/alerta-registral`,
-  //   name: "Alerta Registral",
-  //   Component: AlertaRegistral,
-  // },
+  {
+    to: `${ENLACES.INDEX}/alerta-registral`,
+    path: `${ENLACES.INDEX}/alerta-registral`,
+    name: "Alerta Registral",
+    Component: AlertaRegistral,
+  },
   {
     to: `${ENLACES.INDEX}/consulta-estatus`,
     path: `${ENLACES.INDEX}/consulta-estatus`,

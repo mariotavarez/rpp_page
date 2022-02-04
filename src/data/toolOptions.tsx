@@ -39,12 +39,12 @@ export const TOOL_OPTIONS: ToolOptionsModel[] = [
     url: `${ENLACES.INDEX}/consulta-inmobiliaria`,
     isExternal: false,
   },
-  // {
-  //   img: ALERTA_REGISTRAL,
-  //   nombre: "Alerta Registral",
-  //   url: `${ENLACES.INDEX}/alerta-registral`,
-  //   isExternal: false,
-  // },
+  {
+    img: ALERTA_REGISTRAL,
+    nombre: "Alerta Registral",
+    url: `${ENLACES.INDEX}/alerta-registral`,
+    isExternal: false,
+  },
   {
     img: VALIDAR_TRAMITE,
     nombre: "Validar Trámite",
