@@ -36,12 +36,12 @@ export const ValidarTramiteModal = ({ setShow }: { setShow: any }) => {
 
       return;
     }
-    //  Valida que el identificador tenga una longitud de 16 caracteres
-    if (identificador?.toString().length < 16) {
+    //  Valida que el identificador tenga una longitud de 15 caracteres
+    if (identificador?.toString().length < 15) {
       handleAlertNotification(
         "info",
         "Información",
-        "El identificador debe ser de 16 digitos"
+        "El identificador debe ser de al menos 15 caractares"
       );
       return;
     }
