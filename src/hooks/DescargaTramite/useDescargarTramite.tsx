@@ -18,7 +18,7 @@ export const useDescargarTramite = () => {
     setLoading(true);
     // Realiza la peticion
     const response = await axios.post(
-      `${URL.API_CIAS}/ws_rpp_compb_inscp_general/consultaDoc`,
+      `${URL.API_CIAS}/ws_rpp_compb_inscp_general12/consultaDoc`,
       descargaComprobanteModel
     );
 
@@ -34,7 +34,7 @@ export const useDescargarTramite = () => {
 
     // Realiza la peticion
     const response = await axios.post(
-      `${URL.API_CIAS}/ws_rpp_alterin_general/alterin/recuperaDocumento`,
+      `${URL.API_CIAS}/ws_rpp_alterin_general12/alterin/recuperaDocumento`,
       { llave }
     );
 

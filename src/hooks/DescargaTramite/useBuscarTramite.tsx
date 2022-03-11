@@ -23,7 +23,7 @@ export const useBuscarTramite = () => {
     setLoading(true);
 
     const response = await axios.post(
-      `${URL.API_CIAS}/ws_rpp_compb_inscp_general/descargar`,
+      `${URL.API_CIAS}/ws_rpp_compb_inscp_general12/descargar`,
       buscarTramite
     );
     console.log(response);

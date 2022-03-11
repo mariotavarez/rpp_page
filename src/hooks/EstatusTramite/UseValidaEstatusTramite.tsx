@@ -15,7 +15,7 @@ export const useValidaEstatusTramite = () => {
   const validarEstatus = async (estatusTramite: EstatusTramiteModel) => {
     setLoading(true);
     const responseValidarEstatus = await axios.post(
-      `${URL.API_CIAS}/ws_rpp_general_tramitesSire/estatusTramite`,
+      `${URL.API_CIAS}/ws_rpp_general_tramitesSire12/estatusTramite`,
       estatusTramite
     );
 

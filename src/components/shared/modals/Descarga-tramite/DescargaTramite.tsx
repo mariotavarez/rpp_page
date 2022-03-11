@@ -25,7 +25,7 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
   const btnDescargar: ButtonModel = {
     color: "btn-action-green",
     url: "",
-    text: "Descargar comprobante",
+    text: "Descargar documento",
     sameWindow: true,
   };
   // Form Descarga de tramite
@@ -62,12 +62,17 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
     responseBuscarComprobante: ResponseBuscarComprobanteModel
   ) => {
     return (
-      <>
+      <div className="flex m-4 ">
         {responseBuscarComprobante.lista.map((item, index) => (
-          <div key={index} className="text-sm text-gray-900">
+          <div key={index}>
             {/* BUTTON ACTION */}
             <BtnAction
-              buttonOptions={btnDescargar}
+              buttonOptions={{
+                color: "btn-action-green",
+                url: "",
+                text: item.tipoDoc,
+                sameWindow: true,
+              }}
               onChildClick={() =>
                 handleClicDescargaTramite(item.cscImg, item.tipoDoc)
               }
@@ -75,7 +80,7 @@ export const DescargaTramiteModal = ({ setShow }: { setShow: any }) => {
           </div>
         ))}
         {loadingDescargar && <CargandoRequest />}
-      </>
+      </div>
     );
   };
 

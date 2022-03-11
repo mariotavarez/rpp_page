@@ -21,7 +21,7 @@ export const useBusquedaTramites = () => {
     setLoading(true);
 
     const response = await axios.post(
-      `${URL.API_CIAS}/ws_rpp_pagina_web/tramites`
+      `${URL.API_CIAS}/ws_rpp_pagina_web12/tramites`
     );
 
     setLoading(false);
@@ -32,7 +32,7 @@ export const useBusquedaTramites = () => {
   const descargarDocumento = async (tramite: TramitesModel) => {
     setLoading(true);
     window.open(
-      `${URL.API_CIAS}/ws_rpp_pagina_web/documento?claveTramite=${tramite.claveTramite}&clave=${tramite.clave}&descr=${tramite.descripcionArchivo}`,
+      `${URL.API_CIAS}/ws_rpp_pagina_web12/documento?claveTramite=${tramite.claveTramite}&clave=${tramite.clave}&descr=${tramite.descripcionArchivo}`,
       "_blank"
     );
     setLoading(false);

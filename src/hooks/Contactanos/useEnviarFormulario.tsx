@@ -21,7 +21,7 @@ export const useEnviarFormulario = () => {
   const enviarFormulario = async (formulario: ContactanosModel) => {
     setLoading(true);
     const response = await axios.post(
-      `${URL.API_CIAS}/ws_rpp_pagina_web/contactanos`,
+      `${URL.API_CIAS}/ws_rpp_pagina_web12/contactanos`,
       formulario
     );
     setLoading(false);
